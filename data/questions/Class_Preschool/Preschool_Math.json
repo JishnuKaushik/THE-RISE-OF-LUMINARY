@@ -1,0 +1,166 @@
+{
+  "subject": "Mathematics",
+  "grade": "Preschool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "If you have 1 apple and your friend gives you 1 more, how many apples do you have?",
+      "options": ["1", "2", "3", "4"],
+      "correct": "B",
+      "explanation": "1 apple plus 1 apple equals 2 apples.",
+      "funFact": "Apples float in water because they are made of 25% air!"
+    },
+    {
+      "id": 2,
+      "question": "Which shape has absolutely no corners?",
+      "options": ["Square", "Triangle", "Circle", "Rectangle"],
+      "correct": "C",
+      "explanation": "A circle is perfectly round and smooth with no sharp corners or straight edges.",
+      "funFact": "The circle is the only shape that can roll smoothly in any direction!"
+    },
+    {
+      "id": 3,
+      "question": "How many legs does a typical dog have?",
+      "options": ["2", "3", "4", "5"],
+      "correct": "C",
+      "explanation": "Dogs are quadrupeds, which means they walk on four legs.",
+      "funFact": "A cheetah can use its four legs to run up to 70 miles per hour, making it the fastest land animal!"
+    },
+    {
+      "id": 4,
+      "question": "Which number comes directly after 3 when you are counting?",
+      "options": ["2", "4", "5", "6"],
+      "correct": "B",
+      "explanation": "When we count up, the order is 1, 2, 3, 4, 5.",
+      "funFact": "Some animals, like crows, actually understand the concept of counting up to four!"
+    },
+    {
+      "id": 5,
+      "question": "If you have 3 cookies and eat 1, how many cookies are left?",
+      "options": ["1", "2", "3", "4"],
+      "correct": "B",
+      "explanation": "Taking 1 away from 3 leaves you with 2 (3 - 1 = 2).",
+      "funFact": "The word 'cookie' comes from the Dutch word 'koekje', which means 'little cake'!"
+    },
+    {
+      "id": 6,
+      "question": "Which of these shapes has exactly 3 sides?",
+      "options": ["Circle", "Square", "Triangle", "Star"],
+      "correct": "C",
+      "explanation": "A triangle always has exactly three straight sides and three corners.",
+      "funFact": "Triangles are the strongest shape in architecture and are used to build big bridges!"
+    },
+    {
+      "id": 7,
+      "question": "How many wheels does a bicycle have?",
+      "options": ["1", "2", "3", "4"],
+      "correct": "B",
+      "explanation": "The prefix 'bi-' means two, so a bicycle has two wheels.",
+      "funFact": "The first bicycles were made of wood and didn't even have pedals!"
+    },
+    {
+      "id": 8,
+      "question": "What number comes right before 2?",
+      "options": ["0", "1", "3", "4"],
+      "correct": "B",
+      "explanation": "When counting, 1 comes first, and then 2.",
+      "funFact": "The number 1 is not considered a prime number or a composite number; it's completely unique!"
+    },
+    {
+      "id": 9,
+      "question": "How many fingers are normally on one human hand, including the thumb?",
+      "options": ["4", "5", "6", "10"],
+      "correct": "B",
+      "explanation": "A typical human hand has four fingers and one thumb, making five digits in total.",
+      "funFact": "Some cats have extra toes and can have up to 7 or 8 toes on a single paw!"
+    },
+    {
+      "id": 10,
+      "question": "Which of these animals is usually the biggest?",
+      "options": ["Mouse", "Cat", "Dog", "Elephant"],
+      "correct": "D",
+      "explanation": "Elephants are huge animals, much larger than mice, cats, or dogs.",
+      "funFact": "An African elephant can weigh as much as 14,000 pounds, which is as heavy as three cars!"
+    },
+    {
+      "id": 11,
+      "question": "What shape is a whole pizza before you cut it?",
+      "options": ["Triangle", "Circle", "Square", "Rectangle"],
+      "correct": "B",
+      "explanation": "Pizzas are usually baked as flat, round circles.",
+      "funFact": "The largest round pizza ever made was 131 feet across and weighed over 50,000 pounds!"
+    },
+    {
+      "id": 12,
+      "question": "If you have 2 red blocks and 2 blue blocks, how many blocks do you have in total?",
+      "options": ["2", "3", "4", "5"],
+      "correct": "C",
+      "explanation": "Adding 2 red plus 2 blue equals 4 total blocks.",
+      "funFact": "The plastic blocks we call LEGO are so strong that a single brick can support the weight of 375,000 other bricks!"
+    },
+    {
+      "id": 13,
+      "question": "How many sides does a square have?",
+      "options": ["2", "3", "4", "5"],
+      "correct": "C",
+      "explanation": "A square has four sides, and they are all the exact same length.",
+      "funFact": "A checkerboard is a big square made up of 64 smaller squares!"
+    },
+    {
+      "id": 14,
+      "question": "Which of these objects is the smallest?",
+      "options": ["House", "Car", "Bicycle", "Apple"],
+      "correct": "D",
+      "explanation": "An apple fits in your hand, while the other objects are big enough to ride or live in.",
+      "funFact": "The smallest apple in the world is the size of a berry!"
+    },
+    {
+      "id": 15,
+      "question": "If there are 5 birds on a fence and 1 flies away, how many birds are left?",
+      "options": ["3", "4", "5", "6"],
+      "correct": "B",
+      "explanation": "5 birds minus 1 flying away leaves 4 birds on the fence.",
+      "funFact": "Hummingbirds can fly backwards, which no other bird can do!"
+    },
+    {
+      "id": 16,
+      "question": "Which number is the biggest?",
+      "options": ["1", "5", "2", "3"],
+      "correct": "B",
+      "explanation": "When counting from 1 to 5, 5 comes last and represents the largest amount.",
+      "funFact": "Starfish usually have 5 arms, but some special kinds can have up to 40 arms!"
+    },
+    {
+      "id": 17,
+      "question": "How many eyes do most people have?",
+      "options": ["1", "2", "3", "4"],
+      "correct": "B",
+      "explanation": "People have two eyes to help them see the world in 3D.",
+      "funFact": "Most spiders have 8 eyes, but some have none at all!"
+    },
+    {
+      "id": 18,
+      "question": "What shape is a typical book?",
+      "options": ["Circle", "Triangle", "Rectangle", "Oval"],
+      "correct": "C",
+      "explanation": "A book usually has four sides, with opposite sides being the same length, making it a rectangle.",
+      "funFact": "The largest book in the world is 5 meters tall and weighs over 1,500 kilograms!"
+    },
+    {
+      "id": 19,
+      "question": "If you have 0 candies and someone gives you 2 candies, how many do you have?",
+      "options": ["0", "1", "2", "3"],
+      "correct": "C",
+      "explanation": "Zero means nothing, so getting 2 means you now have 2.",
+      "funFact": "The concept of 'zero' was invented in ancient India. Before that, people didn't have a number for 'nothing'!"
+    },
+    {
+      "id": 20,
+      "question": "Which object is usually the tallest?",
+      "options": ["Tree", "Flower", "Blade of grass", "Mushroom"],
+      "correct": "A",
+      "explanation": "Trees grow much higher into the sky than flowers, grass, or mushrooms.",
+      "funFact": "The tallest tree in the world is a redwood named Hyperion, which is taller than the Statue of Liberty!"
+    }
+  ]
+}

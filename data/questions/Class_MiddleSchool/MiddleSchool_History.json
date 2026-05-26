@@ -1,0 +1,166 @@
+{
+  "subject": "History",
+  "grade": "Middle School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the name of one of the earliest known written legal codes, famous for its principle of 'an eye for an eye'?",
+      "options": ["Justinian Code", "Magna Carta", "Code of Hammurabi", "Twelve Tables"],
+      "correct": "C",
+      "explanation": "King Hammurabi of Babylon created a set of 282 laws around 1750 BCE, carved onto a massive stone pillar.",
+      "funFact": "The code didn't just cover crimes; it also regulated trade, marriage, and even the minimum wage for workers!"
+    },
+    {
+      "id": 2,
+      "question": "Which Macedonian king conquered the Persian Empire and created one of the largest empires of the ancient world by age 30?",
+      "options": ["Julius Caesar", "Alexander the Great", "Cyrus the Great", "Leonidas"],
+      "correct": "B",
+      "explanation": "Alexander the Great spread Greek culture throughout the Middle East and parts of Asia before dying at a young age.",
+      "funFact": "He named over 70 cities after himself, and one city after his beloved horse, Bucephalus!"
+    },
+    {
+      "id": 3,
+      "question": "What action by Julius Caesar in 49 BCE effectively ended the Roman Republic and started a civil war?",
+      "options": ["Assassinating the Senate", "Crossing the Rubicon river", "Burning Carthage", "Building the Colosseum"],
+      "correct": "B",
+      "explanation": "By bringing his army across the Rubicon river into Italy, Caesar committed treason against the Roman Republic.",
+      "funFact": "When he crossed, he reportedly said 'Alea iacta est', which means 'The die is cast' – meaning there was no turning back!"
+    },
+    {
+      "id": 4,
+      "question": "Which eastern continuation of the Roman Empire survived for a thousand years after the fall of Rome?",
+      "options": ["The Holy Roman Empire", "The Ottoman Empire", "The Byzantine Empire", "The Carolingian Empire"],
+      "correct": "C",
+      "explanation": "The Byzantine Empire, with its capital at Constantinople, preserved Roman and Greek culture throughout the Middle Ages.",
+      "funFact": "They used a secret weapon called 'Greek Fire' in naval battles, which continued to burn even while floating on water!"
+    },
+    {
+      "id": 5,
+      "question": "Who founded the Mongol Empire, which became the largest contiguous land empire in history?",
+      "options": ["Kublai Khan", "Attila the Hun", "Genghis Khan", "Tamerlane"],
+      "correct": "C",
+      "explanation": "Genghis Khan united the nomadic tribes of the Asian steppe and conquered vast territories across Eurasia.",
+      "funFact": "The Mongols created a fast postal relay system called the 'Yam', allowing messages to travel across the empire incredibly quickly!"
+    },
+    {
+      "id": 6,
+      "question": "During the Ming Dynasty, which Chinese admiral led seven massive naval expeditions to explore the Indian Ocean?",
+      "options": ["Sun Tzu", "Zheng He", "Qin Shi Huang", "Confucius"],
+      "correct": "B",
+      "explanation": "Zheng He commanded a massive fleet of 'treasure ships' to establish trade and collect tribute for the Emperor.",
+      "funFact": "Some of his treasure ships were estimated to be over 400 feet long—more than four times the length of Columbus's ships!"
+    },
+    {
+      "id": 7,
+      "question": "The capital of the Aztec Empire, built on an island in the middle of a lake, was called what?",
+      "options": ["Cusco", "Chichen Itza", "Tenochtitlan", "Tikal"],
+      "correct": "C",
+      "explanation": "Tenochtitlan was a massive, highly organized city with canals, bridges, and giant pyramids.",
+      "funFact": "The modern city of Mexico City is built directly on top of the ruins of Tenochtitlan, and the lake has been mostly drained!"
+    },
+    {
+      "id": 8,
+      "question": "During the Scientific Revolution, who proposed the heliocentric theory, stating that the Earth revolves around the Sun?",
+      "options": ["Isaac Newton", "Nicolaus Copernicus", "Galileo Galilei", "Johannes Kepler"],
+      "correct": "B",
+      "explanation": "Copernicus mathematically challenged the long-held belief that the Earth was the center of the universe.",
+      "funFact": "He delayed publishing his book until right before his death because he was afraid of the controversy it would cause!"
+    },
+    {
+      "id": 9,
+      "question": "Which event is considered the starting point of the French Revolution in 1789?",
+      "options": ["The execution of Louis XVI", "The Reign of Terror", "The Storming of the Bastille", "The Battle of Waterloo"],
+      "correct": "C",
+      "explanation": "Angry citizens in Paris attacked the Bastille, a medieval fortress and prison, to seize weapons and gunpowder.",
+      "funFact": "At the time it was stormed, the famous 'prison' only held seven prisoners!"
+    },
+    {
+      "id": 10,
+      "question": "Who led the only successful slave revolt in history, which resulted in the independence of Haiti?",
+      "options": ["Simon Bolivar", "Nat Turner", "Toussaint L'Ouverture", "Jose de San Martin"],
+      "correct": "C",
+      "explanation": "Toussaint L'Ouverture was a former slave who became a brilliant military leader, fighting off French, British, and Spanish forces.",
+      "funFact": "Haiti became the first independent nation in Latin America and the first post-colonial independent black-led nation in the world!"
+    },
+    {
+      "id": 11,
+      "question": "The rapid modernization and industrialization of Japan in the late 19th century is known as what?",
+      "options": ["The Shogun Era", "The Meiji Restoration", "The Edo Period", "The Taika Reforms"],
+      "correct": "B",
+      "explanation": "Emperor Meiji was restored to power, and Japan rapidly adopted Western technology, military, and political systems.",
+      "funFact": "To learn about the West, the Japanese government sent a mission of scholars on a multi-year trip around the world called the Iwakura Mission!"
+    },
+    {
+      "id": 12,
+      "question": "What 1884 meeting resulted in European powers dividing up the continent of Africa among themselves?",
+      "options": ["The Treaty of Versailles", "The Congress of Vienna", "The Berlin Conference", "The Yalta Conference"],
+      "correct": "C",
+      "explanation": "During the 'Scramble for Africa', European nations drew arbitrary borders across Africa, largely ignoring existing cultural and ethnic boundaries.",
+      "funFact": "Not a single African leader was invited to the conference where their continent was divided!"
+    },
+    {
+      "id": 13,
+      "question": "The assassination of which figure was the spark that ignited World War I?",
+      "options": ["Tsar Nicholas II", "Archduke Franz Ferdinand", "Kaiser Wilhelm II", "Woodrow Wilson"],
+      "correct": "B",
+      "explanation": "The assassination of the heir to the Austro-Hungarian throne in Sarajevo led to a chain reaction of military alliances activating.",
+      "funFact": "The assassin, Gavrilo Princip, only got the chance to shoot the Archduke because the Archduke's driver took a wrong turn!"
+    },
+    {
+      "id": 14,
+      "question": "Which political group, led by Vladimir Lenin, seized power in Russia during the October Revolution of 1917?",
+      "options": ["The Mensheviks", "The Romanovs", "The Bolsheviks", "The White Army"],
+      "correct": "C",
+      "explanation": "The Bolsheviks overthrew the provisional government and established the first communist state.",
+      "funFact": "Lenin had been exiled in Switzerland, and the German government secretly transported him back to Russia in a sealed train to cause chaos!"
+    },
+    {
+      "id": 15,
+      "question": "What 1929 event triggered the global economic collapse known as the Great Depression?",
+      "options": ["The Dust Bowl", "The Wall Street Crash", "The end of World War I", "The Gold Standard Act"],
+      "correct": "B",
+      "explanation": "The sudden collapse of the U.S. stock market led to massive unemployment and poverty worldwide.",
+      "funFact": "In Germany, money became so worthless during the economic crisis that children used stacks of cash as building blocks!"
+    },
+    {
+      "id": 16,
+      "question": "What physical barrier divided a major German city during the Cold War from 1961 to 1989?",
+      "options": ["The Iron Curtain", "The Maginot Line", "The Berlin Wall", "The Checkpoint Charlie Fence"],
+      "correct": "C",
+      "explanation": "The Soviet-backed East German government built the wall to stop its citizens from fleeing to democratic West Berlin.",
+      "funFact": "Over 5,000 people managed to escape over, under, or through the wall, using everything from hot air balloons to zip lines!"
+    },
+    {
+      "id": 17,
+      "question": "Who was the leader of the nonviolent resistance movement against British colonial rule in India?",
+      "options": ["Jawaharlal Nehru", "Indira Gandhi", "Mahatma Gandhi", "Subhas Chandra Bose"],
+      "correct": "C",
+      "explanation": "Gandhi used civil disobedience, such as boycotts and peaceful marches, to win India's independence in 1947.",
+      "funFact": "In 1930, Gandhi led a 240-mile march to the sea just to make salt, protesting a British tax on salt!"
+    },
+    {
+      "id": 18,
+      "question": "Which war, lasting from 1950 to 1953, ended in an armistice but never an official peace treaty, leaving the country divided?",
+      "options": ["The Vietnam War", "The Korean War", "World War II", "The Gulf War"],
+      "correct": "B",
+      "explanation": "The Korean War halted with a ceasefire, establishing a Demilitarized Zone (DMZ) between North and South Korea.",
+      "funFact": "The DMZ is so heavily guarded and devoid of human activity that it has accidentally become a thriving nature preserve!"
+    },
+    {
+      "id": 19,
+      "question": "What was the system of institutionalized racial segregation and discrimination in South Africa called?",
+      "options": ["Jim Crow", "Apartheid", "Segregation", "The Pass Laws"],
+      "correct": "B",
+      "explanation": "Apartheid was a policy enforced by the white minority government from 1948 until the early 1990s.",
+      "funFact": "Nelson Mandela, a key anti-apartheid leader, spent 27 years in prison before being released and becoming South Africa's first black president!"
+    },
+    {
+      "id": 20,
+      "question": "Which major global pandemic killed tens of millions of people right after World War I?",
+      "options": ["The Bubonic Plague", "The Spanish Flu", "Cholera", "Smallpox"],
+      "correct": "B",
+      "explanation": "The 1918 influenza pandemic infected about a third of the world's population at the time.",
+      "funFact": "It is called the 'Spanish Flu' not because it started in Spain, but because Spain was neutral in WWI and their press was the only one freely reporting on the sickness!"
+    }
+  ]
+}

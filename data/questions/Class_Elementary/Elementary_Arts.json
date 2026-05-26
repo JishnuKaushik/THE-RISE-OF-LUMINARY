@@ -1,0 +1,166 @@
+{
+  "subject": "Arts",
+  "grade": "Elementary",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What are the three primary colors?",
+      "options": ["Red, Green, Blue", "Red, Yellow, Blue", "Orange, Green, Purple", "Black, White, Gray"],
+      "correct": "B",
+      "explanation": "Red, yellow, and blue are the primary colors because you can't create them by mixing other colors together.",
+      "funFact": "Sir Isaac Newton invented the first color wheel in 1666!"
+    },
+    {
+      "id": 2,
+      "question": "Which famous artist painted the 'Mona Lisa'?",
+      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+      "correct": "C",
+      "explanation": "Leonardo da Vinci painted the Mona Lisa during the Italian Renaissance.",
+      "funFact": "The Mona Lisa is surprisingly small; it's only 30 inches tall and 21 inches wide!"
+    },
+    {
+      "id": 3,
+      "question": "What do we call a painting of unmoving objects, like a bowl of fruit or flowers?",
+      "options": ["A landscape", "A portrait", "A still life", "A mural"],
+      "correct": "C",
+      "explanation": "A still life is a work of art depicting mostly inanimate subject matter.",
+      "funFact": "Ancient Egyptians painted still lifes in tombs because they believed the food depicted would become real in the afterlife!"
+    },
+    {
+      "id": 4,
+      "question": "What type of instrument is a drum?",
+      "options": ["String", "Woodwind", "Brass", "Percussion"],
+      "correct": "D",
+      "explanation": "Percussion instruments are played by hitting, shaking, or scraping them.",
+      "funFact": "The oldest known drum is the alligator drum, which was made in China from clay and alligator skin over 4,000 years ago!"
+    },
+    {
+      "id": 5,
+      "question": "What do we call the written pages that actors read to learn their lines for a play?",
+      "options": ["A novel", "A script", "A poem", "A letter"],
+      "correct": "B",
+      "explanation": "A script contains all the dialogue and stage directions for a play or movie.",
+      "funFact": "The word 'script' comes from the Latin word 'scriptus', which simply means 'written'!"
+    },
+    {
+      "id": 6,
+      "question": "What is the art of beautiful, decorative handwriting called?",
+      "options": ["Typography", "Calligraphy", "Graffiti", "Origami"],
+      "correct": "B",
+      "explanation": "Calligraphy uses special pens or brushes to make writing look like art.",
+      "funFact": "In ancient China, calligraphy was considered one of the highest forms of visual art!"
+    },
+    {
+      "id": 7,
+      "question": "Which two colors do you mix together to make purple?",
+      "options": ["Red and Blue", "Blue and Yellow", "Red and Yellow", "Black and White"],
+      "correct": "A",
+      "explanation": "Mixing the primary colors red and blue creates the secondary color purple.",
+      "funFact": "In ancient times, purple dye was so expensive to make from sea snails that only royalty was allowed to wear it!"
+    },
+    {
+      "id": 8,
+      "question": "Which artist is famous for painting 'The Starry Night' and cutting off a piece of his own ear?",
+      "options": ["Claude Monet", "Vincent van Gogh", "Salvador Dali", "Frida Kahlo"],
+      "correct": "B",
+      "explanation": "Vincent van Gogh was a Dutch painter who created 'The Starry Night' while staying in an asylum.",
+      "funFact": "Van Gogh only ever sold one painting while he was alive, but today his works are worth millions!"
+    },
+    {
+      "id": 9,
+      "question": "What is a group of people singing together called?",
+      "options": ["An orchestra", "A band", "A choir", "A cast"],
+      "correct": "C",
+      "explanation": "A choir is a musical ensemble of singers.",
+      "funFact": "Singing in a choir has been scientifically proven to sync up the heartbeats of everyone singing!"
+    },
+    {
+      "id": 10,
+      "question": "What kind of paint is transparent and mixed with water?",
+      "options": ["Oil paint", "Watercolor", "Acrylic", "Tempera"],
+      "correct": "B",
+      "explanation": "Watercolor paints use water to thin the pigment, creating a light, see-through effect on paper.",
+      "funFact": "During the Renaissance, watercolors were mostly used just for quick sketches before the 'real' oil painting started!"
+    },
+    {
+      "id": 11,
+      "question": "What is the wooden frame called that holds an artist's canvas while they paint?",
+      "options": ["A palette", "An easel", "A pedestal", "A frame"],
+      "correct": "B",
+      "explanation": "An easel stands upright to hold a canvas at eye level so the artist can paint comfortably.",
+      "funFact": "The word 'easel' comes from an old Dutch word meaning 'donkey', because it carries a heavy load!"
+    },
+    {
+      "id": 12,
+      "question": "What do we call a painting of outdoor scenery, like mountains or the ocean?",
+      "options": ["A portrait", "A landscape", "A still life", "A collage"],
+      "correct": "B",
+      "explanation": "A landscape shows the natural environment, like forests, rivers, or mountains.",
+      "funFact": "Before the 1500s, landscapes were mostly just used as backgrounds for paintings of people!"
+    },
+    {
+      "id": 13,
+      "question": "Which of these instruments has strings and is usually played with a bow?",
+      "options": ["Violin", "Flute", "Trumpet", "Clarinet"],
+      "correct": "A",
+      "explanation": "A violin is a string instrument, and the bow rubbed against the strings makes the sound.",
+      "funFact": "The hair on a violin bow is usually made from real horsehair!"
+    },
+    {
+      "id": 14,
+      "question": "In a dance performance, what does a choreographer do?",
+      "options": ["Sells tickets", "Plays the music", "Creates the dance moves", "Makes the costumes"],
+      "correct": "C",
+      "explanation": "A choreographer invents and arranges the dance routines for the performers.",
+      "funFact": "Choreographers don't just work in dance; they also choreograph stage combat and sword fights in action movies!"
+    },
+    {
+      "id": 15,
+      "question": "What type of theater uses puppets that are controlled from above using strings?",
+      "options": ["Shadow theater", "Marionette theater", "Hand puppet theater", "Musical theater"],
+      "correct": "B",
+      "explanation": "Marionettes are puppets manipulated by strings attached to a control bar.",
+      "funFact": "Some complex marionettes can have over 30 strings to control individual fingers and facial expressions!"
+    },
+    {
+      "id": 16,
+      "question": "What material is pottery usually made from before it is baked in an oven?",
+      "options": ["Glass", "Metal", "Wood", "Clay"],
+      "correct": "D",
+      "explanation": "Potters shape wet clay into bowls or vases, and then it hardens when baked.",
+      "funFact": "The special oven used to bake and harden pottery is called a kiln, and it can reach temperatures over 2000 degrees Fahrenheit!"
+    },
+    {
+      "id": 17,
+      "question": "What do you call a picture made by arranging many small colored stones, tiles, or pieces of glass?",
+      "options": ["A mosaic", "A fresco", "A sketch", "A sculpture"],
+      "correct": "A",
+      "explanation": "A mosaic is created by piecing together tiny fragments to form a larger image.",
+      "funFact": "The ancient Romans decorated the floors of their homes with massive mosaics that worked like durable carpets!"
+    },
+    {
+      "id": 18,
+      "question": "Colors that are opposite each other on the color wheel, like red and green, are called what?",
+      "options": ["Primary colors", "Secondary colors", "Complementary colors", "Warm colors"],
+      "correct": "C",
+      "explanation": "Complementary colors make each other look brighter when placed side by side.",
+      "funFact": "This is why sports teams often use complementary colors, like orange and blue, for their uniforms—it makes them stand out!"
+    },
+    {
+      "id": 19,
+      "question": "What is it called when an artist makes a statue by chipping away stone with a chisel?",
+      "options": ["Casting", "Carving", "Modeling", "Weaving"],
+      "correct": "B",
+      "explanation": "Carving is a subtractive process where material is removed to create a shape.",
+      "funFact": "Michelangelo believed that the sculpture was already inside the stone, and he just had to carve away the extra pieces to set it free!"
+    },
+    {
+      "id": 20,
+      "question": "In music, what is the steady beat that you can tap your foot to called?",
+      "options": ["Melody", "Rhythm", "Harmony", "Pitch"],
+      "correct": "B",
+      "explanation": "Rhythm is the pattern of sounds and silences in music that creates the beat.",
+      "funFact": "Your heartbeat will actually speed up or slow down to match the rhythm of the music you are listening to!"
+    }
+  ]
+}

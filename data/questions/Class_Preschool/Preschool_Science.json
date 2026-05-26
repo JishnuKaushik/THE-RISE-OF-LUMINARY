@@ -1,0 +1,166 @@
+{
+  "subject": "Science",
+  "grade": "Preschool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What do plants need most to grow from a seed?",
+      "options": ["Water and Sunlight", "Pizza and Juice", "Toys and Games", "Cookies and Milk"],
+      "correct": "A",
+      "explanation": "Plants use water and sunlight to make their own food and grow big!",
+      "funFact": "Some giant redwood trees can grow taller than a 30-story building!"
+    },
+    {
+      "id": 2,
+      "question": "What falls from the dark clouds when it is raining?",
+      "options": ["Snow", "Water", "Rocks", "Leaves"],
+      "correct": "B",
+      "explanation": "Rain is liquid water that falls when clouds get too heavy.",
+      "funFact": "A raindrop falls at a speed of about 14 miles per hour!"
+    },
+    {
+      "id": 3,
+      "question": "Which animal says 'Moo' and gives us milk?",
+      "options": ["Horse", "Cow", "Pig", "Sheep"],
+      "correct": "B",
+      "explanation": "Cows produce milk, which we use to make cheese, butter, and yogurt.",
+      "funFact": "A cow chews its food about 40,000 times a day!"
+    },
+    {
+      "id": 4,
+      "question": "What shines brightly in the sky during the day and keeps us warm?",
+      "options": ["The Moon", "Stars", "The Sun", "A Flashlight"],
+      "correct": "C",
+      "explanation": "The Sun gives Earth light and warmth so living things can survive.",
+      "funFact": "The Sun is actually a giant star, and it's super hot!"
+    },
+    {
+      "id": 5,
+      "question": "Which of these animals has feathers and can fly in the sky?",
+      "options": ["Dog", "Fish", "Bird", "Elephant"],
+      "correct": "C",
+      "explanation": "Birds have wings and feathers that help them fly through the air.",
+      "funFact": "Hummingbirds can fly backwards and even upside down!"
+    },
+    {
+      "id": 6,
+      "question": "How many legs does a spider have?",
+      "options": ["Four", "Six", "Eight", "Ten"],
+      "correct": "C",
+      "explanation": "Spiders are arachnids, which means they all have eight legs.",
+      "funFact": "Most spiders have eight eyes too, but they don't see very well!"
+    },
+    {
+      "id": 7,
+      "question": "What color are most leaves on a tree during the summer?",
+      "options": ["Red", "Green", "Blue", "Purple"],
+      "correct": "B",
+      "explanation": "Leaves are green because of a special chemical called chlorophyll.",
+      "funFact": "In autumn, the green color fades away, showing red, yellow, and orange!"
+    },
+    {
+      "id": 8,
+      "question": "What is the very cold, hard form of water called?",
+      "options": ["Steam", "Juice", "Ice", "Cloud"],
+      "correct": "C",
+      "explanation": "When water gets freezing cold, it turns into solid ice.",
+      "funFact": "Ice is actually lighter than water, which is why it floats in your drink!"
+    },
+    {
+      "id": 9,
+      "question": "Which large animal has a long trunk and big ears?",
+      "options": ["Giraffe", "Elephant", "Tiger", "Monkey"],
+      "correct": "B",
+      "explanation": "Elephants use their long trunks to grab food, drink water, and even hug!",
+      "funFact": "An elephant's trunk has over 40,000 muscles in it!"
+    },
+    {
+      "id": 10,
+      "question": "What do we use our eyes for?",
+      "options": ["Hearing", "Smelling", "Seeing", "Tasting"],
+      "correct": "C",
+      "explanation": "Eyes capture light and send pictures to our brain so we can see.",
+      "funFact": "Your eyes blink around 15 to 20 times every single minute!"
+    },
+    {
+      "id": 11,
+      "question": "Which of these is a fruit that is long, yellow, and curved?",
+      "options": ["Apple", "Banana", "Orange", "Grape"],
+      "correct": "B",
+      "explanation": "Bananas grow in bunches on large plants in warm places.",
+      "funFact": "Bananas actually float if you put them in water!"
+    },
+    {
+      "id": 12,
+      "question": "What comes out at night and twinkles in the dark sky?",
+      "options": ["The Sun", "Clouds", "Stars", "Rainbows"],
+      "correct": "C",
+      "explanation": "Stars are giant balls of glowing gas far away in space.",
+      "funFact": "There are more stars in the sky than grains of sand on all the beaches on Earth!"
+    },
+    {
+      "id": 13,
+      "question": "Which part of a plant grows deep under the dirt?",
+      "options": ["Leaves", "Flowers", "Stem", "Roots"],
+      "correct": "D",
+      "explanation": "Roots hold the plant in place and drink up water from the soil.",
+      "funFact": "Some tree roots can stretch out wider than the tree is tall!"
+    },
+    {
+      "id": 14,
+      "question": "What do caterpillars turn into after they sleep in a chrysalis?",
+      "options": ["Spiders", "Butterflies", "Worms", "Beetles"],
+      "correct": "B",
+      "explanation": "Caterpillars transform into beautiful butterflies with colorful wings.",
+      "funFact": "Butterflies actually taste their food using their feet!"
+    },
+    {
+      "id": 15,
+      "question": "Which of these animals lives completely under the water?",
+      "options": ["Lion", "Bear", "Fish", "Deer"],
+      "correct": "C",
+      "explanation": "Fish have special parts called gills that let them breathe underwater.",
+      "funFact": "Some fish, like the great white shark, never stop swimming, even when they sleep!"
+    },
+    {
+      "id": 16,
+      "question": "What invisible gas do we breathe in to stay alive?",
+      "options": ["Air", "Water", "Sand", "Dirt"],
+      "correct": "A",
+      "explanation": "We breathe air to get oxygen, which our bodies need to work.",
+      "funFact": "You take about 20,000 breaths every single day without even thinking about it!"
+    },
+    {
+      "id": 17,
+      "question": "What beautiful, colorful arch can you sometimes see in the sky after it rains?",
+      "options": ["A Tornado", "A Rainbow", "A Blizzard", "A Meteor"],
+      "correct": "B",
+      "explanation": "Rainbows happen when sunlight shines through tiny raindrops in the air.",
+      "funFact": "You can never reach the end of a rainbow because it moves with you!"
+    },
+    {
+      "id": 18,
+      "question": "What season is very cold and often brings snow?",
+      "options": ["Summer", "Winter", "Spring", "Fall"],
+      "correct": "B",
+      "explanation": "Winter is the coldest season when days are shorter and it can snow.",
+      "funFact": "Every single snowflake has its own unique, beautiful shape!"
+    },
+    {
+      "id": 19,
+      "question": "What do birds build out of twigs and grass to lay their eggs in?",
+      "options": ["A House", "A Cave", "A Nest", "A Web"],
+      "correct": "C",
+      "explanation": "Birds carefully weave nests to keep their eggs warm and safe.",
+      "funFact": "Some birds 'glue' their nests together using spiderwebs!"
+    },
+    {
+      "id": 20,
+      "question": "What sweet treat do bees make from flower nectar?",
+      "options": ["Chocolate", "Honey", "Candy", "Sugar"],
+      "correct": "B",
+      "explanation": "Bees collect nectar and turn it into honey to feed their hive.",
+      "funFact": "A single honeybee will only make about one-twelfth of a teaspoon of honey in its entire life!"
+    }
+  ]
+}

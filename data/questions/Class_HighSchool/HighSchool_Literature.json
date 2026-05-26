@@ -1,0 +1,166 @@
+{
+  "subject": "Literature",
+  "grade": "High School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In George Orwell's '1984', what is the name of the totalitarian leader?",
+      "options": ["Big Brother", "The Chairman", "Great Leader", "The Commander"],
+      "correct": "A",
+      "explanation": "Big Brother is the symbol of the Party's absolute power and constant surveillance over Oceania.",
+      "funFact": "Orwell originally titled the novel 'The Last Man in Europe' before his publisher suggested '1984'."
+    },
+    {
+      "id": 2,
+      "question": "In F. Scott Fitzgerald's 'The Great Gatsby', what does the green light symbolize?",
+      "options": ["Wealth and greed", "Environmentalism", "Gatsby's hopes and dreams for the future", "A warning sign"],
+      "correct": "C",
+      "explanation": "The green light at the end of Daisy's dock represents Gatsby's unattainable dream of reuniting with her and recapturing the past.",
+      "funFact": "The Great Gatsby was actually considered a commercial failure during Fitzgerald's lifetime, selling fewer than 25,000 copies before he died."
+    },
+    {
+      "id": 3,
+      "question": "In William Shakespeare's 'Macbeth', what vision does Macbeth see before murdering King Duncan?",
+      "options": ["A bloody dagger", "A ghost", "A burning crown", "A black dog"],
+      "correct": "A",
+      "explanation": "Macbeth hallucinates a floating, blood-covered dagger pointing him toward Duncan's chamber.",
+      "funFact": "There is a long-standing theatrical superstition that saying 'Macbeth' inside a theater brings a curse; actors call it 'The Scottish Play' instead."
+    },
+    {
+      "id": 4,
+      "question": "Who is the author of 'The Catcher in the Rye'?",
+      "options": ["Ernest Hemingway", "J.D. Salinger", "Arthur Miller", "William Faulkner"],
+      "correct": "B",
+      "explanation": "J.D. Salinger wrote this iconic novel defining teenage alienation and angst, narrated by Holden Caulfield.",
+      "funFact": "After the massive success of the novel, Salinger became a recluse, stopping publication of his work and refusing almost all interviews for the rest of his life."
+    },
+    {
+      "id": 5,
+      "question": "In Arthur Miller's play 'The Crucible', the Salem witch trials are used as an allegory for what 20th-century event?",
+      "options": ["The Holocaust", "McCarthyism and the Red Scare", "The Civil Rights Movement", "The Vietnam War"],
+      "correct": "B",
+      "explanation": "Miller wrote the play to parallel the anti-communist 'witch hunts' led by Senator Joseph McCarthy in the 1950s.",
+      "funFact": "Because of this play, Arthur Miller was himself called before the House Un-American Activities Committee and convicted of contempt of Congress."
+    },
+    {
+      "id": 6,
+      "question": "What is the occupation of Guy Montag, the protagonist of Ray Bradbury's 'Fahrenheit 451'?",
+      "options": ["Police officer", "Teacher", "Fireman", "Politician"],
+      "correct": "C",
+      "explanation": "In Bradbury's dystopian world, 'firemen' don't put out fires; they start them to burn illegal books.",
+      "funFact": "Bradbury wrote the novel in the basement of UCLA's library on a rented typewriter, paying 10 cents per half-hour."
+    },
+    {
+      "id": 7,
+      "question": "In Mary Shelley's 'Frankenstein', what is the name of the monster?",
+      "options": ["Frankenstein", "Igor", "Behemoth", "He has no name"],
+      "correct": "D",
+      "explanation": "Victor Frankenstein never gives his creation a name; the creature is referred to as 'monster', 'fiend', or 'wretch'.",
+      "funFact": "Mary Shelley conceived the idea for the novel when she was just 18 years old during a ghost story competition with Lord Byron."
+    },
+    {
+      "id": 8,
+      "question": "Which of these is an example of dramatic irony?",
+      "options": ["A fire station burns down", "The audience knows Juliet is just asleep, but Romeo thinks she's dead", "A character says 'Great weather' during a hurricane", "A postman is bitten by a dog"],
+      "correct": "B",
+      "explanation": "Dramatic irony occurs when the audience knows a critical piece of information that the characters do not.",
+      "funFact": "The term 'irony' comes from a character type in ancient Greek comedy called the 'eiron', the clever underdog who defeats a boastful opponent."
+    },
+    {
+      "id": 9,
+      "question": "In 'Lord of the Flies', what object is used to establish order and allow someone to speak during assemblies?",
+      "options": ["A conch shell", "A wooden spear", "Piggy's glasses", "A skull"],
+      "correct": "A",
+      "explanation": "The conch shell becomes a powerful symbol of civilization, rules, and democratic process among the stranded boys.",
+      "funFact": "William Golding once read the manuscript of the novel to his own boys as a bedtime story to see if they found it believable."
+    },
+    {
+      "id": 10,
+      "question": "What is the fatal flaw (hamartia) that leads to the downfall of a tragic hero often called?",
+      "options": ["Catharsis", "Hubris", "Pathos", "Ethos"],
+      "correct": "B",
+      "explanation": "Hubris is excessive pride or self-confidence that brings about a character's ruin, a common theme in Greek tragedy.",
+      "funFact": "In ancient Athens, 'hubris' was actually a legal term for a crime involving the intentional use of violence to humiliate someone."
+    },
+    {
+      "id": 11,
+      "question": "In John Steinbeck's 'Of Mice and Men', what does Lennie desperately want to tend on the dream farm?",
+      "options": ["The horses", "The crops", "The rabbits", "The chickens"],
+      "correct": "C",
+      "explanation": "Lennie, a large man with a mental disability, loves soft things and dreams of tending rabbits.",
+      "funFact": "Steinbeck's original title for the book was 'Something That Happened'. He changed it after reading a poem by Robert Burns."
+    },
+    {
+      "id": 12,
+      "question": "What classic novel opens with: 'It was the best of times, it was the worst of times'?",
+      "options": ["A Tale of Two Cities", "Pride and Prejudice", "Moby-Dick", "Jane Eyre"],
+      "correct": "A",
+      "explanation": "Charles Dickens' historical novel 'A Tale of Two Cities' begins with this famous paradoxical line.",
+      "funFact": "The 'two cities' referred to in the title are London and Paris during the time of the French Revolution."
+    },
+    {
+      "id": 13,
+      "question": "In 'To Kill a Mockingbird', what is Boo Radley's real first name?",
+      "options": ["Arthur", "Charles", "William", "Thomas"],
+      "correct": "A",
+      "explanation": "Boo's real name is Arthur Radley. He is a reclusive neighbor who eventually saves Scout and Jem.",
+      "funFact": "Harper Lee was childhood friends with Truman Capote, who inspired the character of Dill in the novel."
+    },
+    {
+      "id": 14,
+      "question": "What happens to the protagonist at the end of Kate Chopin's 'The Awakening'?",
+      "options": ["She moves to Paris", "She reconciles with her husband", "She drowns herself in the ocean", "She becomes a famous artist"],
+      "correct": "C",
+      "explanation": "Edna Pontellier swims far out into the Gulf of Mexico, unable to reconcile her desire for independence with the expectations of society.",
+      "funFact": "The novel was heavily censored upon its release in 1899 and effectively ended Kate Chopin's literary career due to public outrage."
+    },
+    {
+      "id": 15,
+      "question": "In Zora Neale Hurston's 'Their Eyes Were Watching God', what natural disaster forms the climax of the novel?",
+      "options": ["An earthquake", "A hurricane", "A tornado", "A wildfire"],
+      "correct": "B",
+      "explanation": "The deadly 1928 Okeechobee hurricane forces Janie and Tea Cake to flee for their lives.",
+      "funFact": "Hurston wrote the novel in just seven weeks while doing anthropological research in Haiti."
+    },
+    {
+      "id": 16,
+      "question": "Which poet wrote 'Do not go gentle into that good night'?",
+      "options": ["Robert Frost", "Dylan Thomas", "Walt Whitman", "T.S. Eliot"],
+      "correct": "B",
+      "explanation": "Dylan Thomas wrote this famous villanelle urging his dying father to fight against death.",
+      "funFact": "A 'villanelle' is a highly structured poem with 19 lines and a strict rhyme and repetition scheme."
+    },
+    {
+      "id": 17,
+      "question": "What is the name of the protagonist in Ralph Ellison's 'Invisible Man'?",
+      "options": ["Bigger Thomas", "He is never named", "Paul D.", "Tom Robinson"],
+      "correct": "B",
+      "explanation": "The narrator remains unnamed throughout the novel, emphasizing his metaphorical invisibility in a racist society.",
+      "funFact": "Ellison struggled for over 40 years to write a second novel but died before completing it; 'Invisible Man' was his only novel published during his lifetime."
+    },
+    {
+      "id": 18,
+      "question": "In Homer's 'The Odyssey', what is the name of the cyclops that Odysseus blinds?",
+      "options": ["Argus", "Polyphemus", "Cerberus", "Minotaur"],
+      "correct": "B",
+      "explanation": "Odysseus tricks and blinds Polyphemus, angering the cyclops' father, Poseidon.",
+      "funFact": "To trick the cyclops, Odysseus tells him that his name is 'Nobody', so when the cyclops calls for help, he yells 'Nobody is hurting me!'"
+    },
+    {
+      "id": 19,
+      "question": "Who wrote the classic American play 'A Streetcar Named Desire'?",
+      "options": ["Tennessee Williams", "Eugene O'Neill", "Arthur Miller", "Edward Albee"],
+      "correct": "A",
+      "explanation": "Tennessee Williams wrote the Pulitzer Prize-winning play featuring characters Blanche DuBois and Stanley Kowalski.",
+      "funFact": "The 'Streetcar Named Desire' was an actual trolley line in New Orleans that Williams could hear from his apartment."
+    },
+    {
+      "id": 20,
+      "question": "What is a 'bildungsroman'?",
+      "options": ["A romantic tragedy", "A novel dealing with one person's formative years or spiritual education", "A poem written in blank verse", "A story featuring talking animals"],
+      "correct": "B",
+      "explanation": "A bildungsroman is a 'coming-of-age' story that tracks the moral and psychological growth of the main character.",
+      "funFact": "The term is German; 'Bildung' means education or shaping, and 'Roman' means novel."
+    }
+  ]
+}

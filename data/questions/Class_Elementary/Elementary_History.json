@@ -1,0 +1,166 @@
+{
+  "subject": "History",
+  "grade": "Elementary",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which ancient civilization lived along the Nile River and built the Great Sphinx?",
+      "options": ["Romans", "Greeks", "Egyptians", "Mayans"],
+      "correct": "C",
+      "explanation": "The ancient Egyptians lived along the Nile River and built monuments like the Sphinx and the Pyramids.",
+      "funFact": "The Great Sphinx is a massive statue with the body of a lion and the head of a human!"
+    },
+    {
+      "id": 2,
+      "question": "What famous ancient trade route connected China to Europe?",
+      "options": ["The Cotton Road", "The Silk Road", "The Spice Trail", "The Gold Path"],
+      "correct": "B",
+      "explanation": "The Silk Road was a network of trade routes where merchants traded silk, spices, and other goods.",
+      "funFact": "It wasn't a single road, but a massive web of trails stretching over 4,000 miles!"
+    },
+    {
+      "id": 3,
+      "question": "Who was the first President of the United States?",
+      "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+      "correct": "C",
+      "explanation": "George Washington led the Continental Army during the Revolutionary War and became the first U.S. President.",
+      "funFact": "George Washington never actually lived in the White House; it was built after his presidency!"
+    },
+    {
+      "id": 4,
+      "question": "Which ancient empire built a vast network of roads and huge water bridges called aqueducts?",
+      "options": ["The Mongol Empire", "The Aztec Empire", "The Roman Empire", "The Persian Empire"],
+      "correct": "C",
+      "explanation": "The Romans were incredible engineers who built roads and aqueducts that spread across Europe.",
+      "funFact": "Some of the Roman aqueducts built over 2,000 years ago are still in use today!"
+    },
+    {
+      "id": 5,
+      "question": "What was the name of the ship that brought the Pilgrims to America in 1620?",
+      "options": ["The Santa Maria", "The Mayflower", "The Titanic", "The Beagle"],
+      "correct": "B",
+      "explanation": "The Mayflower carried the Pilgrims from England to what is now Massachusetts.",
+      "funFact": "The Mayflower journey took 66 days, and the ship was very crowded, carrying 102 passengers!"
+    },
+    {
+      "id": 6,
+      "question": "Which wealthy African king from the Mali Empire is often considered the richest person in history?",
+      "options": ["Shaka Zulu", "Mansa Musa", "Ramses II", "King Tut"],
+      "correct": "B",
+      "explanation": "Mansa Musa ruled the Mali Empire, which was rich in gold and salt.",
+      "funFact": "On his journey to Mecca, he gave away so much gold that he actually lowered its value in Egypt for over ten years!"
+    },
+    {
+      "id": 7,
+      "question": "Who invented the printing press in the 1400s, changing how books were made?",
+      "options": ["Johannes Gutenberg", "Leonardo da Vinci", "Galileo Galilei", "Isaac Newton"],
+      "correct": "A",
+      "explanation": "Gutenberg invented the movable type printing press, allowing books to be printed quickly instead of copied by hand.",
+      "funFact": "Before the printing press, a single book could take months or even years to write by hand!"
+    },
+    {
+      "id": 8,
+      "question": "Which ancient civilization built the city of Machu Picchu high in the Andes Mountains?",
+      "options": ["The Aztecs", "The Mayans", "The Incas", "The Olmecs"],
+      "correct": "C",
+      "explanation": "The Incas built Machu Picchu in Peru without using any wheels or iron tools.",
+      "funFact": "The stones of Machu Picchu fit together so perfectly that you can't even slide a piece of paper between them!"
+    },
+    {
+      "id": 9,
+      "question": "What is the name of the oldest known writing system, invented in Mesopotamia using wedge-shaped marks?",
+      "options": ["Hieroglyphics", "Cuneiform", "Runes", "Alphabet"],
+      "correct": "B",
+      "explanation": "Cuneiform was invented by the Sumerians and was written on clay tablets using a stylus.",
+      "funFact": "It was used to keep track of trade, like how many sheep or bushels of grain someone owned!"
+    },
+    {
+      "id": 10,
+      "question": "During the Middle Ages, what serious disease spread across Europe along trade routes?",
+      "options": ["The Black Death", "Chickenpox", "The Flu", "Malaria"],
+      "correct": "A",
+      "explanation": "The Black Death, or bubonic plague, was a terrible sickness that affected millions of people in the 1300s.",
+      "funFact": "People thought the disease was spread by 'bad air,' so plague doctors wore masks stuffed with sweet-smelling flowers!"
+    },
+    {
+      "id": 11,
+      "question": "Which famous explorer is credited with completing the first circumnavigation (sailing all the way around) of the globe?",
+      "options": ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama", "Marco Polo"],
+      "correct": "B",
+      "explanation": "Magellan's expedition was the first to sail entirely around the world, though Magellan himself died during the journey.",
+      "funFact": "Magellan named the Pacific Ocean 'Pacific' because the waters seemed very peaceful and calm to him!"
+    },
+    {
+      "id": 12,
+      "question": "What famous document signed in 1776 declared the American colonies independent from Great Britain?",
+      "options": ["The Constitution", "The Magna Carta", "The Declaration of Independence", "The Bill of Rights"],
+      "correct": "C",
+      "explanation": "The Declaration of Independence announced that the thirteen colonies were a new nation.",
+      "funFact": "Two of the signers, Thomas Jefferson and John Adams, both died on the exact same day: July 4, 1826!"
+    },
+    {
+      "id": 13,
+      "question": "In ancient Greece, what city-state was famous for its fierce warriors and military training?",
+      "options": ["Athens", "Sparta", "Troy", "Corinth"],
+      "correct": "B",
+      "explanation": "Sparta was a warrior society where boys left home at age 7 to start military training.",
+      "funFact": "Spartan soldiers wore bright red cloaks to hide the blood if they were injured in battle!"
+    },
+    {
+      "id": 14,
+      "question": "Who was the brave young woman who led the French army to victory during the Hundred Years' War?",
+      "options": ["Marie Antoinette", "Joan of Arc", "Queen Victoria", "Elizabeth I"],
+      "correct": "B",
+      "explanation": "Joan of Arc was a peasant girl who believed she had visions telling her to help the French king defeat the English.",
+      "funFact": "She was only a teenager when she led the army into battle!"
+    },
+    {
+      "id": 15,
+      "question": "What period in history saw a huge shift from making things by hand to making them with machines in factories?",
+      "options": ["The Renaissance", "The Industrial Revolution", "The Enlightenment", "The Stone Age"],
+      "correct": "B",
+      "explanation": "The Industrial Revolution started in the 1700s and changed how people lived, worked, and traveled.",
+      "funFact": "The invention of the steam engine was a massive part of this, powering everything from trains to factory looms!"
+    },
+    {
+      "id": 16,
+      "question": "Which famous artist and inventor from the Renaissance painted the Mona Lisa?",
+      "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
+      "correct": "C",
+      "explanation": "Leonardo da Vinci was a true 'Renaissance Man' who painted, sculpted, and sketched early ideas for flying machines.",
+      "funFact": "Leonardo often wrote his notes backwards, so they could only be read if you held them up to a mirror!"
+    },
+    {
+      "id": 17,
+      "question": "What was the name of the first artificial satellite sent into space in 1957?",
+      "options": ["Apollo 11", "Voyager", "Sputnik 1", "Hubble"],
+      "correct": "C",
+      "explanation": "Sputnik 1 was launched by the Soviet Union, kicking off the 'Space Race' between the US and the USSR.",
+      "funFact": "Sputnik was only about the size of a beach ball, but it terrified people who could hear it beeping on the radio!"
+    },
+    {
+      "id": 18,
+      "question": "Who was the Egyptian queen known for her intelligence and alliances with Roman leaders Julius Caesar and Mark Antony?",
+      "options": ["Nefertiti", "Cleopatra", "Hatshepsut", "Isis"],
+      "correct": "B",
+      "explanation": "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt.",
+      "funFact": "Although she ruled Egypt, Cleopatra was actually of Greek descent!"
+    },
+    {
+      "id": 19,
+      "question": "What famous massive ship sank on its first voyage in 1912 after hitting an iceberg?",
+      "options": ["The Lusitania", "The Britannic", "The Titanic", "The Queen Mary"],
+      "correct": "C",
+      "explanation": "The RMS Titanic was considered 'unsinkable,' but it tragically sank in the North Atlantic Ocean.",
+      "funFact": "The Titanic had its own swimming pool, a squash court, and a gym with an electric horse!"
+    },
+    {
+      "id": 20,
+      "question": "Which ancient civilization developed the concept of the number zero and built huge step pyramids in Central America?",
+      "options": ["The Romans", "The Mayans", "The Vikings", "The Mongols"],
+      "correct": "B",
+      "explanation": "The Maya were brilliant astronomers and mathematicians who lived in parts of what is now Mexico and Central America.",
+      "funFact": "The Maya played a ball game where players couldn't use their hands or feet, only their hips and knees!"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "subject": "Science",
+  "grade": "High School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the double-helix structure of DNA made up of?",
+      "options": ["Proteins and lipids", "Nucleotides bonded together", "Amino acids and sugars", "Ribosomes and enzymes"],
+      "correct": "B",
+      "explanation": "DNA is a polymer of nucleotides. Each nucleotide contains a deoxyribose sugar, a phosphate group, and one of four nitrogenous bases (A, T, C, G).",
+      "funFact": "The DNA in a single human cell, if uncoiled, is about 2 meters long. All the DNA in your body laid end to end would stretch from Earth to the Sun and back about 600 times!"
+    },
+    {
+      "id": 2,
+      "question": "According to Newton's Second Law, what is force equal to?",
+      "options": ["mass times velocity", "mass times acceleration", "weight times gravity", "energy divided by time"],
+      "correct": "B",
+      "explanation": "F = ma. Force equals mass multiplied by acceleration. Doubling mass or acceleration doubles the net force.",
+      "funFact": "NASA uses F = ma constantly. The thrust of a rocket must exceed the force of gravity (mass x 9.8 m/s²) for it to lift off!"
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between mitosis and meiosis?",
+      "options": ["Mitosis creates sex cells; meiosis creates body cells", "Mitosis produces 2 identical cells; meiosis produces 4 genetically diverse cells", "Mitosis occurs in plants only; meiosis in animals only", "They are the same process with different names"],
+      "correct": "B",
+      "explanation": "Mitosis produces two identical diploid cells for growth and repair. Meiosis produces four haploid cells with unique genetic combinations for sexual reproduction.",
+      "funFact": "Meiosis creates genetic variation through a process called 'crossing over,' where chromosomes exchange segments. This is why siblings look similar but not identical!"
+    },
+    {
+      "id": 4,
+      "question": "In Mendelian genetics, if two heterozygous parents (Bb x Bb) cross, what is the probability of a homozygous recessive (bb) offspring?",
+      "options": ["25%", "50%", "75%", "100%"],
+      "correct": "A",
+      "explanation": "A Punnett square shows the offspring ratios are 1 BB : 2 Bb : 1 bb, giving a 25% (1 in 4) chance of the homozygous recessive genotype.",
+      "funFact": "Gregor Mendel discovered the laws of inheritance by meticulously crossbreeding over 29,000 pea plants in a monastery garden. He never knew about DNA!"
+    },
+    {
+      "id": 5,
+      "question": "What is the Law of Conservation of Energy?",
+      "options": ["Energy is created during combustion", "Energy can be created from nothing", "Energy cannot be created or destroyed, only transformed", "Energy is destroyed when friction occurs"],
+      "correct": "C",
+      "explanation": "Energy can change forms (kinetic to thermal, chemical to electrical) but the total energy in a closed system always remains constant.",
+      "funFact": "When you drop a bouncy ball, it never returns to its original height. The 'lost' energy isn't destroyed — it's converted into heat and sound when the ball hits the ground!"
+    },
+    {
+      "id": 6,
+      "question": "What is the pH value of a neutral solution?",
+      "options": ["0", "5", "7", "14"],
+      "correct": "C",
+      "explanation": "The pH scale runs from 0 (most acidic) to 14 (most basic/alkaline). A pH of 7, like pure water, is neutral.",
+      "funFact": "Your stomach acid has a pH of about 1.5 to 3.5 — strong enough to dissolve zinc! The stomach lining replaces itself every few days to avoid being digested."
+    },
+    {
+      "id": 7,
+      "question": "What is the theory that explains the diversity of life through inherited variation and natural selection?",
+      "options": ["Atomic theory", "Cell theory", "Germ theory", "Theory of evolution"],
+      "correct": "D",
+      "explanation": "Darwin's theory of evolution states that organisms with favorable traits survive and reproduce, passing those traits to offspring over many generations.",
+      "funFact": "Humans and chimpanzees share approximately 98.7% of their DNA. We also share about 60% of our DNA with a banana plant!"
+    },
+    {
+      "id": 8,
+      "question": "What does 'atomic number' represent on the periodic table?",
+      "options": ["The number of neutrons", "The number of protons", "The atomic mass", "The number of electrons in the outer shell"],
+      "correct": "B",
+      "explanation": "The atomic number is the number of protons in the nucleus and uniquely identifies each element. It also equals the number of electrons in a neutral atom.",
+      "funFact": "Hydrogen has an atomic number of 1, making it the simplest element. It is also the most abundant element in the universe, making up about 75% of all normal matter!"
+    },
+    {
+      "id": 9,
+      "question": "What is the name for a reaction that releases energy (heat) to the surroundings?",
+      "options": ["Endothermic", "Exothermic", "Isothermal", "Adiabatic"],
+      "correct": "B",
+      "explanation": "Exothermic reactions release energy as heat. Combustion (burning) and respiration are both exothermic reactions.",
+      "funFact": "Hand warmers work through an exothermic reaction — iron oxidizing (rusting) very rapidly. The rust releases heat just as a bonfire does, just much more slowly!"
+    },
+    {
+      "id": 10,
+      "question": "What causes the seasons on Earth?",
+      "options": ["Earth's varying distance from the Sun", "The Earth's axial tilt", "Sunspot activity", "The Moon's gravitational pull"],
+      "correct": "B",
+      "explanation": "Earth's 23.5-degree axial tilt means different hemispheres receive more direct sunlight at different points in its orbit, causing seasons.",
+      "funFact": "Earth is actually slightly CLOSER to the Sun in January (winter in the Northern Hemisphere) than in July. This proves that seasons are caused by tilt, not distance!"
+    },
+    {
+      "id": 11,
+      "question": "What is the relationship between wave frequency and wavelength for a wave traveling at a constant speed?",
+      "options": ["They are equal", "They are directly proportional", "They are inversely proportional", "They have no relationship"],
+      "correct": "C",
+      "explanation": "Speed = frequency x wavelength. If speed is constant, increasing frequency decreases wavelength and vice versa.",
+      "funFact": "Gamma rays (high frequency, short wavelength) and radio waves (low frequency, long wavelength) are both forms of electromagnetic radiation — just at opposite ends of the spectrum!"
+    },
+    {
+      "id": 12,
+      "question": "In which process do plants release CO2 and consume O2?",
+      "options": ["Photosynthesis", "Transpiration", "Cellular Respiration", "Nitrogen Fixation"],
+      "correct": "C",
+      "explanation": "Cellular respiration breaks down glucose using oxygen to release ATP energy, producing CO2 and water as byproducts. All living cells perform it.",
+      "funFact": "Plants actually do both photosynthesis AND cellular respiration. During the day, photosynthesis dominates; at night, they only respire, which is why plants compete for CO2 in a sealed room!"
+    },
+    {
+      "id": 13,
+      "question": "What type of bond involves the sharing of electron pairs between two nonmetal atoms?",
+      "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+      "correct": "B",
+      "explanation": "Covalent bonds form when atoms share electrons rather than transferring them. This is common between nonmetal atoms like C, H, N, and O.",
+      "funFact": "Water's unique properties (high boiling point, surface tension, ability to dissolve many things) all come from the hydrogen bonds that form between its covalent molecules!"
+    },
+    {
+      "id": 14,
+      "question": "What is a hypothesis in the scientific method?",
+      "options": ["A proven fact supported by many experiments", "A testable explanation for an observation", "The final conclusion of an experiment", "A list of experimental materials"],
+      "correct": "B",
+      "explanation": "A hypothesis is a specific, testable prediction about the relationship between variables, often framed as an 'if...then' statement.",
+      "funFact": "A scientific theory is NOT a guess — it's a well-substantiated explanation supported by massive amounts of evidence. The theory of gravity and germ theory are two examples!"
+    },
+    {
+      "id": 15,
+      "question": "What is the function of the ribosomes in a cell?",
+      "options": ["Store genetic information", "Produce energy as ATP", "Synthesize (build) proteins", "Control what enters and exits the cell"],
+      "correct": "C",
+      "explanation": "Ribosomes read mRNA instructions (transcribed from DNA) and assemble amino acids into the proteins the cell needs.",
+      "funFact": "Antibiotics like streptomycin work by targeting bacterial ribosomes, jamming their protein-making machinery. They are designed to leave human ribosomes (which are slightly different) unaffected!"
+    },
+    {
+      "id": 16,
+      "question": "What is Ohm's Law?",
+      "options": ["V = IR (Voltage = Current x Resistance)", "P = IV (Power = Current x Voltage)", "F = ma (Force = Mass x Acceleration)", "E = mc² (Energy = Mass x Speed of Light²)"],
+      "correct": "A",
+      "explanation": "Ohm's Law states that the voltage across a conductor is directly proportional to the current through it, with resistance as the constant of proportionality.",
+      "funFact": "Georg Ohm discovered his law in 1827 and was initially ridiculed by the scientific community. He was later vindicated and the unit of electrical resistance was named the 'ohm' in his honor!"
+    },
+    {
+      "id": 17,
+      "question": "What is natural selection?",
+      "options": ["When humans choose which animals to breed", "When organisms with advantageous traits are more likely to survive and reproduce", "A random mutation in DNA", "The process of fossilization"],
+      "correct": "B",
+      "explanation": "Natural selection is the mechanism of evolution: individuals with traits better suited to their environment survive longer and leave more offspring, passing on those traits.",
+      "funFact": "The peppered moth is a famous example: during the Industrial Revolution, soot darkened trees, and dark moths survived while light moths were eaten by birds. The population shifted to darker moths within decades!"
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between speed and velocity?",
+      "options": ["They are identical", "Speed is faster than velocity", "Velocity has direction; speed does not", "Speed has direction; velocity does not"],
+      "correct": "C",
+      "explanation": "Speed is a scalar quantity (magnitude only). Velocity is a vector quantity that includes both magnitude and direction.",
+      "funFact": "You could drive at 60 mph in a perfect circle and have a constant speed, but your velocity is constantly changing because your direction is always changing!"
+    },
+    {
+      "id": 19,
+      "question": "What causes ionic bonds to form?",
+      "options": ["Two atoms sharing electrons equally", "An electron is transferred from one atom to another, creating opposite charges", "Two atoms sharing electrons unequally", "Two positive ions attracting each other"],
+      "correct": "B",
+      "explanation": "Ionic bonds form when a metal atom donates an electron to a nonmetal, creating a positive cation and a negative anion that attract each other.",
+      "funFact": "Table salt (NaCl) is an ionic compound. When dissolved in water, it splits into Na+ and Cl- ions, making it an excellent electrical conductor — which is why seawater conducts electricity!"
+    },
+    {
+      "id": 20,
+      "question": "What does the half-life of a radioactive element measure?",
+      "options": ["The total time until it fully decays", "The time for half of the atoms in a sample to decay", "The energy released per second", "The distance radiation travels"],
+      "correct": "B",
+      "explanation": "Half-life is the time required for exactly half of a radioactive sample to undergo decay. It is constant for each element and unaffected by temperature or pressure.",
+      "funFact": "Carbon-14 has a half-life of 5,730 years, making it perfect for dating biological artifacts up to about 50,000 years old. Carbon dating has been used on Egyptian mummies and ancient bones!"
+    }
+  ]
+}

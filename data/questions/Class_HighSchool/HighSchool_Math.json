@@ -1,0 +1,166 @@
+{
+  "subject": "Mathematics",
+  "grade": "High School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In complex numbers, what is the value of i\u00b2?",
+      "options": ["1", "0", "-1", "i"],
+      "correct": "C",
+      "explanation": "The imaginary unit 'i' is defined as the square root of -1, so squaring it results in -1.",
+      "funFact": "Imaginary numbers were originally called 'fictitious numbers' by Rene Descartes, who meant it as an insult!"
+    },
+    {
+      "id": 2,
+      "question": "What is the exact value of the sine of 30 degrees?",
+      "options": ["0", "1/2", "\u221a2/2", "\u221a3/2"],
+      "correct": "B",
+      "explanation": "In a 30-60-90 right triangle, the side opposite the 30-degree angle is exactly half the length of the hypotenuse.",
+      "funFact": "The word 'sine' comes from a Latin mistranslation of an Arabic word for 'pocket' or 'fold'!"
+    },
+    {
+      "id": 3,
+      "question": "What is the value of the base-10 logarithm of 1000 (log 1000)?",
+      "options": ["2", "3", "10", "100"],
+      "correct": "B",
+      "explanation": "Logarithms ask '10 to what power equals 1000?' Since 10\u00b3 = 1000, the answer is 3.",
+      "funFact": "Before calculators, people used physical books filled with hundreds of pages of logarithm tables to do complex math!"
+    },
+    {
+      "id": 4,
+      "question": "Which part of the quadratic formula determines the number and type of roots?",
+      "options": ["The vertex", "The coefficient", "The asymptote", "The discriminant"],
+      "correct": "D",
+      "explanation": "The discriminant (b\u00b2 - 4ac) determines if the roots are real, complex, or a single repeated root.",
+      "funFact": "The quadratic formula was first derived geometrically by Persian mathematician Al-Khwarizmi in the 9th century!"
+    },
+    {
+      "id": 5,
+      "question": "What is the equivalent of 180 degrees in radians?",
+      "options": ["\u03c0/2", "\u03c0", "3\u03c0/2", "2\u03c0"],
+      "correct": "B",
+      "explanation": "A full circle is 360 degrees or 2\u03c0 radians. Therefore, a half circle (180 degrees) is \u03c0 radians.",
+      "funFact": "Radians are considered a 'dimensionless' unit because they are just a ratio of arc length to radius!"
+    },
+    {
+      "id": 6,
+      "question": "Which type of mathematical function is the inverse of an exponential function?",
+      "options": ["Quadratic", "Linear", "Logarithmic", "Trigonometric"],
+      "correct": "C",
+      "explanation": "Logarithmic functions undo exponential functions, just like subtraction undoes addition.",
+      "funFact": "The Richter scale, used to measure earthquake intensity, is actually a logarithmic scale, not linear!"
+    },
+    {
+      "id": 7,
+      "question": "What is the tangent of a 45-degree angle?",
+      "options": ["0", "1/2", "1", "\u221a2"],
+      "correct": "C",
+      "explanation": "In a 45-45-90 right triangle, the opposite and adjacent sides are equal, making the ratio (tangent) exactly 1.",
+      "funFact": "The tangent function is essential in computer graphics for rendering 3D environments on a 2D screen!"
+    },
+    {
+      "id": 8,
+      "question": "What is the slope of a line that is perpendicular to the line y = 2x + 5?",
+      "options": ["2", "-2", "1/2", "-1/2"],
+      "correct": "D",
+      "explanation": "Perpendicular lines have slopes that are negative reciprocals of each other. The negative reciprocal of 2 is -1/2.",
+      "funFact": "The concept of coordinate geometry, linking algebra and lines, was dreamed up by Descartes while he was lying in bed watching a fly on the ceiling!"
+    },
+    {
+      "id": 9,
+      "question": "What is the formula for the axis of symmetry of a parabola given by y = ax\u00b2 + bx + c?",
+      "options": ["x = b/a", "x = -b/2a", "y = mx + b", "x = \u221a(b\u00b2 - 4ac)"],
+      "correct": "B",
+      "explanation": "The vertical line that splits a parabola perfectly in half is calculated using the formula x = -b/2a.",
+      "funFact": "Satellite dishes are shaped like parabolas because they perfectly bounce all incoming signals to a single focal point!"
+    },
+    {
+      "id": 10,
+      "question": "In a right triangle, which trigonometric ratio is defined as the adjacent side over the hypotenuse?",
+      "options": ["Sine", "Cosine", "Tangent", "Secant"],
+      "correct": "B",
+      "explanation": "Remembered by the acronym SOH CAH TOA, Cosine is Adjacent over Hypotenuse (CAH).",
+      "funFact": "Ancient astronomers used rudimentary trigonometry to successfully calculate the distance from the Earth to the Moon!"
+    },
+    {
+      "id": 11,
+      "question": "What is the distance between the points (0,0) and (3,4) on a Cartesian plane?",
+      "options": ["5", "7", "12", "25"],
+      "correct": "A",
+      "explanation": "Using the distance formula or Pythagorean theorem (\u221a(3\u00b2 + 4\u00b2) = \u221a(9 + 16) = \u221a25), the distance is 5.",
+      "funFact": "A 3-4-5 right triangle is one of the simplest Pythagorean triples and was used by ancient Egyptian builders to ensure perfectly square corners!"
+    },
+    {
+      "id": 12,
+      "question": "What is the value of 5 factorial (written as 5!)?",
+      "options": ["15", "25", "60", "120"],
+      "correct": "D",
+      "explanation": "Factorial means multiplying all positive integers up to that number: 5 * 4 * 3 * 2 * 1 = 120.",
+      "funFact": "The exclamation mark '!' was chosen to represent factorials in 1808 by Christian Kramp simply because he needed a symbol that was easy to print!"
+    },
+    {
+      "id": 13,
+      "question": "If f(x) = x\u00b2 + 1, what is the value of f(-3)?",
+      "options": ["-8", "-5", "7", "10"],
+      "correct": "D",
+      "explanation": "Substitute -3 for x: (-3)\u00b2 is 9, and 9 + 1 = 10.",
+      "funFact": "The concept of a mathematical 'function' was formally introduced by Gottfried Wilhelm Leibniz in the late 17th century."
+    },
+    {
+      "id": 14,
+      "question": "What is the vertical asymptote of the rational function f(x) = 1 / (x - 2)?",
+      "options": ["x = -2", "x = 0", "x = 1", "x = 2"],
+      "correct": "D",
+      "explanation": "A vertical asymptote occurs where the denominator is zero. Here, x - 2 = 0, so x = 2.",
+      "funFact": "An asymptote is a line that a curve approaches infinitely closely but technically never actually touches!"
+    },
+    {
+      "id": 15,
+      "question": "What is the sum of the interior angles of a regular hexagon?",
+      "options": ["360 degrees", "540 degrees", "720 degrees", "900 degrees"],
+      "correct": "C",
+      "explanation": "The formula is (n-2) * 180. For a hexagon (6 sides), it's (6-2) * 180 = 4 * 180 = 720 degrees.",
+      "funFact": "A hexagon has the most sides of any regular polygon that can tile a flat plane without leaving any gaps!"
+    },
+    {
+      "id": 16,
+      "question": "Which formula calculates the number of ways to select items from a group where the order does NOT matter?",
+      "options": ["Permutation", "Combination", "Factorial", "Logarithm"],
+      "correct": "B",
+      "explanation": "Combinations are for choosing groups (order doesn't matter), while permutations are for arrangements (order matters).",
+      "funFact": "A standard combination lock should actually be called a permutation lock, because the order of the numbers definitely matters!"
+    },
+    {
+      "id": 17,
+      "question": "In the standard equation of a circle, (x - h)\u00b2 + (y - k)\u00b2 = r\u00b2, what does the coordinate point (h, k) represent?",
+      "options": ["The radius", "The circumference", "The center", "A point on the edge"],
+      "correct": "C",
+      "explanation": "The variables h and k represent the x and y coordinates of the circle's exact center point.",
+      "funFact": "Circles have the shortest possible perimeter for a given area compared to any other 2D shape!"
+    },
+    {
+      "id": 18,
+      "question": "What is the result of multiplying a square matrix by its inverse?",
+      "options": ["A zero matrix", "An identity matrix", "A scalar", "A vector"],
+      "correct": "B",
+      "explanation": "Multiplying a matrix by its inverse always results in the identity matrix, which has 1s on the diagonal and 0s elsewhere.",
+      "funFact": "Matrix mathematics is the fundamental engine that powers all modern computer graphics and 3D video game rendering!"
+    },
+    {
+      "id": 19,
+      "question": "What does the Fundamental Theorem of Algebra state about a polynomial of degree n?",
+      "options": ["It has exactly n turning points", "It has exactly n complex roots", "It is always continuous", "Its derivative is degree n-1"],
+      "correct": "B",
+      "explanation": "It guarantees that a polynomial of degree n will have exactly n roots in the complex number system.",
+      "funFact": "Carl Friedrich Gauss provided the first widely accepted proof for this theorem in 1799 when he was only 22 years old!"
+    },
+    {
+      "id": 20,
+      "question": "In statistics, what is the square of the standard deviation called?",
+      "options": ["Mean", "Median", "Variance", "Z-score"],
+      "correct": "C",
+      "explanation": "Variance measures how far a set of numbers is spread out, and the standard deviation is the square root of the variance.",
+      "funFact": "The concept of standard deviation was introduced by Karl Pearson in 1893 to help analyze biological populations!"
+    }
+  ]
+}

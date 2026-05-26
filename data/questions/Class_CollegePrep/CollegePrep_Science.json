@@ -1,0 +1,166 @@
+{
+  "subject": "Science",
+  "grade": "College Prep",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the Heisenberg Uncertainty Principle, what two properties of a particle cannot both be precisely known simultaneously?",
+      "options": ["Mass and charge", "Position and momentum", "Speed and energy", "Spin and wavelength"],
+      "correct": "B",
+      "explanation": "The Heisenberg Uncertainty Principle states that the more precisely a particle's position is known, the less precisely its momentum can be known, and vice versa.",
+      "funFact": "This isn't a limitation of our measuring instruments — it's a fundamental property of reality. Electrons literally do not have definite positions and momenta at the same time!"
+    },
+    {
+      "id": 2,
+      "question": "What does the Gibbs Free Energy (G) equation predict about a spontaneous reaction?",
+      "options": ["Spontaneous reactions always increase temperature", "Spontaneous reactions have a negative change in G", "Spontaneous reactions have a positive change in G", "Spontaneous reactions only occur in isolation"],
+      "correct": "B",
+      "explanation": "A reaction is spontaneous when delta-G < 0 (negative). delta-G = delta-H - T*delta-S combines enthalpy change and entropy change.",
+      "funFact": "The rusting of iron is spontaneous (negative delta-G) but extremely slow. Thermodynamics tells you IF a reaction can happen; kinetics tells you HOW FAST it will happen!"
+    },
+    {
+      "id": 3,
+      "question": "In molecular biology, what is the Central Dogma?",
+      "options": ["Cells come from pre-existing cells", "DNA is replicated every cell division", "DNA is transcribed to RNA, which is translated to protein", "Proteins fold into their own functional shapes"],
+      "correct": "C",
+      "explanation": "The Central Dogma describes the flow of genetic information: DNA is transcribed into mRNA, and mRNA is translated by ribosomes into a specific amino acid sequence (protein).",
+      "funFact": "Retroviruses like HIV violate the Central Dogma! They use an enzyme called reverse transcriptase to write their RNA genome BACK into DNA, which then integrates into the host's chromosomes."
+    },
+    {
+      "id": 4,
+      "question": "What is the name for the energy needed to start a chemical reaction?",
+      "options": ["Gibbs energy", "Entropy", "Activation energy", "Bond enthalpy"],
+      "correct": "C",
+      "explanation": "Activation energy is the minimum energy required for reactants to collide and break existing bonds to form products. Catalysts lower this barrier.",
+      "funFact": "Enzymes are biological catalysts that can lower activation energy by a factor of up to a trillion (10^12), making essential chemical reactions in your body occur in milliseconds instead of years!"
+    },
+    {
+      "id": 5,
+      "question": "What does Einstein's famous equation E = mc² describe?",
+      "options": ["The energy of a photon", "The equivalence of mass and energy", "The force of gravity between two masses", "The kinetic energy of a moving object"],
+      "correct": "B",
+      "explanation": "E = mc² shows that mass and energy are interchangeable. A tiny amount of mass (m) corresponds to an enormous amount of energy (E) because c² is an enormous number.",
+      "funFact": "The energy released by one kilogram of matter completely converting to energy (E=mc²) would be equivalent to about 21 megatons of TNT — roughly the yield of a large thermonuclear warhead!"
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between gene expression in prokaryotes and eukaryotes?",
+      "options": ["Prokaryotes have introns; eukaryotes do not", "Eukaryotic mRNA is processed and spliced; prokaryotic mRNA is translated immediately", "Prokaryotes use ribosomes; eukaryotes do not", "Eukaryotes transcribe DNA in the cytoplasm"],
+      "correct": "B",
+      "explanation": "Eukaryotic pre-mRNA undergoes splicing (removal of introns), capping, and polyadenylation before export to the cytoplasm. Prokaryotes couple transcription and translation directly.",
+      "funFact": "Alternative splicing allows one human gene to code for hundreds of different proteins! The Dscam gene in fruit flies can produce over 38,000 distinct protein variants from a single gene."
+    },
+    {
+      "id": 7,
+      "question": "In organic chemistry, what is a functional group?",
+      "options": ["A group of elements in the same periodic table column", "A charged ion in a solution", "A specific atom or group of atoms that determines a molecule's reactivity", "A polymer chain"],
+      "correct": "C",
+      "explanation": "Functional groups (like -OH hydroxyl, -COOH carboxyl, -NH2 amine) are responsible for the characteristic chemical reactions of a molecule.",
+      "funFact": "Just one functional group change can drastically alter a drug. Morphine and codeine differ only in one -OH vs -OCH3 group, yet they have very different potencies and effects in the body!"
+    },
+    {
+      "id": 8,
+      "question": "What is the Hardy-Weinberg equilibrium used to describe?",
+      "options": ["The balance of predators and prey in an ecosystem", "The allele and genotype frequencies in a non-evolving population", "The rate at which mutations occur", "The energy flow through a food web"],
+      "correct": "B",
+      "explanation": "The Hardy-Weinberg principle states that allele frequencies remain constant across generations in the absence of evolution (no mutation, migration, selection, or genetic drift).",
+      "funFact": "In practice, Hardy-Weinberg equilibrium is almost never met in real populations. It serves as a null hypothesis — deviations from it indicate that evolution is actively occurring!"
+    },
+    {
+      "id": 9,
+      "question": "What phenomenon does the photoelectric effect demonstrate about the nature of light?",
+      "options": ["Light travels as a wave", "Light has a dual wave-particle nature", "Light can only exist as particles (photons)", "Light is a longitudinal wave"],
+      "correct": "B",
+      "explanation": "Einstein explained the photoelectric effect by showing that light behaves as discrete photons (particles) with energy proportional to frequency, establishing wave-particle duality.",
+      "funFact": "It was the explanation of the photoelectric effect — not the theory of relativity — that won Einstein the Nobel Prize in Physics in 1921!"
+    },
+    {
+      "id": 10,
+      "question": "In thermodynamics, what does the Second Law state?",
+      "options": ["Energy is conserved in all reactions", "The entropy of an isolated system tends to increase over time", "Heat always flows from cold to hot", "All chemical reactions reach equilibrium"],
+      "correct": "B",
+      "explanation": "The Second Law states that entropy (disorder) of a closed system always tends to increase. It is why heat flows from hot to cold and why perpetual motion machines are impossible.",
+      "funFact": "The Second Law means the universe is always becoming more disordered. The low-entropy, highly ordered state of the early universe is the reason time appears to flow only in one direction!"
+    },
+    {
+      "id": 11,
+      "question": "What is CRISPR-Cas9 used for in molecular biology?",
+      "options": ["Sequencing DNA quickly", "Precise editing of specific DNA sequences in a genome", "Manufacturing proteins in a lab", "Visualizing chromosomes under a microscope"],
+      "correct": "B",
+      "explanation": "CRISPR-Cas9 is a genome editing tool derived from a bacterial immune system. The Cas9 protein acts as molecular scissors, cutting DNA at a precise location guided by an RNA template.",
+      "funFact": "In 2020, Jennifer Doudna and Emmanuelle Charpentier won the Nobel Prize in Chemistry for developing CRISPR. The technology may allow us to cure genetic diseases like sickle cell anemia and Huntington's!"
+    },
+    {
+      "id": 12,
+      "question": "What does the term 'electronegativity' describe for an atom?",
+      "options": ["How many electrons it can lose", "Its overall electrical charge in a compound", "Its ability to attract electrons in a covalent bond", "The energy needed to remove its outermost electron"],
+      "correct": "C",
+      "explanation": "Electronegativity measures how strongly an atom pulls the shared electrons in a covalent bond toward itself. Fluorine is the most electronegative element.",
+      "funFact": "Electronegativity differences create polar bonds. Water's polarity (O is more electronegative than H) is responsible for almost every one of its life-enabling properties, from dissolving salts to surface tension!"
+    },
+    {
+      "id": 13,
+      "question": "What is the significance of the endosymbiotic theory?",
+      "options": ["It explains how viruses infect cells", "It explains the origin of mitochondria and chloroplasts from ancient prokaryotes", "It describes how cells divide", "It proposes that life originated in hydrothermal vents"],
+      "correct": "B",
+      "explanation": "Endosymbiotic theory, championed by Lynn Margulis, proposes that mitochondria and chloroplasts were once free-living bacteria engulfed by larger cells and retained over billions of years.",
+      "funFact": "Strong evidence for endosymbiosis: mitochondria have their own circular DNA, their own ribosomes (which are more similar to bacterial ribosomes than to eukaryotic ones), and they reproduce by binary fission!"
+    },
+    {
+      "id": 14,
+      "question": "In quantum mechanics, what does the wave function of a particle describe?",
+      "options": ["The exact path the particle will travel", "The probability of finding the particle at a given location", "The speed of the particle at every moment", "The color of light the particle will emit"],
+      "correct": "B",
+      "explanation": "The wave function (psi) contains all information about a quantum system. Its squared magnitude gives the probability density of finding the particle at each location.",
+      "funFact": "The famous 'Schrodinger's Cat' thought experiment was designed to mock the Copenhagen interpretation of quantum mechanics, suggesting the absurdity of applying quantum probability to macroscopic objects like cats!"
+    },
+    {
+      "id": 15,
+      "question": "What is the mechanism behind enzyme inhibition by a competitive inhibitor?",
+      "options": ["It permanently destroys the enzyme", "It binds to the active site and blocks the substrate", "It changes the enzyme's shape permanently", "It increases the activation energy of the reaction"],
+      "correct": "B",
+      "explanation": "A competitive inhibitor has a shape similar to the substrate and competes for the enzyme's active site. Its effect can be overcome by increasing substrate concentration.",
+      "funFact": "Many drugs are competitive enzyme inhibitors. Statins, used by millions to lower cholesterol, work by competitively inhibiting HMG-CoA reductase, the key enzyme in cholesterol synthesis!"
+    },
+    {
+      "id": 16,
+      "question": "What does Le Chatelier's Principle state?",
+      "options": ["Reactions always proceed to completion", "A system at equilibrium will shift to oppose any stress applied to it", "The rate of a reaction doubles with every 10 degree temperature increase", "Catalysts change the position of equilibrium"],
+      "correct": "B",
+      "explanation": "If a change (concentration, temperature, pressure) is applied to a system at equilibrium, the system shifts in the direction that minimizes that change.",
+      "funFact": "The Haber-Bosch process for making ammonia fertilizer uses Le Chatelier's Principle: high pressure and moderate temperature optimize ammonia yield. This process feeds nearly half of humanity today!"
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between type I and type II errors in statistical hypothesis testing?",
+      "options": ["Type I is when math is wrong; type II is when the equipment fails", "Type I is a false positive; type II is a false negative", "Type I rejects a true hypothesis; type II accepts a false one", "Both B and C are correct"],
+      "correct": "D",
+      "explanation": "A Type I error (false positive) means rejecting a true null hypothesis. A Type II error (false negative) means failing to reject a false null hypothesis.",
+      "funFact": "In medical testing, a Type I error might mean diagnosing a healthy person with a disease, while a Type II error means missing a disease in a sick patient. The trade-off between these errors is a core challenge in diagnostic medicine!"
+    },
+    {
+      "id": 18,
+      "question": "What causes the greenhouse effect in Earth's atmosphere?",
+      "options": ["The ozone layer reflecting heat", "Greenhouse gases absorbing and re-emitting infrared radiation", "Ocean currents distributing heat", "Solar wind interacting with the magnetosphere"],
+      "correct": "B",
+      "explanation": "Greenhouse gases (CO2, methane, water vapor) absorb outgoing infrared radiation from Earth's surface and re-emit it in all directions, including back toward Earth, warming the surface.",
+      "funFact": "Without any greenhouse effect, Earth's average temperature would be about -18°C (0°F). The natural greenhouse effect makes Earth's average about +15°C (59°F). The problem is that human activity is enhancing it beyond natural levels!"
+    },
+    {
+      "id": 19,
+      "question": "What is the principle of superposition in geology?",
+      "options": ["Older rock layers are found on top of younger ones", "Rock layers at the bottom are the oldest", "All rocks were formed at the same time", "Metamorphic rocks are always beneath sedimentary rocks"],
+      "correct": "B",
+      "explanation": "In undisturbed sedimentary rock sequences, the oldest layers are at the bottom and the youngest at the top, because each new layer is deposited on top of existing ones.",
+      "funFact": "The Grand Canyon's walls expose nearly 2 billion years of Earth's history! Reading the rock layers from bottom to top is like reading a geological history book of our planet."
+    },
+    {
+      "id": 20,
+      "question": "What is the role of ATP synthase in cellular respiration?",
+      "options": ["It breaks down glucose into pyruvate", "It uses the proton gradient across the inner mitochondrial membrane to synthesize ATP", "It transports electrons along the electron transport chain", "It converts pyruvate into acetyl-CoA"],
+      "correct": "B",
+      "explanation": "ATP synthase uses the flow of protons (H+) down their concentration gradient through the inner mitochondrial membrane to drive the synthesis of ATP from ADP and inorganic phosphate.",
+      "funFact": "ATP synthase is a remarkable molecular motor that literally spins like a turbine at up to 9,000 RPM! Each full rotation produces exactly 3 ATP molecules. Your body synthesizes its own weight in ATP every single day!"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "subject": "History",
+  "grade": "High School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What term describes the widespread transfer of plants, animals, culture, human populations, technology, and ideas between the Americas and the Old World in the 15th and 16th centuries?",
+      "options": ["The Silk Road Exchange", "The Columbian Exchange", "The Triangular Trade", "The Magellan Effect"],
+      "correct": "B",
+      "explanation": "Named after Christopher Columbus, this exchange fundamentally altered ecosystems and diets globally.",
+      "funFact": "Before the Columbian Exchange, there were no tomatoes in Italy, no potatoes in Ireland, and no horses in the Great Plains of North America!"
+    },
+    {
+      "id": 2,
+      "question": "Which 1648 treaty ended the Thirty Years' War and is often credited with establishing the modern concept of state sovereignty?",
+      "options": ["Treaty of Versailles", "Treaty of Tordesillas", "Peace of Westphalia", "Treaty of Utrecht"],
+      "correct": "C",
+      "explanation": "The Peace of Westphalia established the principle of 'cuius regio, eius religio' (whose realm, his religion), laying the groundwork for the modern nation-state system.",
+      "funFact": "The negotiations took five years and involved over 100 delegations, setting the precedent for modern international diplomatic congresses."
+    },
+    {
+      "id": 3,
+      "question": "In the Spanish American colonies, what was the 'encomienda' system?",
+      "options": ["A postal network", "A labor system rewarding conquerors with the labor of particular groups of subject people", "A trade agreement with Britain", "A religious institution for converting natives"],
+      "correct": "B",
+      "explanation": "The encomienda system granted Spanish colonists the right to demand tribute and forced labor from indigenous inhabitants, often leading to severe abuse.",
+      "funFact": "The Dominican friar Bartolomé de las Casas was initially an encomendero before becoming its fiercest critic and an early advocate for universal human rights."
+    },
+    {
+      "id": 4,
+      "question": "Which Enlightenment philosopher's concept of the 'social contract' heavily influenced both the American and French Revolutions?",
+      "options": ["Thomas Hobbes", "Jean-Jacques Rousseau", "Adam Smith", "Francis Bacon"],
+      "correct": "B",
+      "explanation": "Rousseau argued that a government's right to rule comes from the consent of the governed, a radical departure from the 'divine right of kings'.",
+      "funFact": "Rousseau wrote extensively on progressive education in his book 'Emile', yet he infamously abandoned all five of his own children to an orphanage."
+    },
+    {
+      "id": 5,
+      "question": "The Opium Wars (1839–1860) were fought between China and which Western power over trade imbalances?",
+      "options": ["France", "The United States", "Great Britain", "Germany"],
+      "correct": "C",
+      "explanation": "Britain forced China to open its markets to opium grown in British India, leading to devastating social consequences in China and the ceding of Hong Kong to Britain.",
+      "funFact": "The first Opium War resulted in the Treaty of Nanking, which was the first of what the Chinese later referred to as the 'Unequal Treaties'."
+    },
+    {
+      "id": 6,
+      "question": "Which 19th-century uprising in China, led by Hong Xiuquan (who claimed to be the brother of Jesus Christ), became one of the deadliest conflicts in history?",
+      "options": ["The Boxer Rebellion", "The Taiping Rebellion", "The Yellow Turban Rebellion", "The White Lotus Rebellion"],
+      "correct": "B",
+      "explanation": "The Taiping Rebellion (1850-1864) was a massive civil war against the Qing dynasty, resulting in an estimated 20 to 30 million deaths.",
+      "funFact": "Despite being a religious movement, the Taiping Heavenly Kingdom enacted radical social reforms, including the banning of foot-binding and declaring women legally equal to men."
+    },
+    {
+      "id": 7,
+      "question": "Who was the Venezuelan military and political leader who played a leading role in the establishment of Venezuela, Bolivia, Colombia, Ecuador, Peru, and Panama as sovereign states?",
+      "options": ["Fidel Castro", "Emiliano Zapata", "Simón Bolívar", "Che Guevara"],
+      "correct": "C",
+      "explanation": "Bolívar, known as 'El Libertador', envisioned a united South American republic called Gran Colombia, though political infighting eventually fractured it.",
+      "funFact": "The country of Bolivia was explicitly named after him, making him one of the few people in history to have a nation named in their honor."
+    },
+    {
+      "id": 8,
+      "question": "In 1848, Karl Marx and Friedrich Engels published a political pamphlet that argued that history is the history of class struggles. What was it called?",
+      "options": ["The Wealth of Nations", "Das Kapital", "The Communist Manifesto", "Leviathan"],
+      "correct": "C",
+      "explanation": "The Manifesto predicted the overthrow of the capitalist system by the proletariat (working class) and the establishment of a classless society.",
+      "funFact": "Despite co-authoring the foundational text of communism, Engels was the son of a wealthy textile manufacturer and financially supported Marx for most of his life."
+    },
+    {
+      "id": 9,
+      "question": "Article 231 of the Treaty of Versailles, which ended WWI, is famously known as the 'War Guilt Clause'. What did it require?",
+      "options": ["The dissolution of the Ottoman Empire", "Germany to accept full responsibility for causing the war", "The creation of the League of Nations", "The division of Germany into four zones"],
+      "correct": "B",
+      "explanation": "This clause forced Germany to accept moral responsibility and pay massive financial reparations, deeply damaging the German economy and stoking nationalist resentment.",
+      "funFact": "Germany didn't finish paying off the interest on its WWI reparations until October 3, 2010—92 years after the war ended!"
+    },
+    {
+      "id": 10,
+      "question": "What was the name of the secret U.S. research project during World War II that developed the first atomic weapons?",
+      "options": ["Project Apollo", "The Manhattan Project", "Operation Overlord", "The Enigma Project"],
+      "correct": "B",
+      "explanation": "Led by J. Robert Oppenheimer, the project successfully tested the first nuclear bomb in New Mexico in 1945.",
+      "funFact": "The project employed over 130,000 people and cost nearly $2 billion, yet it was kept so secret that Vice President Harry Truman didn't know about it until he became President."
+    },
+    {
+      "id": 11,
+      "question": "During the Cold War, the 'Non-Aligned Movement' emerged. What was its primary goal?",
+      "options": ["To create a unified European army", "To ensure states remained neutral and independent from the US and Soviet blocs", "To spread communism to South America", "To dismantle all nuclear weapons"],
+      "correct": "B",
+      "explanation": "Originating from the 1955 Bandung Conference, leaders from Asia and Africa sought a 'middle path' to avoid being drawn into the superpower conflict.",
+      "funFact": "The founding fathers of the movement included leaders from very different political systems, such as Tito of communist Yugoslavia and Nehru of democratic India."
+    },
+    {
+      "id": 12,
+      "question": "In 1962, the world came the closest it has ever been to global nuclear war over the placement of Soviet missiles in which country?",
+      "options": ["Turkey", "Vietnam", "Cuba", "East Germany"],
+      "correct": "C",
+      "explanation": "During the Cuban Missile Crisis, US President Kennedy and Soviet Premier Khrushchev engaged in a tense 13-day standoff before reaching a secret agreement.",
+      "funFact": "A Soviet submarine officer named Vasili Arkhipov is credited with saving the world during the crisis by refusing his captain's orders to launch a nuclear torpedo."
+    },
+    {
+      "id": 13,
+      "question": "What two policies were introduced by Soviet leader Mikhail Gorbachev in the 1980s that inadvertently hastened the collapse of the Soviet Union?",
+      "options": ["Containment and Deterrence", "Glasnost and Perestroika", "Collectivization and Five-Year Plans", "Detente and Brinkmanship"],
+      "correct": "B",
+      "explanation": "Glasnost (openness) allowed for greater freedom of speech, while Perestroika (restructuring) attempted to introduce market-like reforms to the sluggish Soviet economy.",
+      "funFact": "Gorbachev even starred in a Pizza Hut commercial in 1997, where Russians debated whether his reforms were good or bad before agreeing they were good because 'we have Pizza Hut!'"
+    },
+    {
+      "id": 14,
+      "question": "The systematic murder of approximately 6 million European Jews by the Nazi regime during WWII is known as what?",
+      "options": ["The Great Purge", "The Holodomor", "The Holocaust", "The Diaspora"],
+      "correct": "C",
+      "explanation": "The Holocaust was the implementation of the 'Final Solution', targeting Jews as well as Romani people, people with disabilities, and political dissidents.",
+      "funFact": "During the war, a Polish doctor faked a typhus epidemic in his village using a harmless bacteria, scaring away the Nazis and saving thousands of Jewish lives."
+    },
+    {
+      "id": 15,
+      "question": "Which ideology, championed by Benito Mussolini, emphasizes extreme nationalism, militarism, and the supremacy of the state over the individual?",
+      "options": ["Anarchism", "Fascism", "Marxism", "Libertarianism"],
+      "correct": "B",
+      "explanation": "Fascism arose in Italy after WWI as a reaction against both liberal democracy and the perceived threat of communism.",
+      "funFact": "The word 'fascism' comes from the Latin 'fasces'—a bundle of wooden rods with an axe, which was a symbol of authority in ancient Rome."
+    },
+    {
+      "id": 16,
+      "question": "The 1916 Sykes-Picot Agreement was a secret treaty that essentially divided which falling empire into British and French spheres of influence?",
+      "options": ["The Austro-Hungarian Empire", "The Qing Empire", "The Ottoman Empire", "The Russian Empire"],
+      "correct": "C",
+      "explanation": "This agreement drew arbitrary borders in the Middle East, ignoring ethnic and religious realities, which has contributed to ongoing regional instability.",
+      "funFact": "The secret agreement was unexpectedly exposed to the world when the Bolsheviks seized power in Russia and published the Tsar's secret treaties in 1917."
+    },
+    {
+      "id": 17,
+      "question": "Which historical event starting in 2010 saw a wave of pro-democracy protests, uprisings, and armed rebellions across the Middle East and North Africa?",
+      "options": ["The Arab Spring", "The Velvet Revolution", "The Cultural Revolution", "The Intifada"],
+      "correct": "A",
+      "explanation": "Triggered by the self-immolation of a street vendor in Tunisia, the Arab Spring led to the toppling of governments in Tunisia, Egypt, Libya, and Yemen.",
+      "funFact": "Social media platforms like Twitter and Facebook played such a crucial role in organizing the protests that some commentators dubbed them 'Twitter Revolutions'."
+    },
+    {
+      "id": 18,
+      "question": "In 1994, an estimated 800,000 Tutsis and moderate Hutus were systematically murdered over 100 days in which African nation?",
+      "options": ["Sudan", "Somalia", "Rwanda", "Congo"],
+      "correct": "C",
+      "explanation": "The Rwandan Genocide was carried out largely by Hutu militias following decades of ethnic tension exacerbated by former Belgian colonial policies.",
+      "funFact": "Hotel manager Paul Rusesabagina sheltered 1,268 Hutu and Tutsi refugees in his luxury hotel during the genocide, saving all their lives—a story later adapted into the movie 'Hotel Rwanda'."
+    },
+    {
+      "id": 19,
+      "question": "The 'Green Revolution' of the mid-20th century primarily involved advancements in what field?",
+      "options": ["Renewable Energy", "Agriculture", "Environmental Protection", "Military Technology"],
+      "correct": "B",
+      "explanation": "Led by scientist Norman Borlaug, the introduction of high-yielding varieties of wheat and rice saved an estimated one billion people from starvation, particularly in Asia.",
+      "funFact": "Borlaug is one of only a few people to have won the Nobel Peace Prize, the Presidential Medal of Freedom, and the Congressional Gold Medal."
+    },
+    {
+      "id": 20,
+      "question": "What 1494 treaty divided the newly discovered lands outside Europe between the Portuguese Empire and the Spanish Empire along a meridian?",
+      "options": ["Treaty of Tordesillas", "Treaty of Paris", "Treaty of Zaragoza", "Treaty of London"],
+      "correct": "A",
+      "explanation": "Brokered by the Pope, this treaty gave Spain rights to most of the Americas, while Portugal got Africa, Asia, and what is now Brazil.",
+      "funFact": "Because longitude was notoriously difficult to measure at the time, the exact location of the dividing line was heavily disputed for decades!"
+    }
+  ]
+}

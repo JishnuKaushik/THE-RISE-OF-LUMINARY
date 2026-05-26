@@ -1,0 +1,166 @@
+{
+  "subject": "Literature",
+  "grade": "Elementary",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In 'Charlotte's Web', what kind of animal is Wilbur?",
+      "options": ["A spider", "A horse", "A pig", "A sheep"],
+      "correct": "C",
+      "explanation": "Wilbur is the lovable pig whose life is saved by a clever spider named Charlotte.",
+      "funFact": "Author E.B. White actually spent a year studying the behavior and anatomy of spiders before writing the book."
+    },
+    {
+      "id": 2,
+      "question": "What is the name of the magical chocolate factory owner created by Roald Dahl?",
+      "options": ["Mr. Fox", "Willy Wonka", "BFG", "Matilda"],
+      "correct": "B",
+      "explanation": "Willy Wonka is the eccentric candy maker who hides five golden tickets in his chocolate bars.",
+      "funFact": "Roald Dahl originally named the protagonist 'Charlie Bucket', but in an early draft, Charlie was actually an African American boy."
+    },
+    {
+      "id": 3,
+      "question": "In the 'Harry Potter' series, what animal is the symbol of Gryffindor house?",
+      "options": ["A snake", "A badger", "An eagle", "A lion"],
+      "correct": "D",
+      "explanation": "The lion represents Gryffindor, symbolizing bravery, daring, nerve, and chivalry.",
+      "funFact": "J.K. Rowling invented the names of the Hogwarts houses by jotting them down on an airplane sick bag."
+    },
+    {
+      "id": 4,
+      "question": "Who falls down a rabbit hole into a bizarre fantasy world?",
+      "options": ["Dorothy", "Lucy", "Alice", "Wendy"],
+      "correct": "C",
+      "explanation": "Alice follows the White Rabbit down a rabbit hole and ends up in Wonderland.",
+      "funFact": "The real 'Alice' was Alice Liddell, the daughter of Lewis Carroll's boss, who begged him to write down the stories he told her."
+    },
+    {
+      "id": 5,
+      "question": "What kind of creature is Aslan in 'The Chronicles of Narnia'?",
+      "options": ["A talking beaver", "A centaur", "A faun", "A lion"],
+      "correct": "D",
+      "explanation": "Aslan, the Great Lion, is the powerful creator and true king of Narnia.",
+      "funFact": "C.S. Lewis didn't originally plan for Aslan to be in the story, but he said the lion bounded in on his own accord."
+    },
+    {
+      "id": 6,
+      "question": "What is the name of the main character in 'Diary of a Wimpy Kid'?",
+      "options": ["Rowley Jefferson", "Greg Heffley", "Rodrick Heffley", "Fregley"],
+      "correct": "B",
+      "explanation": "Greg Heffley is the middle school student who details his daily struggles in a diary.",
+      "funFact": "Author Jeff Kinney actually originally intended for the book to be for adults, reflecting on the awkwardness of middle school."
+    },
+    {
+      "id": 7,
+      "question": "Which magical land did Dorothy travel to via a tornado?",
+      "options": ["Neverland", "Narnia", "Wonderland", "Oz"],
+      "correct": "D",
+      "explanation": "Dorothy Gale and her dog Toto are swept away from Kansas to the magical Land of Oz.",
+      "funFact": "In L. Frank Baum's original book, Dorothy's magical slippers were silver, not ruby red as in the famous movie."
+    },
+    {
+      "id": 8,
+      "question": "Who wrote 'The Giving Tree' and 'Where the Sidewalk Ends'?",
+      "options": ["Dr. Seuss", "Shel Silverstein", "Eric Carle", "Maurice Sendak"],
+      "correct": "B",
+      "explanation": "Shel Silverstein was the famous poet and author who wrote these beloved children's classics.",
+      "funFact": "Silverstein was also a very successful songwriter, writing Johnny Cash's famous hit 'A Boy Named Sue'."
+    },
+    {
+      "id": 9,
+      "question": "What special power does Matilda Wormwood have?",
+      "options": ["Invisibility", "Flying", "Telekinesis", "Mind reading"],
+      "correct": "C",
+      "explanation": "Matilda has telekinesis, which means she can move objects with her mind.",
+      "funFact": "In early drafts of the novel, Matilda was actually a wicked child who played cruel tricks on her kind parents!"
+    },
+    {
+      "id": 10,
+      "question": "In 'Peter Pan', what is the name of the fairy who follows Peter?",
+      "options": ["Pixie", "Tinker Bell", "Flora", "Silvermist"],
+      "correct": "B",
+      "explanation": "Tinker Bell is the feisty fairy who is Peter Pan's companion and sprinkles pixie dust.",
+      "funFact": "In the original stage play, Tinker Bell wasn't played by an actor, but was just a darting spotlight and the sound of a bell."
+    },
+    {
+      "id": 11,
+      "question": "What kind of animal is Stuart Little?",
+      "options": ["A mouse", "A rat", "A hamster", "A gerbil"],
+      "correct": "A",
+      "explanation": "Stuart is a brave little mouse who was born to a human family in New York City.",
+      "funFact": "The New York Public Library actually has a tiny, functional door built into the baseboards just for Stuart Little."
+    },
+    {
+      "id": 12,
+      "question": "Who is Percy Jackson's father in Greek mythology?",
+      "options": ["Zeus", "Ares", "Poseidon", "Hades"],
+      "correct": "C",
+      "explanation": "Percy discovers he is a demigod and the son of Poseidon, the Greek god of the sea.",
+      "funFact": "Rick Riordan invented the Percy Jackson stories to tell at bedtime to his son, who had recently been diagnosed with ADHD and dyslexia."
+    },
+    {
+      "id": 13,
+      "question": "What is the name of the little girl who lives at the Plaza Hotel in New York?",
+      "options": ["Madeline", "Eloise", "Ramona", "Junie B. Jones"],
+      "correct": "B",
+      "explanation": "Eloise is a mischievous six-year-old who lives in the 'room on the tippy-top floor' of the Plaza Hotel.",
+      "funFact": "The portrait of Eloise that hangs in the real Plaza Hotel was once stolen and went missing for two years!"
+    },
+    {
+      "id": 14,
+      "question": "In 'The Tale of Despereaux', what does Despereaux love more than anything?",
+      "options": ["Cheese", "Music and stories", "Exploring", "Sleeping"],
+      "correct": "B",
+      "explanation": "Unlike other mice, Despereaux reads books instead of eating them and loves music and stories.",
+      "funFact": "Author Kate DiCamillo wrote the story because her best friend's son asked for a story about an unlikely hero with exceptionally large ears."
+    },
+    {
+      "id": 15,
+      "question": "What is the name of the little girl who attends a boarding school in Paris covered in vines?",
+      "options": ["Eloise", "Matilda", "Madeline", "Heidi"],
+      "correct": "C",
+      "explanation": "Madeline is the smallest but bravest of twelve little girls in two straight lines in an old house in Paris.",
+      "funFact": "The author, Ludwig Bemelmans, was inspired to write the story after he was hospitalized following a bicycle accident in France."
+    },
+    {
+      "id": 16,
+      "question": "What kind of creature is the BFG?",
+      "options": ["A Friendly Ghost", "A Flying Griffin", "A Big Friendly Giant", "A Brave Forest Goblin"],
+      "correct": "C",
+      "explanation": "The BFG stands for the Big Friendly Giant, who catches dreams and blows them into children's bedrooms.",
+      "funFact": "Roald Dahl dedicated 'The BFG' to his daughter Olivia, who had tragically passed away at age seven."
+    },
+    {
+      "id": 17,
+      "question": "In 'Bridge to Terabithia', what is Terabithia?",
+      "options": ["A magical kingdom", "An imaginary world in the woods", "A treehouse", "A distant planet"],
+      "correct": "B",
+      "explanation": "Terabithia is a secret imaginary kingdom created by Jess and Leslie in the woods.",
+      "funFact": "Katherine Paterson wrote the book to help her son cope with the tragic death of his real-life best friend."
+    },
+    {
+      "id": 18,
+      "question": "What is the name of the spider who acts as a narrator in 'James and the Giant Peach'?",
+      "options": ["Miss Spider", "Charlotte", "Aragog", "Shelob"],
+      "correct": "A",
+      "explanation": "Miss Spider is one of the magical, oversized insects that travel with James inside the peach.",
+      "funFact": "Roald Dahl originally intended for the fruit to be a cherry, but changed it to a peach because it was 'prettier, bigger and squishier'."
+    },
+    {
+      "id": 19,
+      "question": "What is the name of the young boy who wins a golden ticket in 'Charlie and the Chocolate Factory'?",
+      "options": ["Augustus Gloop", "Mike Teavee", "Charlie Bucket", "Arthur Pendragon"],
+      "correct": "C",
+      "explanation": "Charlie Bucket is the poor but kind boy who finds the final golden ticket.",
+      "funFact": "Roald Dahl hated the 1971 movie adaptation so much that he refused to ever let them make a sequel based on his books."
+    },
+    {
+      "id": 20,
+      "question": "In 'The Lion, the Witch and the Wardrobe', what does the White Witch give Edmund?",
+      "options": ["A magical sword", "Turkish Delight", "A golden crown", "A warm coat"],
+      "correct": "B",
+      "explanation": "The White Witch uses magical Turkish Delight to enchant Edmund and convince him to betray his siblings.",
+      "funFact": "During WWII, real Turkish Delight was strictly rationed in Britain, making it an unimaginably rare and tempting treat for children reading the book at the time."
+    }
+  ]
+}

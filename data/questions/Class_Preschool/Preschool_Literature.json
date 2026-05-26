@@ -1,0 +1,166 @@
+{
+  "subject": "Literature",
+  "grade": "Preschool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who was the little girl that visited the home of the Three Bears?",
+      "options": ["Cinderella", "Goldilocks", "Snow White", "Little Red Riding Hood"],
+      "correct": "B",
+      "explanation": "Goldilocks is the curious girl who tastes the bears' porridge, sits in their chairs, and sleeps in their beds.",
+      "funFact": "The original story didn't feature a young girl but rather an old woman who was described as 'impudent and foul-mouthed'!"
+    },
+    {
+      "id": 2,
+      "question": "What kind of animal is the Very Hungry Caterpillar before he spins a cocoon?",
+      "options": ["A butterfly", "A ladybug", "A caterpillar", "A worm"],
+      "correct": "C",
+      "explanation": "He is a caterpillar who eats through many different foods before turning into a butterfly.",
+      "funFact": "Eric Carle's original idea for the book was about a bookworm named Willi, but his editor suggested a caterpillar instead."
+    },
+    {
+      "id": 3,
+      "question": "In the nursery rhyme, who had a great fall from a wall?",
+      "options": ["Jack", "Humpty Dumpty", "The Grand Old Duke", "Little Boy Blue"],
+      "correct": "B",
+      "explanation": "Humpty Dumpty sat on a wall and had a great fall, and all the king's horses and men couldn't put him together again.",
+      "funFact": "The rhyme never actually states that Humpty Dumpty is an egg! That idea came from illustrations in later books."
+    },
+    {
+      "id": 4,
+      "question": "What color is Clifford, the famous giant dog?",
+      "options": ["Blue", "Yellow", "Red", "Green"],
+      "correct": "C",
+      "explanation": "Clifford is known as the 'Big Red Dog' in Norman Bridwell's popular book series.",
+      "funFact": "The creator originally wanted to name the dog 'Bloodhound', but his wife suggested 'Clifford' after her childhood imaginary friend."
+    },
+    {
+      "id": 5,
+      "question": "Who went up the hill to fetch a pail of water?",
+      "options": ["Hansel and Gretel", "Jack and Jill", "Little Bo Peep", "Mary and Her Lamb"],
+      "correct": "B",
+      "explanation": "Jack and Jill went up the hill to fetch a pail of water, but Jack fell down and broke his crown.",
+      "funFact": "Some historians believe the rhyme is actually about King Louis XVI and Marie Antoinette of France."
+    },
+    {
+      "id": 6,
+      "question": "What kind of animal is Curious George?",
+      "options": ["A dog", "A bear", "A monkey", "A cat"],
+      "correct": "C",
+      "explanation": "Curious George is a sweet but mischievous little monkey brought from Africa by The Man with the Yellow Hat.",
+      "funFact": "The creators of Curious George escaped Paris on bicycles during World War II, carrying the original manuscript with them."
+    },
+    {
+      "id": 7,
+      "question": "Which animal huffed and puffed and blew houses down?",
+      "options": ["The Big Bad Wolf", "The Grumpy Bear", "The Angry Lion", "The Sneaky Fox"],
+      "correct": "A",
+      "explanation": "The Big Bad Wolf huffed and puffed to blow down the houses of the Three Little Pigs.",
+      "funFact": "In early versions of the story, the wolf doesn't just blow the houses down; he actually eats the first two pigs!"
+    },
+    {
+      "id": 8,
+      "question": "What type of footwear is Cinderella famous for leaving behind at the ball?",
+      "options": ["A golden boot", "A glass slipper", "A silver sandal", "A ruby shoe"],
+      "correct": "B",
+      "explanation": "Cinderella leaves behind a delicate glass slipper when she runs away from the ball at midnight.",
+      "funFact": "Some scholars believe the 'glass' slipper came from a mistranslation of the French word 'vair' (fur) for 'verre' (glass)."
+    },
+    {
+      "id": 9,
+      "question": "What did the boy named Jack trade for magic beans?",
+      "options": ["A horse", "A bag of gold", "A cow", "A loaf of bread"],
+      "correct": "C",
+      "explanation": "Jack trades his family's only cow for some 'magic' beans, which grow into a giant beanstalk.",
+      "funFact": "The story of Jack and the Beanstalk is believed to have roots in a fairy tale that is over 5,000 years old!"
+    },
+    {
+      "id": 10,
+      "question": "What does the Cat in the Hat wear on his head?",
+      "options": ["A yellow hard hat", "A red and white striped top hat", "A black bowler hat", "A green cap"],
+      "correct": "B",
+      "explanation": "The Cat in the Hat is famous for his tall, red and white striped top hat.",
+      "funFact": "Dr. Seuss wrote the book using only 236 different words to help young children learn to read."
+    },
+    {
+      "id": 11,
+      "question": "Who loves eating honey and lives in the Hundred Acre Wood?",
+      "options": ["Peter Rabbit", "Paddington", "Winnie the Pooh", "Baloo"],
+      "correct": "C",
+      "explanation": "Winnie the Pooh is a lovable bear who constantly searches for 'hunny' in the Hundred Acre Wood.",
+      "funFact": "Winnie the Pooh was named after a real black bear named Winnipeg who lived at the London Zoo."
+    },
+    {
+      "id": 12,
+      "question": "What did Little Red Riding Hood bring to her grandmother?",
+      "options": ["A basket of food", "A bouquet of flowers", "A new blanket", "A magic wand"],
+      "correct": "A",
+      "explanation": "She brings a basket of food to her sick grandmother, but meets a wolf along the way.",
+      "funFact": "In older European versions of the tale, the girl wears a red cape because red was the cheapest dye available for commoners."
+    },
+    {
+      "id": 13,
+      "question": "What kind of clothing did the emperor wear in 'The Emperor's New Clothes'?",
+      "options": ["A golden robe", "Nothing at all", "A silk suit", "A heavy armor"],
+      "correct": "B",
+      "explanation": "The emperor was tricked into believing his invisible clothes could only be seen by smart people, so he paraded wearing nothing at all.",
+      "funFact": "Hans Christian Andersen got the idea for this story from a medieval Spanish tale, but he changed the ending to have a child speak the truth."
+    },
+    {
+      "id": 14,
+      "question": "In 'The Ugly Duckling', what beautiful bird does the duckling grow up to be?",
+      "options": ["A peacock", "A flamingo", "A swan", "An eagle"],
+      "correct": "C",
+      "explanation": "The 'ugly duckling' was actually a baby swan (cygnet) all along, and grows into a beautiful white swan.",
+      "funFact": "Hans Christian Andersen considered the story of the Ugly Duckling to be his own autobiography."
+    },
+    {
+      "id": 15,
+      "question": "Who chased Peter Rabbit out of his garden?",
+      "options": ["Mr. McGregor", "Farmer Brown", "Old MacDonald", "Mr. Jones"],
+      "correct": "A",
+      "explanation": "Mr. McGregor chases Peter out of the garden after Peter eats too many vegetables.",
+      "funFact": "Beatrix Potter originally wrote the story of Peter Rabbit in a letter to cheer up the sick child of her former governess."
+    },
+    {
+      "id": 16,
+      "question": "According to the nursery rhyme, what jumped over the moon?",
+      "options": ["A dog", "A cow", "A cat", "A sheep"],
+      "correct": "B",
+      "explanation": "In 'Hey Diddle Diddle', the cow jumps over the moon while the little dog laughs to see such sport.",
+      "funFact": "The phrase 'over the moon' originated from this exact nursery rhyme published in the 1760s."
+    },
+    {
+      "id": 17,
+      "question": "What happens to Pinocchio's nose when he tells a lie?",
+      "options": ["It turns red", "It falls off", "It grows longer", "It shrinks"],
+      "correct": "C",
+      "explanation": "Pinocchio's wooden nose grows longer every time he tells a lie to the Blue Fairy.",
+      "funFact": "In the original story by Carlo Collodi, Pinocchio was actually very naughty and had his feet burned off!"
+    },
+    {
+      "id": 18,
+      "question": "What magical item makes Snow White fall asleep?",
+      "options": ["A poisoned apple", "A magic mirror", "A spinning wheel", "A golden key"],
+      "correct": "A",
+      "explanation": "The Evil Queen disguises herself and tricks Snow White into taking a bite of a poisoned apple.",
+      "funFact": "The story of Snow White likely originated from a true 16th-century German countess named Margaretha von Waldeck."
+    },
+    {
+      "id": 19,
+      "question": "What is the name of the bear from 'Darkest Peru' who loves marmalade sandwiches?",
+      "options": ["Winnie the Pooh", "Corduroy", "Paddington Bear", "Rupert Bear"],
+      "correct": "C",
+      "explanation": "Paddington Bear is found at Paddington Station in London and is famous for keeping marmalade sandwiches under his hat.",
+      "funFact": "Creator Michael Bond bought a lonely teddy bear from a store near Paddington Station on Christmas Eve as a present for his wife, inspiring the character."
+    },
+    {
+      "id": 20,
+      "question": "Who lost her sheep and didn't know where to find them?",
+      "options": ["Mary", "Little Bo Peep", "Cinderella", "Goldilocks"],
+      "correct": "B",
+      "explanation": "Little Bo Peep lost her sheep, but the rhyme says to leave them alone and they'll come home.",
+      "funFact": "The phrase 'Bo Peep' originally meant a game of peek-a-boo in the 16th century."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "subject": "Mathematics",
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterName": "The Mystery of the Missing Variable",
+      "storyIntro": "Welcome, young Luminary! 🌟 Today we enter the Vault of Equations. The ancient scholars hid their secrets using shifting runes known as variables...",
+      "conceptExplanation": "In algebra, a **variable** is a letter (like x or y) that represents an unknown number. It allows us to write general rules and solve mysteries...",
+      "realLifeExample": "🍕 PIZZA MATH: If a pizza costs $10 and you buy 'x' pizzas, the total cost is 10x. If you buy 3 pizzas, x is 3, and the cost is $30!",
+      "quickCheck": {
+        "question": "If y = 5, what is the value of 2y?",
+        "options": [
+          "2",
+          "5",
+          "10",
+          "25"
+        ],
+        "correct": 2,
+        "explanation": "2y means 2 multiplied by y. Since y is 5, 2 * 5 = 10. ✨"
+      }
+    },
+    {
+      "chapterNumber": 2,
+      "chapterName": "The Balance of the Alchemist",
+      "storyIntro": "Greetings, Luminary! 🧪 Alchemist Leo needs your help. His magical scales are tipping! To brew the perfect potion, both sides of the equation must be perfectly balanced...",
+      "conceptExplanation": "An **equation** is like a scale. Whatever you do to one side, you must do to the other to keep it balanced. To find the unknown, we use inverse operations, like subtracting to undo addition.",
+      "realLifeExample": "🍎 APPLE MATH: You have some apples and find 4 more, giving you 12 in total. We write this as x + 4 = 12. Subtract 4 from both sides, and you find you started with 8 apples!",
+      "quickCheck": {
+        "question": "Solve for x: x - 6 = 14",
+        "options": [
+          "8",
+          "20",
+          "24",
+          "14"
+        ],
+        "correct": 1,
+        "explanation": "To balance the scale, we do the opposite of subtracting 6, which is adding 6 to both sides. 14 + 6 = 20. ⚖️"
+      }
+    },
+    {
+      "chapterNumber": 3,
+      "chapterName": "The Recipe of Runes",
+      "storyIntro": "Excellent work, Luminary! 📜 Now, Professor Mira is unrolling the Recipe of Runes. Before we can solve the grand puzzle, we must understand the ingredients of the magical expressions...",
+      "conceptExplanation": "An **algebraic expression** is a mix of numbers, variables, and operations, but without an equals sign. It is made of **terms** separated by plus or minus signs. For example, 3x + 5 has two terms.",
+      "realLifeExample": "🎟️ CARNIVAL MATH: A ticket costs $2.50, and you buy a magical hat for $15. The total you spend for 't' tickets is the expression 2.50t + 15.",
+      "quickCheck": {
+        "question": "How many terms are in the expression 4y + 7 - 2z?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct": 2,
+        "explanation": "The expression is broken into parts by the plus and minus signs: 4y, 7, and 2z. That makes 3 terms! 🧩"
+      }
+    },
+    {
+      "chapterNumber": 4,
+      "chapterName": "The Gathering of the Golems",
+      "storyIntro": "Look out, Luminary! 🗿 The stone golems are scattered across the courtyard. Alchemist Leo says we can only group together the golems that are made of the exact same magical material...",
+      "conceptExplanation": "**Like terms** are terms that have the exact same variables and exponents. You can combine them by adding or subtracting their coefficients (the numbers in front). You cannot combine different variables!",
+      "realLifeExample": "🍔 BURGER MATH: If you buy 3 burgers and later buy 2 more burgers, you have 5 burgers total (3b + 2b = 5b). But you cannot combine burgers and fries (3b + 2f)!",
+      "quickCheck": {
+        "question": "Simplify the expression: 5x + 3y + 2x",
+        "options": [
+          "10xy",
+          "7x + 3y",
+          "5x + 5y",
+          "8x + 2y"
+        ],
+        "correct": 1,
+        "explanation": "We can only combine the 'x' terms! 5x plus 2x is 7x. The 3y stays the same, giving us 7x + 3y. ✨"
+      }
+    },
+    {
+      "chapterNumber": 5,
+      "chapterName": "The Double Locks of the Vault",
+      "storyIntro": "We are so close to the treasure, Luminary! 🗝️ But Professor Mira warns that the final chest has Double Locks. We must undo two magical seals in the correct order to open it...",
+      "conceptExplanation": "In a **two-step equation**, you need to perform two operations to isolate the variable. The trick is to work backward! First, undo addition or subtraction, and then undo multiplication or division.",
+      "realLifeExample": "🎮 ARCADE MATH: You have $20. You buy a snack for $5.25 and spend the rest on $1.50 arcade tokens. The equation is 1.50x + 5.25 = 20. First subtract 5.25, then divide by 1.50!",
+      "quickCheck": {
+        "question": "Solve for k: 2k + 4 = 16",
+        "options": [
+          "6",
+          "8",
+          "10",
+          "12"
+        ],
+        "correct": 0,
+        "explanation": "First, subtract 4 from both sides to get 2k = 12. Then, divide by 2 to find k = 6. 🔓"
+      }
+    },
+    {
+      "chapterNumber": 6,
+      "chapterName": "The Multiplication Spell",
+      "storyIntro": "The treasure is yours, Luminary! 🎇 To celebrate, Alchemist Leo will teach you the Multiplication Spell. It allows you to share your magical power with everything inside the enchanted brackets...",
+      "conceptExplanation": "The **distributive property** lets you multiply a number outside parentheses with every term inside. For example, a(b + c) becomes ab + ac. It distributes the multiplication!",
+      "realLifeExample": "🎁 PARTY MATH: You want to give 3 friends a gift bag. Each bag has 2 chocolates and 1 toy. You need 3 * (2 chocolates + 1 toy) = 6 chocolates and 3 toys in total!",
+      "quickCheck": {
+        "question": "Use the distributive property to expand: 4(x + 3)",
+        "options": [
+          "4x + 3",
+          "x + 12",
+          "4x + 12",
+          "7x"
+        ],
+        "correct": 2,
+        "explanation": "Multiply the 4 by the x (to get 4x) AND multiply the 4 by the 3 (to get 12). The result is 4x + 12. 🎆"
+      }
+    }
+  ]
+}

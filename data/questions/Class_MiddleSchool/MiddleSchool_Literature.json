@@ -1,0 +1,166 @@
+{
+  "subject": "Literature",
+  "grade": "Middle School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In Lois Lowry's 'The Giver', what job is Jonas assigned at the Ceremony of Twelve?",
+      "options": ["Nurturer", "Receiver of Memory", "Director of Recreation", "Caretaker of the Old"],
+      "correct": "B",
+      "explanation": "Jonas is selected to be the Receiver of Memory, bearing the burden of humanity's past memories and emotions.",
+      "funFact": "Lois Lowry was inspired to write 'The Giver' after visiting her aging father, who had lost most of his long-term memory."
+    },
+    {
+      "id": 2,
+      "question": "Who is the author of 'The Outsiders'?",
+      "options": ["S.E. Hinton", "J.D. Salinger", "John Green", "Lois Duncan"],
+      "correct": "A",
+      "explanation": "S.E. Hinton wrote the groundbreaking young adult novel about the rival Greasers and Socs.",
+      "funFact": "S.E. (Susan Eloise) Hinton used her initials so male reviewers wouldn't dismiss the book simply because it was written by a teenage girl."
+    },
+    {
+      "id": 3,
+      "question": "In 'The Hunger Games', what district is Katniss Everdeen from?",
+      "options": ["District 1", "District 9", "District 11", "District 12"],
+      "correct": "D",
+      "explanation": "Katniss lives in District 12, the impoverished coal-mining region of Panem.",
+      "funFact": "Suzanne Collins got the idea for the series while channel surfing between reality TV shows and footage of the Iraq War."
+    },
+    {
+      "id": 4,
+      "question": "What object does Bilbo Baggins find in Gollum's cave in 'The Hobbit'?",
+      "options": ["A map", "A glowing sword", "A magical ring", "A dragon scale"],
+      "correct": "C",
+      "explanation": "Bilbo finds the One Ring, an event that sets the stage for the entire 'Lord of the Rings' trilogy.",
+      "funFact": "J.R.R. Tolkien graded a student's exam paper when he suddenly wrote on a blank page: 'In a hole in the ground there lived a hobbit.' He didn't even know what a hobbit was yet!"
+    },
+    {
+      "id": 5,
+      "question": "What is the primary literary device used in the sentence: 'The wind whispered through the dark forest'?",
+      "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+      "correct": "C",
+      "explanation": "Personification gives human qualities (whispering) to an inanimate object or concept (the wind).",
+      "funFact": "Personification has been used since ancient times; the Greeks and Romans personified almost all aspects of nature as gods and goddesses."
+    },
+    {
+      "id": 6,
+      "question": "In 'A Wrinkle in Time', what is a 'tesseract'?",
+      "options": ["A magical weapon", "A wrinkle in space-time", "A dark alien species", "A glowing star"],
+      "correct": "B",
+      "explanation": "A tesseract is a concept used to travel vast distances through space by 'wrinkling' the fabric of space and time.",
+      "funFact": "The manuscript for 'A Wrinkle in Time' was rejected by 26 different publishers before finally being accepted."
+    },
+    {
+      "id": 7,
+      "question": "Who narrates Markus Zusak's novel 'The Book Thief'?",
+      "options": ["Liesel Meminger", "Max Vandenburg", "Death", "Hans Hubermann"],
+      "correct": "C",
+      "explanation": "The novel is uniquely narrated by Death, who provides a sympathetic perspective on humanity during World War II.",
+      "funFact": "Zusak initially tried writing the book from the perspective of Death using a very harsh, cynical voice before making Death a weary, compassionate figure."
+    },
+    {
+      "id": 8,
+      "question": "In Gary Paulsen's 'Hatchet', how does Brian survive in the wilderness?",
+      "options": ["He finds an abandoned cabin", "He is rescued immediately", "He uses a hatchet his mother gave him", "He relies on a survival guide book"],
+      "correct": "C",
+      "explanation": "Brian relies on the hatchet to make fire, build shelter, and create tools to survive in the Canadian wilderness.",
+      "funFact": "Gary Paulsen based many of Brian's survival challenges on his own real-life experiences outdoors."
+    },
+    {
+      "id": 9,
+      "question": "Which Edgar Allan Poe story features a narrator who goes mad hearing a beating heart under the floorboards?",
+      "options": ["The Fall of the House of Usher", "The Tell-Tale Heart", "The Raven", "The Cask of Amontillado"],
+      "correct": "B",
+      "explanation": "In 'The Tell-Tale Heart', the narrator is driven by guilt and paranoia to confess his crime when he hallucinates the victim's heartbeat.",
+      "funFact": "Poe only earned $10 for 'The Tell-Tale Heart' when it was first published in 1843."
+    },
+    {
+      "id": 10,
+      "question": "What is the literary term for a warning or indication of a future event in a story?",
+      "options": ["Flashback", "Irony", "Foreshadowing", "Allegory"],
+      "correct": "C",
+      "explanation": "Foreshadowing is used by authors to build suspense and prepare readers for upcoming plot twists.",
+      "funFact": "The chorus in ancient Greek theater often served the purpose of foreshadowing, directly telling the audience about the impending tragedy."
+    },
+    {
+      "id": 11,
+      "question": "In R.J. Palacio's 'Wonder', what condition does the main character, Auggie, have?",
+      "options": ["Blindness", "A facial deformity", "Deafness", "A heart condition"],
+      "correct": "B",
+      "explanation": "Auggie Pullman was born with Treacher Collins syndrome, a rare facial difference.",
+      "funFact": "The author was inspired to write the book after her own son reacted fearfully to a child with a facial difference at an ice cream shop."
+    },
+    {
+      "id": 12,
+      "question": "What is the name of the protagonist in 'The Diary of a Young Girl'?",
+      "options": ["Anne Frank", "Margot Frank", "Edith Frank", "Miep Gies"],
+      "correct": "A",
+      "explanation": "Anne Frank wrote the diary while hiding with her family from the Nazis in Amsterdam.",
+      "funFact": "Anne actually named her diary 'Kitty' and addressed her entries to this imaginary friend."
+    },
+    {
+      "id": 13,
+      "question": "What famous Mark Twain character faked his own death and hid on an island?",
+      "options": ["Huckleberry Finn", "Tom Sawyer", "Becky Thatcher", "Injun Joe"],
+      "correct": "A",
+      "explanation": "Huck Finn fakes his death to escape his abusive father and runs away down the Mississippi River.",
+      "funFact": "Mark Twain (Samuel Clemens) took his pen name from a riverboat term meaning 'two fathoms deep', indicating safe water."
+    },
+    {
+      "id": 14,
+      "question": "In 'Roll of Thunder, Hear My Cry', what is the most prized possession of the Logan family?",
+      "options": ["Their car", "Their land", "A diamond necklace", "Their grocery store"],
+      "correct": "B",
+      "explanation": "The Logans are one of the few Black families in their area to own their own land during the Great Depression.",
+      "funFact": "Mildred D. Taylor based the novel on stories told by her father and uncle about their family's history in Mississippi."
+    },
+    {
+      "id": 15,
+      "question": "What is the term for a story where characters and events represent broader abstract ideas or historical events?",
+      "options": ["Fable", "Myth", "Allegory", "Parody"],
+      "correct": "C",
+      "explanation": "An allegory uses a symbolic narrative to convey a hidden meaning, usually moral or political.",
+      "funFact": "George Orwell's 'Animal Farm' is a famous allegory where farm animals represent figures from the Russian Revolution."
+    },
+    {
+      "id": 16,
+      "question": "In 'The Boy in the Striped Pajamas', who is the 'Fury'?",
+      "options": ["A storm", "Bruno's father", "Adolf Hitler", "A wild dog"],
+      "correct": "C",
+      "explanation": "Bruno misunderstands the word 'Führer' (Hitler) as 'the Fury'.",
+      "funFact": "Author John Boyne wrote the entire first draft of this devastating novel in just two and a half days."
+    },
+    {
+      "id": 17,
+      "question": "Which of these is an example of an oxymoron?",
+      "options": ["As busy as a bee", "Jumbo shrimp", "The cruel wind", "Bang! Crash!"],
+      "correct": "B",
+      "explanation": "An oxymoron places two contradictory terms side-by-side (jumbo = big, shrimp = small).",
+      "funFact": "The word 'oxymoron' is itself an oxymoron! In ancient Greek, 'oxy' means sharp or clever, and 'moron' means dull or foolish."
+    },
+    {
+      "id": 18,
+      "question": "In 'Percy Jackson & The Olympians: The Lightning Thief', what item is stolen?",
+      "options": ["Hades' Helm of Darkness", "Poseidon's Trident", "Zeus's Master Bolt", "Athena's Shield"],
+      "correct": "C",
+      "explanation": "Percy is accused of stealing Zeus's Master Bolt, the most powerful weapon ever created.",
+      "funFact": "Camp Half-Blood, the training ground for demigods, was based on an actual summer camp where author Rick Riordan worked as a music director."
+    },
+    {
+      "id": 19,
+      "question": "In 'The Crossover' by Kwame Alexander, how is the novel written?",
+      "options": ["In emails", "In diary entries", "In free verse poetry", "As a comic book"],
+      "correct": "C",
+      "explanation": "The entire novel is written in dynamic, rhythmic free verse poetry about basketball and family.",
+      "funFact": "Kwame Alexander faced many rejections for 'The Crossover' because publishers didn't think boys would want to read poetry about sports."
+    },
+    {
+      "id": 20,
+      "question": "What literary element refers to the time and place in which a story occurs?",
+      "options": ["Theme", "Plot", "Setting", "Climax"],
+      "correct": "C",
+      "explanation": "The setting provides the geographical and historical backdrop for the narrative.",
+      "funFact": "In many Gothic novels, the setting itself (like a crumbling, dark castle) acts almost like a character that influences the plot."
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "subject": "Arts",
+  "grade": "MiddleSchool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Renaissance artist spent four years painting the ceiling of the Sistine Chapel?",
+      "options": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+      "correct": "C",
+      "explanation": "Michelangelo painted the intricate frescoes on the ceiling of the Sistine Chapel in the Vatican.",
+      "funFact": "Michelangelo had to paint much of the ceiling while standing on scaffolding and bending backwards, which caused him terrible back pain!"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following sets contains only secondary colors?",
+      "options": ["Red, Yellow, Blue", "Green, Orange, Purple", "Black, White, Gray", "Teal, Magenta, Gold"],
+      "correct": "B",
+      "explanation": "Secondary colors are created by mixing two primary colors together.",
+      "funFact": "The color orange wasn't named after the fruit until the 1500s; before that, people just called it 'yellow-red'!"
+    },
+    {
+      "id": 3,
+      "question": "In photography, what does the term 'aperture' refer to?",
+      "options": ["The speed the picture is taken", "The opening in the lens that lets light in", "The type of film used", "The flash on the camera"],
+      "correct": "B",
+      "explanation": "Aperture is the opening in the lens. A wider aperture lets in more light.",
+      "funFact": "The aperture of a camera works exactly like the pupil of your eye, widening in the dark and shrinking in bright light!"
+    },
+    {
+      "id": 4,
+      "question": "What architectural feature did the ancient Romans perfect to build massive aqueducts and bridges?",
+      "options": ["The column", "The arch", "The dome", "The pyramid"],
+      "correct": "B",
+      "explanation": "The arch distributes weight evenly, allowing Romans to build taller, stronger, and more stable structures.",
+      "funFact": "Many Roman aqueducts built using arches are still standing and functional today, over 2,000 years later!"
+    },
+    {
+      "id": 5,
+      "question": "What 20th-century art movement, featuring dream-like scenes, was Salvador Dalí famous for?",
+      "options": ["Impressionism", "Cubism", "Surrealism", "Pop Art"],
+      "correct": "C",
+      "explanation": "Surrealism aimed to unlock the power of the unconscious mind, resulting in strange, dream-like imagery.",
+      "funFact": "Dalí used to sleep with a key in his hand over a metal plate; when he fell asleep, the key would drop, wake him up, and he would paint his dreams!"
+    },
+    {
+      "id": 6,
+      "question": "In theater, what is it called when one actor gives a long speech alone on stage?",
+      "options": ["A dialogue", "A monologue", "A chorus", "A soliloquy"],
+      "correct": "B",
+      "explanation": "A monologue is an extended speech by one person, while a soliloquy is a specific type of monologue where the character is talking to themselves.",
+      "funFact": "The longest monologue in Shakespeare's plays belongs to the character Hamlet, who speaks over 1,500 lines!"
+    },
+    {
+      "id": 7,
+      "question": "What is a long piece of classical music written for a full orchestra usually called?",
+      "options": ["A sonata", "A concerto", "A symphony", "An aria"],
+      "correct": "C",
+      "explanation": "A symphony is a complex, multi-movement composition designed for an orchestra.",
+      "funFact": "Ludwig van Beethoven wrote his 9th Symphony when he was almost completely deaf!"
+    },
+    {
+      "id": 8,
+      "question": "What painting technique involves using tiny, distinct dots of color to form an image?",
+      "options": ["Pointillism", "Impasto", "Fresco", "Glazing"],
+      "correct": "A",
+      "explanation": "Pointillism relies on the viewer's eye to blend the dots into a full image from a distance.",
+      "funFact": "Georges Seurat's famous pointillist painting 'A Sunday on La Grande Jatte' contains roughly 3.4 million individual dots!"
+    },
+    {
+      "id": 9,
+      "question": "Which famous painting features melting pocket watches draped over a barren landscape?",
+      "options": ["The Starry Night", "The Scream", "The Persistence of Memory", "Guernica"],
+      "correct": "C",
+      "explanation": "'The Persistence of Memory' is a surrealist masterpiece painted by Salvador Dalí.",
+      "funFact": "Dalí claimed the inspiration for the melting clocks wasn't a complex scientific theory, but rather Camembert cheese melting in the sun!"
+    },
+    {
+      "id": 10,
+      "question": "In sheet music, what does the dynamic marking 'forte' (f) mean?",
+      "options": ["Play fast", "Play soft", "Play loud", "Play slow"],
+      "correct": "C",
+      "explanation": "'Forte' is Italian for strong or loud, indicating the music should be played loudly.",
+      "funFact": "The piano was originally called the 'pianoforte' because it was the first keyboard instrument that could play both soft (piano) and loud (forte)!"
+    },
+    {
+      "id": 11,
+      "question": "What printmaking technique involves carving an image into a sheet of linoleum?",
+      "options": ["Lithography", "Etching", "Linocut", "Screen printing"],
+      "correct": "C",
+      "explanation": "A linocut is a variant of woodcut where linoleum is carved, inked, and pressed onto paper.",
+      "funFact": "Pablo Picasso revolutionized linocuts by using a single block of linoleum, printing it, cutting it further, and printing again to create multi-colored prints!"
+    },
+    {
+      "id": 12,
+      "question": "What technique do artists use to create the illusion of 3D depth on a flat 2D surface?",
+      "options": ["Symmetry", "Perspective", "Chiaroscuro", "Contrast"],
+      "correct": "B",
+      "explanation": "Perspective uses vanishing points and converging lines to make flat images look three-dimensional.",
+      "funFact": "Before linear perspective was formalized in the Renaissance, artists just made important people larger and unimportant people smaller to show depth!"
+    },
+    {
+      "id": 13,
+      "question": "Bronze, a popular material for sculpting statues, is an alloy mostly made of which two metals?",
+      "options": ["Iron and Gold", "Copper and Tin", "Silver and Lead", "Zinc and Nickel"],
+      "correct": "B",
+      "explanation": "Bronze is typically made of about 90% copper and 10% tin.",
+      "funFact": "When bronze statues are exposed to the weather for a long time, they develop a green coating called a 'patina', like the Statue of Liberty!"
+    },
+    {
+      "id": 14,
+      "question": "What type of theater stage extends into the audience, with people sitting on three sides?",
+      "options": ["Proscenium stage", "Arena stage", "Thrust stage", "Black box theater"],
+      "correct": "C",
+      "explanation": "A thrust stage 'thrusts' into the auditorium, allowing for a more intimate experience than a traditional stage.",
+      "funFact": "William Shakespeare's famous Globe Theatre utilized a thrust stage!"
+    },
+    {
+      "id": 15,
+      "question": "What historical period, translating to 'rebirth', saw a massive revival in art, science, and literature in Europe?",
+      "options": ["The Middle Ages", "The Renaissance", "The Enlightenment", "The Industrial Revolution"],
+      "correct": "B",
+      "explanation": "The Renaissance began in Italy in the 14th century and marked a transition from the Middle Ages to modernity.",
+      "funFact": "During the Renaissance, art and science were considered so closely linked that artists were also expected to be scientists and inventors!"
+    },
+    {
+      "id": 16,
+      "question": "What is the primary role of a conductor in an orchestra?",
+      "options": ["To play the loudest instrument", "To write the music", "To keep time and direct the musicians", "To tune the instruments"],
+      "correct": "C",
+      "explanation": "The conductor uses a baton and hand gestures to unify performers, set the tempo, and shape the sound of the ensemble.",
+      "funFact": "Before the baton was invented, early conductors used to bang a heavy wooden staff on the floor to keep time!"
+    },
+    {
+      "id": 17,
+      "question": "What art movement, co-founded by Pablo Picasso, broke objects apart and reassembled them using geometric shapes?",
+      "options": ["Impressionism", "Cubism", "Fauvism", "Abstract Expressionism"],
+      "correct": "B",
+      "explanation": "Cubism shows subjects from multiple viewpoints simultaneously using fragmented, geometric shapes.",
+      "funFact": "The movement got its name when a critic mocked an early painting, saying it looked like it was made of 'little cubes'!"
+    },
+    {
+      "id": 18,
+      "question": "What is a 'fresco'?",
+      "options": ["A watercolor painting on paper", "A painting done rapidly in watercolor on wet plaster", "A type of modern graffiti", "An oil painting on canvas"],
+      "correct": "B",
+      "explanation": "In fresco painting, the pigment bonds with the wet plaster as it dries, making the painting a permanent part of the wall.",
+      "funFact": "Because the plaster dries quickly, a fresco painter can only work on a small section of a wall each day!"
+    },
+    {
+      "id": 19,
+      "question": "In music, what does singing 'a cappella' mean?",
+      "options": ["Singing in a high pitch", "Singing without instrumental accompaniment", "Singing in a choir", "Singing in Italian"],
+      "correct": "B",
+      "explanation": "A cappella is vocal music performed without any instruments playing along.",
+      "funFact": "The term 'a cappella' translates from Italian to 'in the style of the chapel', because early church music was sung without instruments!"
+    },
+    {
+      "id": 20,
+      "question": "In filmmaking, what is the role of the cinematographer?",
+      "options": ["Writing the script", "Directing the actors", "Overseeing the camera and lighting crews", "Editing the film footage"],
+      "correct": "C",
+      "explanation": "The cinematographer, or Director of Photography, is responsible for the visual look of the film, including lighting and camera angles.",
+      "funFact": "Cinematographers often use a 'clapperboard' at the start of a take not just for scene numbers, but to help synchronize the sound and picture in editing!"
+    }
+  ]
+}

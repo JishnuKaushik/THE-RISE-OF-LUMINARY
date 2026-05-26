@@ -1,0 +1,166 @@
+{
+  "subject": "Science",
+  "grade": "Middle School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the basic unit of life?",
+      "options": ["Atom", "Cell", "Molecule", "Organ"],
+      "correct": "B",
+      "explanation": "All living things are made of cells. Cells are the smallest unit that can carry out life processes.",
+      "funFact": "The human body contains about 37 trillion cells — that's more cells than stars in the Milky Way!"
+    },
+    {
+      "id": 2,
+      "question": "What organelle is known as the 'powerhouse of the cell'?",
+      "options": ["Nucleus", "Ribosome", "Mitochondria", "Vacuole"],
+      "correct": "C",
+      "explanation": "Mitochondria convert glucose and oxygen into ATP (energy) through cellular respiration.",
+      "funFact": "Mitochondria have their own DNA, suggesting they were once free-living bacteria that were absorbed by larger cells billions of years ago!"
+    },
+    {
+      "id": 3,
+      "question": "What is the process by which plants make their own food using sunlight?",
+      "options": ["Respiration", "Fermentation", "Photosynthesis", "Digestion"],
+      "correct": "C",
+      "explanation": "During photosynthesis, plants use sunlight, water, and carbon dioxide to produce glucose and oxygen.",
+      "funFact": "If all the plants on Earth stopped photosynthesis for just one year, most life on the planet would die from lack of oxygen and food!"
+    },
+    {
+      "id": 4,
+      "question": "In Newton's First Law, what does an object at rest tend to do?",
+      "options": ["Accelerate", "Remain at rest", "Move in a circle", "Slow down gradually"],
+      "correct": "B",
+      "explanation": "Newton's First Law (inertia) states that an object at rest stays at rest unless acted on by an unbalanced external force.",
+      "funFact": "Inertia is why you jerk forward when a car brakes suddenly — your body wants to keep moving even after the car stops!"
+    },
+    {
+      "id": 5,
+      "question": "What are the three states of matter?",
+      "options": ["Hot, Cold, Warm", "Solid, Liquid, Gas", "Metal, Wood, Plastic", "Fire, Water, Earth"],
+      "correct": "B",
+      "explanation": "Matter exists as solid (fixed shape), liquid (fixed volume), or gas (no fixed shape or volume).",
+      "funFact": "Plasma is actually a fourth state of matter — it makes up over 99% of the visible universe, including the Sun!"
+    },
+    {
+      "id": 6,
+      "question": "What type of rock is formed when molten lava cools and solidifies?",
+      "options": ["Sedimentary", "Metamorphic", "Igneous", "Limestone"],
+      "correct": "C",
+      "explanation": "Igneous rocks form when magma (underground) or lava (above ground) cools and hardens.",
+      "funFact": "The word 'igneous' comes from the Latin word 'ignis', meaning fire. Obsidian, a natural glass used as arrowheads, is an igneous rock!"
+    },
+    {
+      "id": 7,
+      "question": "What is the chemical formula for water?",
+      "options": ["CO2", "NaCl", "H2O", "O2"],
+      "correct": "C",
+      "explanation": "Water is made of two hydrogen atoms bonded to one oxygen atom (H2O).",
+      "funFact": "Water is the only substance on Earth that naturally exists in all three states — solid ice, liquid water, and water vapor — at everyday temperatures!"
+    },
+    {
+      "id": 8,
+      "question": "In the food chain, what are organisms called that make their own food?",
+      "options": ["Consumers", "Decomposers", "Producers", "Predators"],
+      "correct": "C",
+      "explanation": "Producers (like plants and algae) use photosynthesis to create their own food from sunlight, forming the base of every food chain.",
+      "funFact": "Ocean phytoplankton (tiny producers) generate over 50% of the Earth's oxygen supply — more than all land forests combined!"
+    },
+    {
+      "id": 9,
+      "question": "What layer of the Earth is the thickest?",
+      "options": ["Crust", "Inner Core", "Outer Core", "Mantle"],
+      "correct": "D",
+      "explanation": "The mantle is approximately 2,900 km thick and makes up about 84% of Earth's total volume.",
+      "funFact": "The mantle is solid rock, but it flows very slowly over millions of years — like extremely thick silly putty — which moves the tectonic plates above it!"
+    },
+    {
+      "id": 10,
+      "question": "What gas makes up the largest percentage of Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+      "correct": "C",
+      "explanation": "Nitrogen makes up about 78% of the atmosphere. Oxygen is second at about 21%.",
+      "funFact": "Although we breathe nitrogen constantly, our bodies cannot use it directly. Certain bacteria in soil 'fix' nitrogen into a form that plants — and ultimately we — can use!"
+    },
+    {
+      "id": 11,
+      "question": "What is the term for a push or pull that can change an object's motion?",
+      "options": ["Energy", "Force", "Mass", "Velocity"],
+      "correct": "B",
+      "explanation": "A force is any push or pull. Forces can start motion, stop motion, or change the direction of a moving object.",
+      "funFact": "The four fundamental forces of nature are gravity, electromagnetism, the strong nuclear force, and the weak nuclear force. All everyday forces are combinations of these!"
+    },
+    {
+      "id": 12,
+      "question": "Which part of a cell contains the genetic information (DNA)?",
+      "options": ["Cell membrane", "Cytoplasm", "Nucleus", "Ribosome"],
+      "correct": "C",
+      "explanation": "The nucleus acts as the cell's control center, housing the DNA that carries instructions for every function the cell performs.",
+      "funFact": "If you uncoiled and stretched out all the DNA from a single human cell, it would be about 2 meters (6.5 feet) long — yet it fits inside a nucleus smaller than a grain of sand!"
+    },
+    {
+      "id": 13,
+      "question": "What is the speed of light in a vacuum?",
+      "options": ["300 km/s", "3,000 km/s", "300,000 km/s", "30,000,000 km/s"],
+      "correct": "C",
+      "explanation": "Light travels at approximately 300,000 kilometers per second (186,000 miles per second) in a vacuum.",
+      "funFact": "Light from the Sun takes about 8 minutes and 20 seconds to reach Earth. When you look at the Sun, you're actually seeing what it looked like 8 minutes ago!"
+    },
+    {
+      "id": 14,
+      "question": "What kind of energy does a moving object have?",
+      "options": ["Potential energy", "Chemical energy", "Thermal energy", "Kinetic energy"],
+      "correct": "D",
+      "explanation": "Kinetic energy is the energy of motion. The faster an object moves and the more mass it has, the more kinetic energy it possesses.",
+      "funFact": "A professional baseball pitched at 100 mph has enough kinetic energy that if it were fully converted to heat, it could raise the temperature of a small cup of water by about 1 degree!"
+    },
+    {
+      "id": 15,
+      "question": "What is the process of water turning from liquid to vapor called?",
+      "options": ["Condensation", "Precipitation", "Evaporation", "Freezing"],
+      "correct": "C",
+      "explanation": "Evaporation occurs when water molecules at the surface gain enough energy to escape into the air as water vapor.",
+      "funFact": "Sweating cools you down because of evaporation — when sweat evaporates from your skin, it carries heat away with it!"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is NOT a renewable energy source?",
+      "options": ["Solar", "Wind", "Coal", "Hydroelectric"],
+      "correct": "C",
+      "explanation": "Coal is a fossil fuel formed over millions of years and cannot be replenished on a human timescale, making it non-renewable.",
+      "funFact": "The coal we burn today was formed from the remains of forests that existed over 300 million years ago — long before the dinosaurs!"
+    },
+    {
+      "id": 17,
+      "question": "What is the name for the movement of tectonic plates that causes earthquakes and volcanoes?",
+      "options": ["Erosion", "Plate tectonics", "Weathering", "The Water Cycle"],
+      "correct": "B",
+      "explanation": "Plate tectonics describes how Earth's outer shell is divided into several plates that glide over the mantle, causing geological events at their boundaries.",
+      "funFact": "The plates move at about the same speed your fingernails grow — only a few centimeters per year. But over millions of years, this has rearranged all the continents!"
+    },
+    {
+      "id": 18,
+      "question": "What is the role of decomposers in an ecosystem?",
+      "options": ["They eat other animals", "They make food from sunlight", "They break down dead organisms", "They pollinate flowers"],
+      "correct": "C",
+      "explanation": "Decomposers (fungi and bacteria) break down dead plants and animals into simpler substances, recycling nutrients back into the soil.",
+      "funFact": "A single teaspoon of healthy forest soil can contain more bacteria than there are people on Earth!"
+    },
+    {
+      "id": 19,
+      "question": "In a longitudinal wave, what moves parallel to the direction of wave travel?",
+      "options": ["Crests and troughs", "Compressions and rarefactions", "Wavelength and frequency", "Light and heat"],
+      "correct": "B",
+      "explanation": "In a longitudinal wave like sound, particles are compressed and spread out (rarefied) in the same direction the wave travels.",
+      "funFact": "Sound cannot travel through the vacuum of space because there are no particles to compress. Space battles in movies with sound effects are scientifically impossible!"
+    },
+    {
+      "id": 20,
+      "question": "What is the term for the transfer of heat by direct contact between objects?",
+      "options": ["Radiation", "Convection", "Conduction", "Reflection"],
+      "correct": "C",
+      "explanation": "Conduction transfers heat through direct contact. Metal is an excellent conductor because its electrons can move freely and carry energy.",
+      "funFact": "Metal feels colder than wood at the same temperature because metal conducts heat away from your hand faster, tricking your nerves into sensing cold!"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "subject": "Literature",
+  "grade": "College Prep",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In Dante's 'Inferno', who serves as the narrator's guide through Hell?",
+      "options": ["Beatrice", "Homer", "Virgil", "Ovid"],
+      "correct": "C",
+      "explanation": "The ancient Roman poet Virgil acts as Dante's guide through the nine circles of Hell.",
+      "funFact": "The 'Inferno' is just the first part of a larger epic poem called 'The Divine Comedy', which also includes 'Purgatorio' and 'Paradiso'."
+    },
+    {
+      "id": 2,
+      "question": "What narrative technique is prominently used by James Joyce in 'Ulysses' and Virginia Woolf in 'Mrs. Dalloway'?",
+      "options": ["Epistolary format", "Stream of consciousness", "Third-person objective", "Magical realism"],
+      "correct": "B",
+      "explanation": "Stream of consciousness attempts to capture the unfiltered, continuous flow of a character's thoughts and feelings.",
+      "funFact": "James Joyce's 'Ulysses' takes place entirely on a single day: June 16, 1904, a date now celebrated globally by fans as 'Bloomsday'."
+    },
+    {
+      "id": 3,
+      "question": "In Toni Morrison's 'Beloved', who or what is Beloved?",
+      "options": ["A magical artifact", "A ghost/reincarnation of Sethe's murdered child", "A plantation in Ohio", "An escaped slave who helps the family"],
+      "correct": "B",
+      "explanation": "Beloved is the physical manifestation of the traumatic past, representing the infant Sethe killed to save her from slavery.",
+      "funFact": "Morrison based the novel on the true story of Margaret Garner, an enslaved African American woman who escaped to Ohio in 1856."
+    },
+    {
+      "id": 4,
+      "question": "What is the literary term for a genre where magical elements are a natural part of an otherwise mundane, realistic environment?",
+      "options": ["High Fantasy", "Surrealism", "Magical Realism", "Gothic Fiction"],
+      "correct": "C",
+      "explanation": "Magical realism blends fantastical elements seamlessly into real-world settings, famously used by Latin American authors.",
+      "funFact": "Gabriel García Márquez said his tone for 'One Hundred Years of Solitude' was inspired by the deadpan way his grandmother used to tell fantastic stories."
+    },
+    {
+      "id": 5,
+      "question": "In Herman Melville's 'Moby-Dick', what is the name of Captain Ahab's ship?",
+      "options": ["The Hispaniola", "The Pequod", "The Nautilus", "The Beagle"],
+      "correct": "B",
+      "explanation": "The Pequod is the doomed whaling ship commanded by the obsessed Captain Ahab.",
+      "funFact": "When 'Moby-Dick' was first published in London, the epilogue was accidentally omitted, leaving readers confused as to how the narrator survived to tell the tale."
+    },
+    {
+      "id": 6,
+      "question": "Who undergoes a bizarre transformation into a giant insect in Franz Kafka's 'The Metamorphosis'?",
+      "options": ["Josef K.", "Gregor Samsa", "Ivan Ilyich", "Meursault"],
+      "correct": "B",
+      "explanation": "Gregor Samsa wakes up one morning to find himself transformed into a 'monstrous vermin'.",
+      "funFact": "Kafka strictly forbade his publisher from ever illustrating the insect on the book's cover, wanting it to remain ambiguous."
+    },
+    {
+      "id": 7,
+      "question": "Which novel features the complicated Compson family and is famously divided into four sections with different narrators?",
+      "options": ["The Sound and the Fury", "As I Lay Dying", "East of Eden", "A Hundred Years of Solitude"],
+      "correct": "A",
+      "explanation": "William Faulkner's modernist masterpiece uses multiple narrators, including the intellectually disabled Benjy, to tell the story of a falling Southern aristocratic family.",
+      "funFact": "The title is taken from a famous soliloquy in Shakespeare's 'Macbeth': 'It is a tale told by an idiot, full of sound and fury, signifying nothing.'"
+    },
+    {
+      "id": 8,
+      "question": "In Fyodor Dostoevsky's 'Crime and Punishment', what justifies Raskolnikov's decision to commit murder in his own mind?",
+      "options": ["He is starving and needs money", "He believes he is an 'extraordinary' man above moral law", "He is acting in self-defense", "He is ordered to by a secret society"],
+      "correct": "B",
+      "explanation": "Raskolnikov develops a theory that certain extraordinary individuals have the right to commit crimes if it serves a higher purpose.",
+      "funFact": "Dostoevsky wrote the novel in a frantic rush to pay off massive gambling debts."
+    },
+    {
+      "id": 9,
+      "question": "Who wrote 'The Canterbury Tales'?",
+      "options": ["William Shakespeare", "John Milton", "Geoffrey Chaucer", "Edmund Spenser"],
+      "correct": "C",
+      "explanation": "Chaucer wrote this collection of stories told by pilgrims traveling to the shrine of Saint Thomas Becket.",
+      "funFact": "Chaucer originally planned for each of the 30 pilgrims to tell four stories each (120 total), but he died having completed only 24."
+    },
+    {
+      "id": 10,
+      "question": "In Joseph Conrad's 'Heart of Darkness', what are Kurtz's famous last words?",
+      "options": ["'The horror! The horror!'", "'A horse! A horse! My kingdom for a horse!'", "'It is a far, far better thing that I do...'", "'More weight.'"],
+      "correct": "A",
+      "explanation": "Kurtz whispers 'The horror! The horror!' before dying, reflecting on the darkness of human nature he experienced in the Congo.",
+      "funFact": "The novella heavily inspired the 1979 film 'Apocalypse Now', which adapted the story from colonial Africa to the Vietnam War."
+    },
+    {
+      "id": 11,
+      "question": "What is the term for a narrator whose credibility has been seriously compromised, either intentionally or unintentionally?",
+      "options": ["Omniscient narrator", "Unreliable narrator", "Objective narrator", "Limited narrator"],
+      "correct": "B",
+      "explanation": "An unreliable narrator may be deceptive, misinformed, mentally unstable, or naive, forcing the reader to question the truth of the story.",
+      "funFact": "Agatha Christie famously used a deceitful unreliable narrator in 'The Murder of Roger Ackroyd', shocking contemporary readers."
+    },
+    {
+      "id": 12,
+      "question": "Miguel de Cervantes' 'Don Quixote' is often considered the first modern novel. What does Quixote mistake for giants?",
+      "options": ["Mountains", "Flocks of sheep", "Windmills", "Tall trees"],
+      "correct": "C",
+      "explanation": "Don Quixote attacks windmills, believing them to be ferocious giants, giving rise to the idiom 'tilting at windmills'.",
+      "funFact": "Cervantes came up with the idea for the novel while serving a sentence in a Spanish debtor's prison."
+    },
+    {
+      "id": 13,
+      "question": "Which poet is known for heavily employing 'enjambment' and unconventional capitalization, as seen in poems like 'anyone lived in a pretty how town'?",
+      "options": ["T.S. Eliot", "E.E. Cummings", "Sylvia Plath", "Langston Hughes"],
+      "correct": "B",
+      "explanation": "E.E. Cummings was famous for his radical experimentation with form, punctuation, syntax, and spelling.",
+      "funFact": "Cummings actually spent several months in a French military prison during WWI due to a bureaucratic mix-up, an experience he turned into his novel 'The Enormous Room'."
+    },
+    {
+      "id": 14,
+      "question": "What famous opening line begins Jane Austen's 'Pride and Prejudice'?",
+      "options": ["'Call me Ishmael.'", "'Happy families are all alike; every unhappy family is unhappy in its own way.'", "'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.'", "'All children, except one, grow up.'"],
+      "correct": "C",
+      "explanation": "This satirical opening perfectly sets up the novel's themes of marriage, wealth, and societal expectations.",
+      "funFact": "Jane Austen initially titled the manuscript 'First Impressions' before revising it years later."
+    },
+    {
+      "id": 15,
+      "question": "In 'The Awakening' by Kate Chopin, Edna Pontellier's suicide at the end is often interpreted by critics as an act of:",
+      "options": ["Cowardice and defeat", "Ultimate rebellion and bodily autonomy", "Religious sacrifice", "Accidental tragedy"],
+      "correct": "B",
+      "explanation": "Feminist critics often argue Edna's drowning is her final refusal to compromise her independence to fit the suffocating roles of wife and mother.",
+      "funFact": "The book was so controversial for its frank depiction of female sexual desire that it was banned from libraries in Chopin's hometown of St. Louis."
+    },
+    {
+      "id": 16,
+      "question": "What literary movement, prominent after WWI, features fragmentation, loss of absolute truth, and a break from traditional forms (e.g., T.S. Eliot's 'The Waste Land')?",
+      "options": ["Romanticism", "Transcendentalism", "Modernism", "Victorianism"],
+      "correct": "C",
+      "explanation": "Modernism arose as a response to the devastating industrialization and world wars, rejecting the certainty of Enlightenment thinking.",
+      "funFact": "T.S. Eliot's 'The Waste Land' was heavily edited by his friend and fellow poet Ezra Pound, who cut the poem's length nearly in half."
+    },
+    {
+      "id": 17,
+      "question": "Which novel by Ralph Ellison utilizes jazz and blues motifs to structure its narrative about the African American experience?",
+      "options": ["Native Son", "Invisible Man", "Song of Solomon", "Go Tell It on the Mountain"],
+      "correct": "B",
+      "explanation": "'Invisible Man' is heavily influenced by musical improvisation and the rhythm of jazz, reflecting the protagonist's chaotic journey.",
+      "funFact": "Ellison was an accomplished trumpet player who studied classical music at the Tuskegee Institute before becoming a writer."
+    },
+    {
+      "id": 18,
+      "question": "What does the 'A' worn by Hester Prynne stand for in Nathaniel Hawthorne's 'The Scarlet Letter'?",
+      "options": ["Atheist", "Adulteress", "Alienated", "Arrogant"],
+      "correct": "B",
+      "explanation": "Hester is forced to wear the letter 'A' as punishment for her affair and illegitimate child in Puritan Boston.",
+      "funFact": "Nathaniel Hawthorne added the 'W' to his last name (originally Hathorne) to distance himself from his great-great-grandfather, who was a harsh judge during the Salem witch trials."
+    },
+    {
+      "id": 19,
+      "question": "In Leo Tolstoy's 'Anna Karenina', what mode of transportation is heavily symbolic and fatally linked to the protagonist?",
+      "options": ["A horse carriage", "A steamship", "A train", "A hot air balloon"],
+      "correct": "C",
+      "explanation": "Trains symbolize the destructive force of modernization in the novel, and Anna ultimately throws herself under one.",
+      "funFact": "Tolstoy initially intended for Anna to be a highly unsympathetic character, but as he wrote, he grew to pity and understand her."
+    },
+    {
+      "id": 20,
+      "question": "In Samuel Beckett's play 'Waiting for Godot', who is Godot?",
+      "options": ["A wealthy landowner", "An absolute ruler", "He never appears and his identity is never explained", "A religious figure"],
+      "correct": "C",
+      "explanation": "Godot never arrives. The play is a cornerstone of the 'Theatre of the Absurd', emphasizing the meaninglessness of human existence.",
+      "funFact": "When asked who or what Godot actually was, Beckett famously replied, 'If I knew, I would have said so in the play.'"
+    }
+  ]
+}

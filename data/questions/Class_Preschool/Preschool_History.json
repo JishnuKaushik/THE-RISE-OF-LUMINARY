@@ -1,0 +1,166 @@
+{
+  "subject": "History",
+  "grade": "Preschool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What giant animals lived on Earth a long, long time ago before people?",
+      "options": ["Dogs", "Dinosaurs", "Elephants", "Bears"],
+      "correct": "B",
+      "explanation": "Dinosaurs were giant reptiles that lived millions of years ago.",
+      "funFact": "The word 'dinosaur' actually means 'terrible lizard'!"
+    },
+    {
+      "id": 2,
+      "question": "In ancient Egypt, people built giant triangle-shaped buildings. What are they called?",
+      "options": ["Castles", "Tents", "Pyramids", "Houses"],
+      "correct": "C",
+      "explanation": "The ancient Egyptians built massive pyramids as tombs for their kings.",
+      "funFact": "The Great Pyramid is so big it was built with over 2 million stone blocks!"
+    },
+    {
+      "id": 3,
+      "question": "A long time ago in Europe, kings and queens lived in big, strong buildings called what?",
+      "options": ["Castles", "Caves", "Apartments", "Treehouses"],
+      "correct": "A",
+      "explanation": "Castles were built with tall stone walls to keep the people inside safe.",
+      "funFact": "Some castles had a 'moat' – a big ditch filled with water all around it!"
+    },
+    {
+      "id": 4,
+      "question": "Before cars were invented, what animal did people ride to travel fast?",
+      "options": ["Turtles", "Cows", "Horses", "Pigs"],
+      "correct": "C",
+      "explanation": "People rode horses or had horses pull wagons to travel from place to place.",
+      "funFact": "Horses can sleep both lying down and standing up!"
+    },
+    {
+      "id": 5,
+      "question": "Who was the first person to walk on the moon?",
+      "options": ["George Washington", "Neil Armstrong", "Albert Einstein", "Santa Claus"],
+      "correct": "B",
+      "explanation": "Neil Armstrong traveled in a spaceship and walked on the moon in 1969.",
+      "funFact": "His footprints are still on the moon today because there is no wind to blow them away!"
+    },
+    {
+      "id": 6,
+      "question": "What is the really, really long wall in Asia that you can see from far away?",
+      "options": ["The Great Wall of China", "The Big Fence", "The Tall Brick Wall", "The Asian Wall"],
+      "correct": "A",
+      "explanation": "The Great Wall of China was built a long time ago to protect the country.",
+      "funFact": "The Great Wall is actually made of many different walls joined together, and it's over 13,000 miles long!"
+    },
+    {
+      "id": 7,
+      "question": "Before people had electric lights, what did they use to see in the dark?",
+      "options": ["Flashlights", "Candles", "Glow sticks", "Cell phones"],
+      "correct": "B",
+      "explanation": "People used candles made of wax and string to light up their homes at night.",
+      "funFact": "Some people used to tell time using 'candle clocks' that burned down to certain marks!"
+    },
+    {
+      "id": 8,
+      "question": "A long time ago, brave sailors called Vikings traveled the ocean in what?",
+      "options": ["Airplanes", "Submarines", "Longships", "Trains"],
+      "correct": "C",
+      "explanation": "Vikings built special wooden boats called longships that were very fast.",
+      "funFact": "Viking longships often had the head of a scary dragon carved on the front!"
+    },
+    {
+      "id": 9,
+      "question": "Where did some of the very first people draw pictures of animals?",
+      "options": ["On iPads", "On paper", "On cave walls", "On chalkboards"],
+      "correct": "C",
+      "explanation": "Early humans painted amazing pictures of animals on the walls of deep caves.",
+      "funFact": "Some of these cave paintings are over 40,000 years old!"
+    },
+    {
+      "id": 10,
+      "question": "In ancient Rome, people gathered in a huge circle building to watch games. What is it called?",
+      "options": ["The Colosseum", "The Superdome", "The Circus", "The Museum"],
+      "correct": "A",
+      "explanation": "The Colosseum was a massive amphitheater where Romans watched big events.",
+      "funFact": "They sometimes filled the bottom of the Colosseum with water to have pretend boat battles!"
+    },
+    {
+      "id": 11,
+      "question": "What important round invention helps cars, bikes, and wagons roll?",
+      "options": ["The Square", "The Wheel", "The Box", "The Triangle"],
+      "correct": "B",
+      "explanation": "The wheel is one of the most important inventions in history for moving things.",
+      "funFact": "The oldest known wheel was actually used for making pottery, not for transportation!"
+    },
+    {
+      "id": 12,
+      "question": "In ancient Japan, brave warriors wore cool armor and carried swords. Who were they?",
+      "options": ["Cowboys", "Pirates", "Samurai", "Ninjas"],
+      "correct": "C",
+      "explanation": "Samurai were highly respected warriors in Japan who followed a strict code of honor.",
+      "funFact": "Samurai armor was made of tiny metal plates tied together with colorful silk cords!"
+    },
+    {
+      "id": 13,
+      "question": "A long time ago, people invented the first way to fly in the sky using what?",
+      "options": ["Hot air balloons", "Rockets", "Helicopters", "Jetpacks"],
+      "correct": "A",
+      "explanation": "Before airplanes, people used giant balloons filled with hot air to float up into the sky.",
+      "funFact": "The very first passengers in a hot air balloon were a sheep, a duck, and a rooster!"
+    },
+    {
+      "id": 14,
+      "question": "In ancient Greece, people started a big sports competition that we still do today. What is it?",
+      "options": ["The World Cup", "The Super Bowl", "The Olympics", "The World Series"],
+      "correct": "C",
+      "explanation": "The Olympic Games started in Greece with running, jumping, and throwing contests.",
+      "funFact": "Winners in the ancient Olympics didn't get gold medals; they got crowns made of olive leaves!"
+    },
+    {
+      "id": 15,
+      "question": "A beautiful white marble building in India was built by an emperor for his wife. What is it?",
+      "options": ["The Eiffel Tower", "The Taj Mahal", "Big Ben", "The White House"],
+      "correct": "B",
+      "explanation": "The Taj Mahal is a famous and beautiful monument in India.",
+      "funFact": "The white marble of the Taj Mahal changes color depending on the sun, looking pink in the morning and golden at night!"
+    },
+    {
+      "id": 16,
+      "question": "Old-fashioned trains puff a lot of smoke because they were powered by what?",
+      "options": ["Electricity", "Steam", "Wind", "Solar power"],
+      "correct": "B",
+      "explanation": "Early trains used coal to boil water and make steam, which pushed the train forward.",
+      "funFact": "These old trains were often called 'Iron Horses'!"
+    },
+    {
+      "id": 17,
+      "question": "Instead of writing with pens and pencils, ancient Egyptians wrote with pictures called what?",
+      "options": ["Emojis", "Hieroglyphs", "Letters", "Numbers"],
+      "correct": "B",
+      "explanation": "Hieroglyphs were small pictures of birds, eyes, and lines that meant words and sounds.",
+      "funFact": "They wrote on a special kind of paper made from reeds called papyrus!"
+    },
+    {
+      "id": 18,
+      "question": "Who were the people that sailed ships with black flags and looked for buried treasure?",
+      "options": ["Astronauts", "Farmers", "Pirates", "Bakers"],
+      "correct": "C",
+      "explanation": "Pirates sailed the seas a long time ago, looking for gold and treasure.",
+      "funFact": "Many pirates wore an eye patch not because they lost an eye, but to keep one eye ready to see in the dark under the ship's deck!"
+    },
+    {
+      "id": 19,
+      "question": "Long ago, Native American tribes living on the plains lived in cone-shaped tents called what?",
+      "options": ["Igloos", "Cabins", "Teepees", "Huts"],
+      "correct": "C",
+      "explanation": "Teepees were warm and could be easily packed up when the tribe needed to move.",
+      "funFact": "The smoke from their fires would escape through a hole at the very top of the teepee!"
+    },
+    {
+      "id": 20,
+      "question": "Before we had refrigerators, how did people keep their food cold?",
+      "options": ["With magic", "Using big blocks of ice", "Putting it in the sun", "Using a fan"],
+      "correct": "B",
+      "explanation": "People had 'iceboxes' and the 'iceman' would bring huge blocks of frozen ice to their houses.",
+      "funFact": "The ice was cut from frozen lakes and rivers during the winter and saved for the summer!"
+    }
+  ]
+}

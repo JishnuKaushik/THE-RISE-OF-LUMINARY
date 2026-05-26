@@ -1,0 +1,166 @@
+{
+  "subject": "Arts",
+  "grade": "CollegePrep",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In art history, what is the primary focus of 'iconography'?",
+      "options": ["The chemical composition of paint pigments", "The study of the visual images, symbols, and themes used in a work of art", "The authentication of unsigned artworks", "The economic valuation of art in the modern market"],
+      "correct": "B",
+      "explanation": "Iconography involves identifying, describing, and interpreting the subjects and symbols present in visual arts.",
+      "funFact": "Erwin Panofsky, a famous art historian, developed a three-step method for iconographic analysis that is still standard in university art programs today!"
+    },
+    {
+      "id": 2,
+      "question": "What does the German term 'Gesamtkunstwerk', coined by composer Richard Wagner, translate to?",
+      "options": ["Absolute music", "Total work of art", "Dramatic realism", "Vocal perfection"],
+      "correct": "B",
+      "explanation": "A 'Gesamtkunstwerk' attempts to synthesize all the poetic, visual, musical, and dramatic arts into one comprehensive masterpiece.",
+      "funFact": "To achieve his Gesamtkunstwerk, Wagner even designed his own custom theater in Bayreuth just to stage his massive operas exactly as he wanted!"
+    },
+    {
+      "id": 3,
+      "question": "What radical compositional technique was pioneered by Arnold Schoenberg to break away from traditional tonal harmony?",
+      "options": ["Minimalism", "Musique concrète", "The twelve-tone technique (Serialism)", "Polytonality"],
+      "correct": "C",
+      "explanation": "The twelve-tone technique ensures all 12 notes of the chromatic scale are sounded as often as one another, preventing the emphasis of any one note as a tonal center.",
+      "funFact": "Schoenberg was terrified of the number 13 (triskaidekaphobia) and purposely respelled titles of his works so they wouldn't have 13 letters!"
+    },
+    {
+      "id": 4,
+      "question": "Which architectural style, prominent from the 1950s to the 1970s, is characterized by massive, blocky forms and raw, exposed concrete?",
+      "options": ["Deconstructivism", "Art Deco", "Brutalism", "Postmodernism"],
+      "correct": "C",
+      "explanation": "Brutalism derives its name from the French 'béton brut', which literally means 'raw concrete'.",
+      "funFact": "Brutalism was originally seen as a utopian, socialist architectural style meant to provide honest, unpretentious housing for the masses!"
+    },
+    {
+      "id": 5,
+      "question": "In film studies, what is the central premise of the 'auteur theory'?",
+      "options": ["The script is the most important element of a film", "The director is considered the primary creative author of a film", "Films are essentially collaborative and belong to no single creator", "The editor dictates the final meaning of the film"],
+      "correct": "B",
+      "explanation": "Auteur theory argues that a film reflects the director's personal creative vision, as if they were the primary 'author'.",
+      "funFact": "The theory was championed by French critics in the journal Cahiers du Cinéma, many of whom went on to become famous directors themselves, like François Truffaut!"
+    },
+    {
+      "id": 6,
+      "question": "What is 'sfumato', the Renaissance painting technique famously utilized by Leonardo da Vinci in the Mona Lisa?",
+      "options": ["Painting on wet plaster", "Using harsh outlines to separate figures", "A technique of blending colors without imperceptible transitions to create a smoky effect", "The heavy application of gold leaf"],
+      "correct": "C",
+      "explanation": "Sfumato comes from the Italian word for 'smoke' and involves applying dozens of incredibly thin layers of translucent glaze to soften edges.",
+      "funFact": "X-ray analysis of the Mona Lisa reveals that da Vinci's sfumato glaze layers are sometimes only 1 or 2 micrometers thick—thinner than a red blood cell!"
+    },
+    {
+      "id": 7,
+      "question": "In music theory, what is 'syncopation'?",
+      "options": ["Playing perfectly on the beat", "Placing rhythmic emphasis on typically weak or unaccented beats", "A gradual slowing of the tempo", "Playing two contradictory time signatures at once"],
+      "correct": "B",
+      "explanation": "Syncopation disrupts the expected rhythm, giving music a 'swinging' or unexpected, off-kilter feel. It is fundamental to jazz.",
+      "funFact": "Syncopation is so deeply ingrained in jazz that playing 'straight' on the beat can actually sound incorrect in that genre!"
+    },
+    {
+      "id": 8,
+      "question": "What is the artistic term 'trompe l'œil' used to describe?",
+      "options": ["A highly stylized, abstract representation", "A visual illusion used to trick the eye into perceiving a painted detail as a three-dimensional object", "The use of complementary colors to create optical vibration", "Painting exclusively with a palette knife"],
+      "correct": "B",
+      "explanation": "Trompe l'œil translates to 'deceives the eye' and requires extreme mastery of perspective, shading, and lighting.",
+      "funFact": "An ancient Greek story tells of a painter named Zeuxis who painted grapes so realistically that actual birds flew down and tried to eat them!"
+    },
+    {
+      "id": 9,
+      "question": "Which Post-Impressionist artist famously stated his desire to 'treat nature by the cylinder, the sphere, the cone', heavily influencing the development of Cubism?",
+      "options": ["Vincent van Gogh", "Paul Gauguin", "Paul Cézanne", "Georges Seurat"],
+      "correct": "C",
+      "explanation": "Cézanne sought to break down objects into their fundamental geometric forms rather than capturing fleeting optical impressions.",
+      "funFact": "Both Pablo Picasso and Henri Matisse are said to have referred to Cézanne as 'the father of us all'!"
+    },
+    {
+      "id": 10,
+      "question": "In film theory, what constitutes 'diegetic sound'?",
+      "options": ["The orchestral score added in post-production", "Voiceover narration by a non-character", "Sound whose source is visible on screen or implied to be present in the film's narrative world", "Sound effects created specifically by a Foley artist"],
+      "correct": "C",
+      "explanation": "Diegetic sound is any sound that the characters within the film's world can hear, like a radio playing in the scene or a character speaking.",
+      "funFact": "When a film's background score suddenly transitions into a character turning on a radio, it is crossing the boundary from non-diegetic to diegetic sound!"
+    },
+    {
+      "id": 11,
+      "question": "What defines a 'fugue' in classical music composition?",
+      "options": ["A completely improvised solo piano piece", "A contrapuntal composition built on a short musical theme that is introduced by parts in succession", "A vocal piece sung strictly in unison", "A symphony consisting of exactly four movements"],
+      "correct": "B",
+      "explanation": "A fugue relies on strict counterpoint, where a primary theme (the subject) is imitated and developed by multiple overlapping voices.",
+      "funFact": "J.S. Bach is considered the ultimate master of the fugue, once famously improvising a complex six-part fugue on the spot for King Frederick the Great!"
+    },
+    {
+      "id": 12,
+      "question": "Which avant-garde art movement emerged as a direct reaction against the horrors of World War I, embracing absurdity, anti-bourgeois sentiment, and the concept of 'ready-mades'?",
+      "options": ["Constructivism", "Futurism", "Dadaism", "Expressionism"],
+      "correct": "C",
+      "explanation": "Dadaism rejected logic, reason, and traditional aesthetics, utilizing nonsense, irrationality, and intuition as a form of protest.",
+      "funFact": "The most famous Dada artwork is Marcel Duchamp's 'Fountain', which was literally just a standard porcelain urinal signed with a fake name!"
+    },
+    {
+      "id": 13,
+      "question": "What does the 'Kuleshov effect' in film editing demonstrate?",
+      "options": ["That audiences prefer continuous, uncut shots", "That meaning is derived not from a single shot in isolation, but from the sequential juxtaposition of shots", "That color film is inherently more emotionally resonant than black and white", "That fast cuts induce anxiety in viewers"],
+      "correct": "B",
+      "explanation": "Lev Kuleshov intercut a neutral shot of an actor's face with a bowl of soup, a child in a coffin, and a woman on a sofa. Audiences perceived the actor as expressing hunger, grief, or lust, respectively, despite it being the exact same footage.",
+      "funFact": "Alfred Hitchcock often cited the Kuleshov effect as the absolute purest definition of cinematic art!"
+    },
+    {
+      "id": 14,
+      "question": "In philosophical aesthetics, particularly regarding Romanticism, what does the concept of the 'Sublime' refer to?",
+      "options": ["Perfect mathematical symmetry", "A greatness or scale beyond all possibility of measurement, often invoking a mixture of awe and terror", "The depiction of idyllic, peaceful pastoral scenes", "Art that serves a strictly moralistic purpose"],
+      "correct": "B",
+      "explanation": "The Sublime deals with the overwhelming power and vastness of nature, making the viewer feel small and insignificant but simultaneously elevated.",
+      "funFact": "Caspar David Friedrich's painting 'Wanderer above the Sea of Fog' is widely considered the ultimate visual representation of the Sublime!"
+    },
+    {
+      "id": 15,
+      "question": "What is the defining characteristic of 'aleatoric' or chance music, heavily championed by composer John Cage?",
+      "options": ["It is played entirely on newly invented instruments", "Some primary element of the composition is left to chance or to the performer's spontaneous discretion", "It only utilizes electronic synthesizers", "It relies entirely on mathematical algorithms"],
+      "correct": "B",
+      "explanation": "Aleatoric music surrenders total control by the composer, introducing randomness through methods like rolling dice or drawing cards to determine notes or structure.",
+      "funFact": "John Cage's most famous piece, '4'33\"', consists of a performer sitting at an instrument in complete silence for four minutes and thirty-three seconds; the 'music' is the ambient noise of the audience and environment!"
+    },
+    {
+      "id": 16,
+      "question": "What printmaking technique involves using a strong acid (like nitric acid) to 'bite' unprotected lines into a metal plate?",
+      "options": ["Woodcut", "Lithography", "Etching", "Mezzotint"],
+      "correct": "C",
+      "explanation": "In etching, a metal plate is covered in a waxy, acid-resistant ground. The artist scratches through the ground with a needle, exposing the metal, which the acid then eats away to hold ink.",
+      "funFact": "Rembrandt is considered one of the greatest etchers in history, often carrying small copper plates in his pocket to sketch scenes as he walked around town!"
+    },
+    {
+      "id": 17,
+      "question": "In the theatrical theories of Bertolt Brecht, what is the purpose of the 'Verfremdungseffekt' (alienation or distancing effect)?",
+      "options": ["To make the audience cry", "To create a seamless, hyper-realistic illusion of reality", "To prevent the audience from emotionally identifying with the characters, forcing them to engage critically and intellectually", "To terrify the audience"],
+      "correct": "C",
+      "explanation": "Brecht wanted audiences to remain detached observers rather than getting lost in the emotion of the narrative, so they would think about the social and political themes of the play.",
+      "funFact": "To achieve this effect, Brecht would use harsh lighting, keep stage machinery visible, and have actors directly address the audience to remind them they were watching a play!"
+    },
+    {
+      "id": 18,
+      "question": "Which structural element is the primary defining characteristic of the Romanesque architectural style?",
+      "options": ["The pointed arch", "The flying buttress", "The semi-circular (round) arch", "The steel I-beam"],
+      "correct": "C",
+      "explanation": "Romanesque architecture (approx. 1000-1150 AD) utilized massive, thick walls, small windows, and heavy semi-circular arches, resembling the architecture of ancient Rome.",
+      "funFact": "Because their roofs were so heavy and they didn't have flying buttresses yet, Romanesque churches had to have incredibly thick walls, sometimes up to 20 feet wide!"
+    },
+    {
+      "id": 19,
+      "question": "What is a 'leitmotif' in music?",
+      "options": ["A constantly changing time signature", "A short, recurring musical phrase associated with a particular person, place, or idea", "The highest note a soprano can sing", "A piece of music played exclusively at the end of an opera"],
+      "correct": "B",
+      "explanation": "Leitmotifs are used to narratively link music to specific elements of the story, allowing the composer to subtextually comment on the action.",
+      "funFact": "While Wagner popularized leitmotifs in opera, John Williams is the modern master of them in film—think of the 'Imperial March' for Darth Vader or the 'Jaws' theme!"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following best describes the artistic philosophy of 'Minimalism' that emerged in the 1960s?",
+      "options": ["Art should express raw, chaotic human emotion", "Art should strip away all personal expression, metaphor, and historical reference to focus purely on material and geometric form", "Art should faithfully reproduce the optical effects of light in nature", "Art should incorporate mass-produced commercial imagery"],
+      "correct": "B",
+      "explanation": "Minimalism sought to remove the 'hand of the artist' completely, presenting art objects as just physical objects occupying space, summarized by Frank Stella's quote: 'What you see is what you see.'",
+      "funFact": "Many minimalist sculptors didn't even make their own art; they would draft blueprints and hire industrial factories to fabricate the pieces out of steel or plexiglass!"
+    }
+  ]
+}

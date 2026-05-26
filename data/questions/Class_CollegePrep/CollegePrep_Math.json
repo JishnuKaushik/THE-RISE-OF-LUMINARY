@@ -1,0 +1,166 @@
+{
+  "subject": "Mathematics",
+  "grade": "College Prep",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In calculus, what is the derivative of the sine function, d/dx[sin(x)]?",
+      "options": ["-sin(x)", "sin(x)", "cos(x)", "-cos(x)"],
+      "correct": "C",
+      "explanation": "The rate of change of the sine function is exactly described by the cosine function.",
+      "funFact": "Calculus was invented simultaneously but independently by Isaac Newton and Gottfried Leibniz in the 17th century!"
+    },
+    {
+      "id": 2,
+      "question": "What is the indefinite integral of 2x with respect to x?",
+      "options": ["x\u00b2", "x\u00b2 + C", "2", "1/2 x\u00b2 + C"],
+      "correct": "B",
+      "explanation": "Using the power rule for integration, the integral is x\u00b2, and we must add 'C' to represent the constant of integration.",
+      "funFact": "The long 'S' symbol used for integrals '\u222b' was chosen by Leibniz because it stands for 'summa', the Latin word for sum!"
+    },
+    {
+      "id": 3,
+      "question": "What is the limit of (sin x) / x as x approaches 0?",
+      "options": ["0", "1", "\u221e", "Undefined"],
+      "correct": "B",
+      "explanation": "As the angle x gets infinitely small, the ratio of the sine of the angle to the angle itself approaches exactly 1.",
+      "funFact": "Limits are the foundational concept that allows calculus to safely 'divide by zero' without actually breaking the rules of math!"
+    },
+    {
+      "id": 4,
+      "question": "How do you calculate the determinant of a 2x2 matrix with top row [a, b] and bottom row [c, d]?",
+      "options": ["ab - cd", "a+d - b+c", "ad - bc", "ac - bd"],
+      "correct": "C",
+      "explanation": "The determinant of a 2x2 matrix is the product of the main diagonal minus the product of the other diagonal (ad - bc).",
+      "funFact": "Determinants were originally used to determine if a system of linear equations actually had a unique solution!"
+    },
+    {
+      "id": 5,
+      "question": "Which rule is used to find the derivative of the product of two functions, u(x) * v(x)?",
+      "options": ["Quotient Rule", "Chain Rule", "Power Rule", "Product Rule"],
+      "correct": "D",
+      "explanation": "The Product Rule states that (uv)' = u'v + uv', combining the derivatives and original functions.",
+      "funFact": "Leibniz originally messed up the product rule in a manuscript, thinking it was just u' * v', before realizing his mistake weeks later!"
+    },
+    {
+      "id": 6,
+      "question": "Which rule is used to differentiate composite functions like f(g(x))?",
+      "options": ["Chain Rule", "Product Rule", "L'Hopital's Rule", "Quotient Rule"],
+      "correct": "A",
+      "explanation": "The Chain Rule states that the derivative of f(g(x)) is f'(g(x)) multiplied by g'(x).",
+      "funFact": "The Chain Rule is heavily used today in training Artificial Intelligence neural networks through a process called 'backpropagation'!"
+    },
+    {
+      "id": 7,
+      "question": "When can L'Hopital's Rule be applied to evaluate a limit?",
+      "options": ["Only for continuous functions", "When the limit results in an indeterminate form like 0/0 or \u221e/\u221e", "When the function has asymptotes", "To find the area under a curve"],
+      "correct": "B",
+      "explanation": "If evaluating a limit directly gives 0/0 or \u221e/\u221e, L'Hopital's Rule allows you to take the derivative of the numerator and denominator.",
+      "funFact": "The Marquis de L'Hopital actually bought the rights to this mathematical rule from a poorer mathematician named Johann Bernoulli!"
+    },
+    {
+      "id": 8,
+      "question": "What does the Fundamental Theorem of Calculus connect?",
+      "options": ["Algebra and Geometry", "Differentiation and Integration", "Limits and Continuity", "Matrices and Vectors"],
+      "correct": "B",
+      "explanation": "It formally establishes that differentiation (finding slopes) and integration (finding areas) are reverse operations.",
+      "funFact": "Before this theorem, calculating the area under curves required insanely complex geometric approximations that took days to solve!"
+    },
+    {
+      "id": 9,
+      "question": "What is the approximate value of Euler's number 'e' to two decimal places?",
+      "options": ["1.61", "2.72", "3.14", "4.67"],
+      "correct": "B",
+      "explanation": "Euler's number 'e' is an irrational mathematical constant approximately equal to 2.71828...",
+      "funFact": "The number 'e' is the base rate of growth shared by all continually growing processes, from compounding interest to multiplying bacteria!"
+    },
+    {
+      "id": 10,
+      "question": "In a normal distribution, approximately what percentage of data falls within one standard deviation of the mean?",
+      "options": ["50%", "68%", "95%", "99%"],
+      "correct": "B",
+      "explanation": "According to the Empirical Rule (68-95-99.7 rule), about 68% of the data falls within one standard deviation.",
+      "funFact": "The normal distribution is often called a 'bell curve' because its graph looks exactly like the shape of a bell!"
+    },
+    {
+      "id": 11,
+      "question": "What is the dot product of two non-zero vectors that are perfectly orthogonal (perpendicular)?",
+      "options": ["-1", "0", "1", "It depends on their magnitude"],
+      "correct": "B",
+      "explanation": "If vectors are orthogonal, the angle between them is 90 degrees, and since cos(90) = 0, their dot product is 0.",
+      "funFact": "The dot product is used in 3D video games to calculate how much light should hit a specific surface polygon!"
+    },
+    {
+      "id": 12,
+      "question": "What type of object is produced when you take the cross product of two 3D vectors?",
+      "options": ["A scalar", "A plane", "A matrix", "A new vector orthogonal to both"],
+      "correct": "D",
+      "explanation": "The cross product of two vectors produces a third vector that is perpendicular to the plane containing the original two.",
+      "funFact": "The 'Right Hand Rule' lets you use your actual physical hand to determine the exact direction of the new cross product vector!"
+    },
+    {
+      "id": 13,
+      "question": "What is unique about the derivative of the natural exponential function, d/dx[e^x]?",
+      "options": ["It is x * e^(x-1)", "It is 0", "It is e^x", "It is 1 / e^x"],
+      "correct": "C",
+      "explanation": "The function e^x is its own derivative, meaning its rate of growth is always exactly equal to its current value.",
+      "funFact": "Because e^x is its own derivative, it is also its own integral (plus a constant), making it the most resilient function in calculus!"
+    },
+    {
+      "id": 14,
+      "question": "For the infinite geometric series sum formula S = a / (1 - r) to work, what must be true about the common ratio 'r'?",
+      "options": ["r must be positive", "r must be greater than 1", "The absolute value of r must be less than 1", "r must be an integer"],
+      "correct": "C",
+      "explanation": "The series only converges to a finite sum if the multiplier 'r' is between -1 and 1 (-1 < r < 1).",
+      "funFact": "Zeno's paradox suggested you could never reach a destination because you have to go half the distance, then half the remaining distance ad infinitum. Infinite series prove he was wrong!"
+    },
+    {
+      "id": 15,
+      "question": "What is the complex conjugate of the complex number a + bi?",
+      "options": ["a - bi", "-a + bi", "-a - bi", "a/bi"],
+      "correct": "A",
+      "explanation": "The conjugate is formed by changing the sign between the real and imaginary parts, resulting in a - bi.",
+      "funFact": "Multiplying a complex number by its conjugate always produces a purely real number (a\u00b2 + b\u00b2)!"
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between a Taylor series and a Maclaurin series?",
+      "options": ["Taylor uses derivatives, Maclaurin uses integrals", "Maclaurin series are specifically centered at x = 0", "Taylor series are finite, Maclaurin are infinite", "They are exactly the same thing"],
+      "correct": "B",
+      "explanation": "A Maclaurin series is just a specific, special case of a Taylor series where the expansion is centered around zero.",
+      "funFact": "Colin Maclaurin was a child prodigy who became a professor of mathematics at age 19, a record that stood for over 250 years!"
+    },
+    {
+      "id": 17,
+      "question": "What mathematical operation does the Integration by Parts formula undo?",
+      "options": ["Chain Rule", "Quotient Rule", "Product Rule", "Power Rule"],
+      "correct": "C",
+      "explanation": "Integration by parts (\u222bu dv = uv - \u222bv du) is derived directly from reversing the product rule of differentiation.",
+      "funFact": "The acronym LIATE (Logarithmic, Inverse trig, Algebraic, Trig, Exponential) helps students decide which term to pick for 'u' in this formula!"
+    },
+    {
+      "id": 18,
+      "question": "If a matrix has an inverse, what must be true about its determinant?",
+      "options": ["It must be 1", "It must be positive", "It cannot be 0", "It must be an integer"],
+      "correct": "C",
+      "explanation": "A matrix is only invertible (non-singular) if its determinant is not exactly equal to zero.",
+      "funFact": "If a matrix determinant is zero, it means the transformation it represents completely flattens 3D space down into a 2D plane or a line!"
+    },
+    {
+      "id": 19,
+      "question": "What is the equation for the unit circle in the Cartesian coordinate system?",
+      "options": ["x + y = 1", "x\u00b2 + y\u00b2 = 1", "y = x\u00b2", "x\u00b2 - y\u00b2 = 1"],
+      "correct": "B",
+      "explanation": "The unit circle has a radius of 1 and is centered at the origin, so its equation is x\u00b2 + y\u00b2 = 1\u00b2.",
+      "funFact": "The entire field of trigonometry can be derived just by studying points traveling around the edge of this single unit circle!"
+    },
+    {
+      "id": 20,
+      "question": "In linear algebra, what is an eigenvector?",
+      "options": ["A vector with a magnitude of 1", "A vector that only changes by a scalar factor when a linear transformation is applied", "A vector containing only zeros", "A vector that points to the origin"],
+      "correct": "B",
+      "explanation": "When a matrix transformation is applied, an eigenvector's direction doesn't change, it just scales by a value called the eigenvalue.",
+      "funFact": "Google's original PageRank algorithm for sorting search results was fundamentally just one massive eigenvector calculation!"
+    }
+  ]
+}

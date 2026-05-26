@@ -1,0 +1,166 @@
+{
+  "subject": "History",
+  "grade": "College Prep",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The historical methodology known as the 'Annales School', pioneered by Marc Bloch and Fernand Braudel, is characterized by its emphasis on what?",
+      "options": ["Great Man theory and diplomatic history", "Long-term social and economic history (the 'longue durée')", "Strict Marxist dialectical materialism", "Postmodern deconstruction of primary sources"],
+      "correct": "B",
+      "explanation": "The Annales School shifted the focus of historical research away from political and diplomatic events toward long-term social, economic, and geographic structures.",
+      "funFact": "Fernand Braudel wrote his massive, groundbreaking masterwork on the Mediterranean world while being held as a prisoner of war by the Nazis for five years, working entirely from memory!"
+    },
+    {
+      "id": 2,
+      "question": "During the Song Dynasty (960–1279), the introduction of 'Champa rice' from Vietnam led directly to which major development in China?",
+      "options": ["A shift away from Confucianism", "The invention of gunpowder", "A massive demographic explosion and urbanization", "The collapse of the Silk Road"],
+      "correct": "C",
+      "explanation": "Champa rice was drought-resistant and allowed for two harvests per year, leading to a massive food surplus that fueled a population boom and proto-industrialization.",
+      "funFact": "By the 12th century, the city of Hangzhou had a population of over a million people, making it the largest city in the world at the time, complete with multi-story restaurants and organized fire departments!"
+    },
+    {
+      "id": 3,
+      "question": "The 1814-1815 Congress of Vienna, largely guided by Austrian minister Klemens von Metternich, sought to achieve what primary objective?",
+      "options": ["To rapidly industrialize Central Europe", "To dismantle the remaining overseas empires", "To restore the balance of power and conservative order after the Napoleonic Wars", "To unify the German states into a single nation"],
+      "correct": "C",
+      "explanation": "The Congress aimed to prevent future French aggression and crush liberal, democratic, and nationalist movements by restoring traditional monarchs.",
+      "funFact": "The Congress was essentially an endless series of lavish parties, balls, and banquets; it was famously said that 'the Congress does not move forward, it dances.'"
+    },
+    {
+      "id": 4,
+      "question": "Otto von Bismarck's approach to statecraft, prioritizing practical and pragmatic considerations over ideological or moral ones, is best described by what term?",
+      "options": ["Weltpolitik", "Lebensraum", "Realpolitik", "Laissez-faire"],
+      "correct": "C",
+      "explanation": "Bismarck used 'Realpolitik'—a ruthless, pragmatic diplomacy—to manipulate alliances and provoke wars (like the Franco-Prussian War) to ultimately unify Germany.",
+      "funFact": "Bismarck predicted the start of World War I with terrifying accuracy, stating in 1888 that a great European war would come from 'some damned foolish thing in the Balkans'."
+    },
+    {
+      "id": 5,
+      "question": "What was the primary catalyst for the Indian Rebellion of 1857 (also known as the Sepoy Mutiny) against the British East India Company?",
+      "options": ["The imposition of the salt tax", "The forced conversion of Hindu princes to Christianity", "Rumors that new rifle cartridges were greased with cow and pig fat", "The sudden collapse of the global cotton market"],
+      "correct": "C",
+      "explanation": "Soldiers had to bite the cartridges to load their rifles. Because cows are sacred to Hindus and pigs are considered unclean by Muslims, the grease rumors profoundly offended both groups.",
+      "funFact": "As a direct result of this rebellion, the British government abolished the East India Company and took direct control of India, beginning the era of the British Raj."
+    },
+    {
+      "id": 6,
+      "question": "The 1917 Balfour Declaration was a statement of British support for what geopolitical objective?",
+      "options": ["The independence of Arab nations from the Ottoman Empire", "The establishment of a 'national home for the Jewish people' in Palestine", "The partition of Ireland", "The creation of the League of Nations"],
+      "correct": "B",
+      "explanation": "The letter from British Foreign Secretary Arthur Balfour to Lord Rothschild formally endorsed Zionist aspirations, heavily influencing the future of the Middle East.",
+      "funFact": "The Declaration was only 67 words long, but its vague wording—promising a 'national home' without defining what that meant politically—has fueled a century of conflict."
+    },
+    {
+      "id": 7,
+      "question": "In the context of the Meiji Restoration in Japan, what were the 'Zaibatsu'?",
+      "options": ["Traditional samurai warriors who resisted modernization", "Large, family-controlled financial and industrial monopolies", "Elected parliamentary officials", "Foreign advisors hired to build railroads"],
+      "correct": "B",
+      "explanation": "The government sold state-owned industries to wealthy families like Mitsubishi and Mitsui, who formed massive conglomerates (Zaibatsu) that dominated the Japanese economy.",
+      "funFact": "Mitsubishi started as a shipping firm, but by WWII, its Zaibatsu was producing everything from the famous 'Zero' fighter planes to beer and glass!"
+    },
+    {
+      "id": 8,
+      "question": "The 1944 Bretton Woods Conference established a new international economic order by creating which two major institutions?",
+      "options": ["The World Trade Organization and the European Union", "The International Monetary Fund (IMF) and the World Bank", "The United Nations and the League of Nations", "The Federal Reserve and the Bank of England"],
+      "correct": "B",
+      "explanation": "These institutions were designed to rebuild war-torn economies, stabilize international currencies, and prevent another Great Depression.",
+      "funFact": "The chief British negotiator at Bretton Woods was the famous economist John Maynard Keynes, who was so exhausted by the negotiations he suffered a heart attack shortly after."
+    },
+    {
+      "id": 9,
+      "question": "In Latin American historiography and economics, 'Dependency Theory' argues what?",
+      "options": ["Latin America relies too heavily on socialist policies.", "Resources flow from a 'periphery' of poor states to a 'core' of wealthy states, enriching the latter at the expense of the former.", "Economic success depends entirely on adopting strict free-trade policies.", "Developing nations must depend on foreign military aid to stabilize their economies."],
+      "correct": "B",
+      "explanation": "Dependency theory suggests that the poverty of developing nations is a direct result of their structural integration into the global capitalist system, where they export cheap raw materials and import expensive manufactured goods.",
+      "funFact": "This theory became incredibly popular in the 1960s and 70s among Latin American scholars, directly challenging the Western-centric 'Modernization Theory'."
+    },
+    {
+      "id": 10,
+      "question": "The 1956 Suez Crisis marked a significant shift in global power dynamics. What was the primary outcome?",
+      "options": ["The permanent closure of the Suez Canal", "The overthrow of Gamal Abdel Nasser", "The humiliation of Britain and France, signaling their decline as global superpowers", "The complete Soviet occupation of Egypt"],
+      "correct": "C",
+      "explanation": "When Britain, France, and Israel invaded Egypt to seize the nationalized canal, the US and USSR forced them to withdraw, starkly demonstrating that real power now lay with the two Cold War superpowers.",
+      "funFact": "To force the British to back down, US President Eisenhower threatened to dump massive amounts of British bonds onto the market, which would have collapsed the British currency."
+    },
+    {
+      "id": 11,
+      "question": "The 'Defenestration of Prague' in 1618 is traditionally considered the triggering event for which major European conflict?",
+      "options": ["The Seven Years' War", "The Thirty Years' War", "The War of the Spanish Succession", "The French Revolution"],
+      "correct": "B",
+      "explanation": "Protestant Bohemian nobles threw two Catholic Imperial officials out of a third-story window, sparking a devastating religious and political war across Central Europe.",
+      "funFact": "The men survived the 70-foot fall! Catholics claimed they were caught by angels, while Protestants pointed out they landed in a massive pile of manure."
+    },
+    {
+      "id": 12,
+      "question": "During the Pax Mongolica, what was the 'Yam'?",
+      "options": ["A universal legal code", "A fast, highly efficient postal relay system", "A siege engine used to breach city walls", "A unified paper currency"],
+      "correct": "B",
+      "explanation": "The Yam system allowed messages, officials, and intelligence to travel up to 200 miles a day across the massive Mongol Empire using a network of relay stations.",
+      "funFact": "Riders carried a metal medallion called a 'paiza' to prove their authority; it functioned like an ancient VIP passport, requiring anyone to give the rider fresh horses and food."
+    },
+    {
+      "id": 13,
+      "question": "Which Cold War conflict was characterized by the FLN's use of urban terrorism and guerrilla warfare against French colonial forces, leading to the collapse of the French Fourth Republic?",
+      "options": ["The First Indochina War", "The Algerian War of Independence", "The Malayan Emergency", "The Mau Mau Uprising"],
+      "correct": "B",
+      "explanation": "The Algerian War (1954-1962) was a brutal struggle for independence that deeply traumatized French society and forced the return to power of Charles de Gaulle.",
+      "funFact": "Philosopher Jean-Paul Sartre controversially supported the Algerian FLN against his own country, arguing that violence was a necessary tool for the colonized to reclaim their humanity."
+    },
+    {
+      "id": 14,
+      "question": "What was the 'Great Leap Forward' (1958-1962) in Maoist China?",
+      "options": ["A successful initiative to send the first Chinese astronaut into space", "An economic campaign to rapidly transition from agrarianism to an industrial communist society", "A military campaign to retake Taiwan", "An educational reform prioritizing university research"],
+      "correct": "B",
+      "explanation": "Mao attempted to massively boost grain and steel production through forced collectivization. It was a catastrophic failure.",
+      "funFact": "Peasants were ordered to build 'backyard furnaces' to make steel, but they ended up melting down their own farm tools and cooking pots to produce useless, brittle pig iron."
+    },
+    {
+      "id": 15,
+      "question": "The 1979 Iranian Revolution, which established an Islamic Republic under Ayatollah Khomeini, overthrew which Western-backed monarch?",
+      "options": ["King Faisal", "Saddam Hussein", "Shah Mohammad Reza Pahlavi", "President Sukarno"],
+      "correct": "C",
+      "explanation": "The Shah was deeply unpopular due to his autocratic rule, corruption, and aggressive secular modernization policies, leading a diverse coalition to overthrow him.",
+      "funFact": "Before the revolution, the CIA and MI6 had orchestrated a coup in 1953 to reinstall the Shah and overthrow Iran's democratically elected Prime Minister because he had nationalized the oil industry."
+    },
+    {
+      "id": 16,
+      "question": "In the historiography of the origins of the Cold War, 'Revisionist' historians generally argue what?",
+      "options": ["The Soviet Union was entirely to blame due to its inherent expansionism.", "The United States provoked the Cold War to secure global capitalist markets and atomic monopoly.", "The Cold War was inevitable due to geopolitical realities, regardless of ideology.", "The Cold War never actually happened and was a media fabrication."],
+      "correct": "B",
+      "explanation": "Unlike orthodox historians who blamed Stalin, revisionists (emerging in the 1960s) argued that aggressive US economic imperialism and 'atomic diplomacy' forced the USSR into a defensive posture.",
+      "funFact": "The shifting of historical blame often reflects the present day; Revisionist history became highly popular during the Vietnam War, when many American scholars became deeply critical of US foreign policy."
+    },
+    {
+      "id": 17,
+      "question": "What was the primary focus of the 'Revolutions of 1848' (the Spring of Nations) across Europe?",
+      "options": ["Ending the transatlantic slave trade", "Demanding democratic reforms, constitutional limits on monarchs, and national self-determination", "Establishing communist dictatorships based on Marxist theory", "Reversing the effects of the Industrial Revolution"],
+      "correct": "B",
+      "explanation": "A wave of liberal and nationalist uprisings swept across Europe, though most were quickly suppressed by reactionary forces within a year.",
+      "funFact": "Despite the revolutions largely failing, they abolished serfdom in Austria and Hungary and deeply frightened the ruling elite, showing that the old monarchical system was unstable."
+    },
+    {
+      "id": 18,
+      "question": "The 'Boer Wars' (1880-1881, 1899-1902) were fought in South Africa between the British Empire and which group?",
+      "options": ["The Zulu Kingdom", "The Xhosa people", "Descendants of Dutch-speaking settlers", "Portuguese colonial forces"],
+      "correct": "C",
+      "explanation": "The British fought the Boers (Afrikaners) for control of the region, largely due to the discovery of massive gold and diamond reserves.",
+      "funFact": "During the Second Boer War, the British pioneered the horrific tactic of using 'concentration camps' for Boer women and children to force the guerrilla fighters to surrender."
+    },
+    {
+      "id": 19,
+      "question": "What 14th-century West African empire was a center of Islamic scholarship and trade, largely centered around the city of Timbuktu?",
+      "options": ["The Songhai Empire", "The Mali Empire", "The Kingdom of Aksum", "The Zulu Kingdom"],
+      "correct": "B",
+      "explanation": "Under leaders like Mansa Musa, the Mali Empire fostered immense intellectual growth, with Timbuktu housing massive libraries and a renowned university.",
+      "funFact": "At its height, the University of Sankore in Timbuktu had an enrollment of 25,000 students and a collection of hundreds of thousands of manuscripts, rivaling any university in Europe at the time."
+    },
+    {
+      "id": 20,
+      "question": "At the Yalta Conference in February 1945, the 'Big Three' (Roosevelt, Churchill, Stalin) made several crucial decisions regarding the post-war world. Which of the following was NOT one of them?",
+      "options": ["Dividing Germany into four occupation zones", "The Soviet agreement to enter the war against Japan", "The decision to drop the atomic bomb on Hiroshima", "The framework for the United Nations"],
+      "correct": "C",
+      "explanation": "The atomic bomb was not successfully tested until July 1945 (after Roosevelt's death), and the decision to use it was discussed at the subsequent Potsdam Conference by Truman.",
+      "funFact": "Roosevelt was critically ill during the Yalta Conference and died just two months later; many historians argue his weakened state allowed Stalin to secure a stronger negotiating position regarding Eastern Europe."
+    }
+  ]
+}

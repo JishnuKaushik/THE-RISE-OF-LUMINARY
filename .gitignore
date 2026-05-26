@@ -1,0 +1,55 @@
+# Build output
+build/
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+*.ninja
+install_manifest.txt
+
+# IDE / editor
+.vscode/
+.vs/
+*.user
+*.suo
+*.sln.docstates
+.idea/
+*.swp
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Save files (player data — personal info, exclude entirely)
+saves/
+
+# Claude Code local config (machine-specific paths, permission grants)
+.claude/
+
+# Backup files (kept locally, not tracked)
+src_BACKUP/
+data_BACKUP/
+CMakeLists.txt_BACKUP
+CMakeLists.txt.save
+TrainingState_backup_filter.cpp
+TrainingState_filtered.cpp
+TrainingState_new_load.cpp
+src/*.backup
+src/*.before_*
+src/*.broken
+src/*.txt
+
+# Archives
+sfeMovie.zip

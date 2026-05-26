@@ -1,0 +1,166 @@
+{
+  "subject": "Arts",
+  "grade": "Preschool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What color do you get when you mix red and yellow?",
+      "options": ["Green", "Purple", "Orange", "Blue"],
+      "correct": "C",
+      "explanation": "Red and yellow are primary colors that make orange when mixed together!",
+      "funFact": "Carrots used to be purple or white before farmers selectively bred them to be orange!"
+    },
+    {
+      "id": 2,
+      "question": "What tool is usually used to put paint on a canvas?",
+      "options": ["Spoon", "Paintbrush", "Hammer", "Pencil"],
+      "correct": "B",
+      "explanation": "A paintbrush has bristles that help spread paint smoothly.",
+      "funFact": "The oldest known paintbrushes are about 2.5 million years old and were made of animal hair!"
+    },
+    {
+      "id": 3,
+      "question": "What color do you get when you mix blue and yellow?",
+      "options": ["Green", "Pink", "Black", "Purple"],
+      "correct": "A",
+      "explanation": "Mixing the primary colors blue and yellow creates the secondary color green.",
+      "funFact": "The human eye can see more shades of green than any other color!"
+    },
+    {
+      "id": 4,
+      "question": "What do we call a painting or drawing of a person's face?",
+      "options": ["Landscape", "Collage", "Portrait", "Still Life"],
+      "correct": "C",
+      "explanation": "A portrait is a piece of art that focuses on a person's face and expression.",
+      "funFact": "Before cameras were invented, people would sit completely still for hours to have their portrait painted!"
+    },
+    {
+      "id": 5,
+      "question": "What squishy material can you shape with your hands to make a sculpture?",
+      "options": ["Water", "Clay", "Glass", "Wood"],
+      "correct": "B",
+      "explanation": "Clay is soft when wet and can be molded into many shapes before it dries.",
+      "funFact": "Some ancient clay pots that have been found are over 20,000 years old!"
+    },
+    {
+      "id": 6,
+      "question": "What do you wear over your clothes to keep them clean while painting?",
+      "options": ["A hat", "A scarf", "A smock", "A belt"],
+      "correct": "C",
+      "explanation": "A smock or apron covers your regular clothes so paint doesn't ruin them.",
+      "funFact": "Many famous painters used old, oversized shirts as their smocks!"
+    },
+    {
+      "id": 7,
+      "question": "Which of these is an instrument with black and white keys?",
+      "options": ["Guitar", "Piano", "Drum", "Flute"],
+      "correct": "B",
+      "explanation": "A piano makes music when you press its black and white keys.",
+      "funFact": "A standard piano has exactly 88 keys—52 white ones and 36 black ones!"
+    },
+    {
+      "id": 8,
+      "question": "What do we call art made by folding paper into fun shapes?",
+      "options": ["Origami", "Painting", "Sculpture", "Drawing"],
+      "correct": "A",
+      "explanation": "Origami is the traditional Japanese art of folding paper.",
+      "funFact": "The traditional origami crane is a symbol of peace, and folding 1,000 of them is said to grant a wish!"
+    },
+    {
+      "id": 9,
+      "question": "What building do you visit to look at famous paintings and sculptures?",
+      "options": ["Grocery Store", "Library", "Museum", "Post Office"],
+      "correct": "C",
+      "explanation": "A museum is a special place where art is kept safe and shown to the public.",
+      "funFact": "The biggest art museum in the world is the Louvre in Paris, and it would take 100 days to see everything inside it!"
+    },
+    {
+      "id": 10,
+      "question": "What happens when you mix red and white paint?",
+      "options": ["It turns black", "It turns pink", "It turns green", "It turns brown"],
+      "correct": "B",
+      "explanation": "Adding white to red makes it lighter, creating the color pink.",
+      "funFact": "In the past, pink was actually considered a color for boys, and blue was for girls!"
+    },
+    {
+      "id": 11,
+      "question": "What object does an artist hold to keep their paints in one place?",
+      "options": ["A palette", "A canvas", "A frame", "A brush"],
+      "correct": "A",
+      "explanation": "A palette is a flat board used for holding and mixing different colors of paint.",
+      "funFact": "Some artists use palettes made of glass so they can scrape the dry paint off easily!"
+    },
+    {
+      "id": 12,
+      "question": "What do you do at the end of a play to show the actors you liked it?",
+      "options": ["Go to sleep", "Clap your hands", "Run away", "Eat a snack"],
+      "correct": "B",
+      "explanation": "Clapping, or applause, is how an audience says 'good job' to performers.",
+      "funFact": "In some countries, clapping in perfect rhythm together is a sign of ultimate respect for the performers!"
+    },
+    {
+      "id": 13,
+      "question": "What kind of art is made by gluing different pieces of paper and pictures together?",
+      "options": ["A drawing", "A statue", "A collage", "A photograph"],
+      "correct": "C",
+      "explanation": "A collage is created by assembling different materials, like magazines or colored paper, onto a flat surface.",
+      "funFact": "The word 'collage' comes from a French word that means 'to glue'!"
+    },
+    {
+      "id": 14,
+      "question": "What do we call a picture taken with a camera?",
+      "options": ["A painting", "A sketch", "A photograph", "A sculpture"],
+      "correct": "C",
+      "explanation": "Cameras capture light to create a permanent image called a photograph.",
+      "funFact": "The first photograph ever taken took 8 hours to finish!"
+    },
+    {
+      "id": 15,
+      "question": "Which of these sticks is used to draw pictures on the sidewalk?",
+      "options": ["Chalk", "A pencil", "A marker", "A crayon"],
+      "correct": "A",
+      "explanation": "Chalk is a soft, powdery stick perfect for drawing on rough surfaces like sidewalks.",
+      "funFact": "Natural chalk is actually made from the tiny shells of ancient sea creatures!"
+    },
+    {
+      "id": 16,
+      "question": "What do we call someone who pretends to be a character in a movie or play?",
+      "options": ["A painter", "A singer", "A writer", "An actor"],
+      "correct": "D",
+      "explanation": "An actor's job is to act out a story for an audience.",
+      "funFact": "The first known actor was a man from ancient Greece named Thespis!"
+    },
+    {
+      "id": 17,
+      "question": "What do ballet dancers wear on their feet?",
+      "options": ["Boots", "Slippers", "Sneakers", "High heels"],
+      "correct": "B",
+      "explanation": "Ballet dancers wear special soft slippers to help them move gracefully.",
+      "funFact": "Professional ballet dancers can go through 2 to 3 pairs of ballet slippers in just one week!"
+    },
+    {
+      "id": 18,
+      "question": "What do we call a very quick, messy drawing?",
+      "options": ["A masterpiece", "A portrait", "A sketch", "A statue"],
+      "correct": "C",
+      "explanation": "A sketch is a rough, quick drawing artists do to practice their ideas.",
+      "funFact": "Many famous artists carried a small sketchpad with them everywhere they went!"
+    },
+    {
+      "id": 19,
+      "question": "What type of art is a movie you watch on a big screen?",
+      "options": ["Cinema", "Painting", "Sculpture", "Dance"],
+      "correct": "A",
+      "explanation": "Cinema, or filmmaking, is the art of telling stories with moving pictures and sound.",
+      "funFact": "The first movies ever made didn't have any sound or color!"
+    },
+    {
+      "id": 20,
+      "question": "What is the very first shape you learn to draw that looks like the sun?",
+      "options": ["A square", "A triangle", "A circle", "A line"],
+      "correct": "C",
+      "explanation": "A circle is perfectly round and is often used to draw the sun, faces, and wheels.",
+      "funFact": "There are no straight lines at all in a true circle!"
+    }
+  ]
+}

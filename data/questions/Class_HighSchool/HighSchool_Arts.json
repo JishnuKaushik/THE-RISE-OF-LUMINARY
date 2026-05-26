@@ -1,0 +1,166 @@
+{
+  "subject": "Arts",
+  "grade": "HighSchool",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In art, what does the Italian term 'chiaroscuro' refer to?",
+      "options": ["A style of fresco painting", "The use of strong contrasts between light and dark", "A technique of mixing oil paints", "The rule of thirds in composition"],
+      "correct": "B",
+      "explanation": "Chiaroscuro is the dramatic use of light and shadow to create the illusion of three-dimensional volume on a flat surface.",
+      "funFact": "Caravaggio pushed chiaroscuro to the extreme with a style called 'Tenebrism', where shadows were completely black!"
+    },
+    {
+      "id": 2,
+      "question": "Which classical composer wrote the famous opera 'The Magic Flute'?",
+      "options": ["Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Richard Wagner"],
+      "correct": "C",
+      "explanation": "Mozart composed 'The Magic Flute' (Die Zauberflöte) in 1791, shortly before his death.",
+      "funFact": "Mozart was a child prodigy who began composing music when he was just five years old!"
+    },
+    {
+      "id": 3,
+      "question": "What architectural style is characterized by pointed arches, ribbed vaults, and flying buttresses?",
+      "options": ["Romanesque", "Gothic", "Baroque", "Neoclassical"],
+      "correct": "B",
+      "explanation": "Gothic architecture flourished during the high and late medieval period, allowing for taller buildings with massive stained-glass windows.",
+      "funFact": "The 'flying buttresses' of Gothic cathedrals were essentially stone exoskeletons built to keep the tall, thin walls from collapsing outward!"
+    },
+    {
+      "id": 4,
+      "question": "Which artist is most famously associated with the Pop Art movement and his prints of Campbell's Soup Cans?",
+      "options": ["Roy Lichtenstein", "Jackson Pollock", "Andy Warhol", "Jasper Johns"],
+      "correct": "C",
+      "explanation": "Andy Warhol used silkscreen printing to create mass-produced images of consumer goods and celebrities, challenging traditional art concepts.",
+      "funFact": "Warhol supposedly painted soup cans because he claimed he ate soup for lunch every single day for 20 years!"
+    },
+    {
+      "id": 5,
+      "question": "In theater and film, what does it mean when a character 'breaks the fourth wall'?",
+      "options": ["They forget their lines", "They destroy part of the set", "They directly address or acknowledge the audience", "They exit the stage unexpectedly"],
+      "correct": "C",
+      "explanation": "The 'fourth wall' is the imaginary boundary between the actors and the audience; breaking it means the actor acknowledges they are being watched.",
+      "funFact": "In ancient Greek theater, actors regularly broke the fourth wall to insult specific politicians sitting in the audience!"
+    },
+    {
+      "id": 6,
+      "question": "What is the painting technique called 'impasto'?",
+      "options": ["Applying paint in thin, transparent layers", "Painting on wet plaster", "Applying paint so thickly that it stands out from the canvas", "Scraping paint off the canvas"],
+      "correct": "C",
+      "explanation": "Impasto involves laying on paint thickly, often with a palette knife, to create physical texture on the canvas.",
+      "funFact": "Vincent van Gogh used impasto so heavily in his paintings that some of them took several years to completely dry!"
+    },
+    {
+      "id": 7,
+      "question": "Which American playwright wrote the Pulitzer Prize-winning play 'A Streetcar Named Desire'?",
+      "options": ["Arthur Miller", "Tennessee Williams", "Eugene O'Neill", "Edward Albee"],
+      "correct": "B",
+      "explanation": "Tennessee Williams wrote 'A Streetcar Named Desire', which premiered on Broadway in 1947.",
+      "funFact": "The play's famous character, Stanley Kowalski, was actually named after a factory worker Williams met while living in Missouri!"
+    },
+    {
+      "id": 8,
+      "question": "In music theory, what is 'polyphony'?",
+      "options": ["A single melody without accompaniment", "The simultaneous combination of two or more independent melodies", "A fast, upbeat tempo", "Playing completely out of tune"],
+      "correct": "B",
+      "explanation": "Polyphony involves multiple distinct melodic lines occurring at the same time, unlike homophony, which is one melody with chordal accompaniment.",
+      "funFact": "During the Renaissance, some polyphonic choral pieces were incredibly complex, featuring up to 40 different vocal parts singing at once!"
+    },
+    {
+      "id": 9,
+      "question": "Which 19th-century art movement, focused on capturing light and spontaneous moments, was named after a painting by Claude Monet?",
+      "options": ["Realism", "Romanticism", "Impressionism", "Expressionism"],
+      "correct": "C",
+      "explanation": "The movement was mockingly named 'Impressionism' by a critic who saw Monet's painting 'Impression, Sunrise'.",
+      "funFact": "Early critics hated Impressionism so much they claimed the artists were just firing paint at the canvas with a pistol!"
+    },
+    {
+      "id": 10,
+      "question": "In photography, what does changing the 'f-stop' on a camera directly control?",
+      "options": ["The shutter speed", "The ISO sensitivity", "The size of the lens aperture", "The focal length of the lens"],
+      "correct": "C",
+      "explanation": "The f-stop number indicates the size of the aperture opening. A lower f-stop means a larger opening.",
+      "funFact": "Because f-stops are fractions, an f/1.4 aperture is actually much larger than an f/16 aperture!"
+    },
+    {
+      "id": 11,
+      "question": "What is 'contrapposto' in sculpture?",
+      "options": ["A method of casting bronze", "A pose where the figure's weight rests on one leg, creating an S-curve", "Carving from a single block of marble", "Abstract representation of the human form"],
+      "correct": "B",
+      "explanation": "Contrapposto gives figures a more relaxed, realistic, and dynamic appearance compared to rigid, straight-standing poses.",
+      "funFact": "The ancient Greeks invented contrapposto, but the knowledge was lost for centuries until Renaissance sculptors like Donatello rediscovered it!"
+    },
+    {
+      "id": 12,
+      "question": "Which legendary 1941 film was directed by, co-written by, and starred Orson Welles?",
+      "options": ["Casablanca", "Gone with the Wind", "Citizen Kane", "The Godfather"],
+      "correct": "C",
+      "explanation": "'Citizen Kane' is frequently cited by critics as one of the greatest films ever made for its innovative cinematography and narrative structure.",
+      "funFact": "Orson Welles was only 25 years old when he directed, co-wrote, and starred in 'Citizen Kane'!"
+    },
+    {
+      "id": 13,
+      "question": "What is the musical term for the speed or pace at which a piece of music should be played?",
+      "options": ["Dynamics", "Pitch", "Timbre", "Tempo"],
+      "correct": "D",
+      "explanation": "Tempo dictates the speed of the beat, usually measured in beats per minute (BPM) or indicated by Italian terms like 'Allegro' (fast).",
+      "funFact": "The slowest tempo marking in music is 'Larghissimo', which translates to 'very, very broad' and is essentially played as slowly as humanly possible!"
+    },
+    {
+      "id": 14,
+      "question": "Which artist painted 'Guernica', a massive, monochromatic mural depicting the horrors of the Spanish Civil War?",
+      "options": ["Francisco Goya", "Salvador Dalí", "Pablo Picasso", "Diego Rivera"],
+      "correct": "C",
+      "explanation": "Picasso painted 'Guernica' in response to the bombing of a Basque town, creating one of the most powerful anti-war statements in art history.",
+      "funFact": "When a Nazi officer saw a photo of 'Guernica' and asked Picasso, 'Did you do that?', Picasso famously replied, 'No, you did.'!"
+    },
+    {
+      "id": 15,
+      "question": "In film and theater analysis, what does the French term 'mise-en-scène' encompass?",
+      "options": ["The editing process", "The musical score", "The arrangement of all visual elements in the frame or on stage", "The script's dialogue"],
+      "correct": "C",
+      "explanation": "Mise-en-scène includes everything the viewer sees: sets, props, actors, costumes, and lighting.",
+      "funFact": "The literal translation of mise-en-scène is 'placing on stage'!"
+    },
+    {
+      "id": 16,
+      "question": "What mathematical ratio, approximately 1.618, is historically believed to yield aesthetically pleasing proportions in art and architecture?",
+      "options": ["Pi", "The Golden Ratio", "The Fibonacci Sequence", "Euler's Number"],
+      "correct": "B",
+      "explanation": "The Golden Ratio (Phi) is found in nature and has been used by artists from the Parthenon architects to Leonardo da Vinci.",
+      "funFact": "The spiral of a nautilus shell and the arrangement of seeds in a sunflower both perfectly follow the proportions of the Golden Ratio!"
+    },
+    {
+      "id": 17,
+      "question": "What printing process relies on the scientific principle that oil and water do not mix?",
+      "options": ["Etching", "Screen printing", "Lithography", "Engraving"],
+      "correct": "C",
+      "explanation": "In lithography, an image is drawn on stone or metal with a greasy substance; ink adheres to the grease and is repelled by the water-dampened areas.",
+      "funFact": "Lithography was accidentally invented by a German playwright who was just looking for a cheaper way to publish his scripts!"
+    },
+    {
+      "id": 18,
+      "question": "Which early 20th-century architectural and design school in Germany famously promoted the idea that 'form follows function'?",
+      "options": ["Art Deco", "The Bauhaus", "Beaux-Arts", "Constructivism"],
+      "correct": "B",
+      "explanation": "The Bauhaus school sought to unify art, craft, and technology, heavily influencing modern architecture and industrial design.",
+      "funFact": "Despite being an architectural school, the Bauhaus didn't actually have an architecture department for the first eight years it was open!"
+    },
+    {
+      "id": 19,
+      "question": "What is the term for a specific type of paint binder made from egg yolk, commonly used before the invention of oil paints?",
+      "options": ["Gouache", "Acrylic", "Encaustic", "Tempera"],
+      "correct": "D",
+      "explanation": "Egg tempera dries very quickly and produces a smooth, matte finish that can last for centuries without fading.",
+      "funFact": "Sandro Botticelli's famous masterpiece, 'The Birth of Venus', was painted entirely with egg tempera!"
+    },
+    {
+      "id": 20,
+      "question": "In Western music theory, what is a chord containing three distinct notes (usually a root, a third, and a fifth) called?",
+      "options": ["An octave", "A triad", "A scale", "An arpeggio"],
+      "correct": "B",
+      "explanation": "A triad is the most common type of chord and forms the foundation of tonal harmony.",
+      "funFact": "Even complex, massive orchestral chords played by 100 musicians are often just giant triads with the same three notes doubled across many octaves!"
+    }
+  ]
+}

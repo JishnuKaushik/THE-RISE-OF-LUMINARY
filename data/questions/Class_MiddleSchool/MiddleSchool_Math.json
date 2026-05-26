@@ -1,0 +1,166 @@
+{
+  "subject": "Mathematics",
+  "grade": "Middle School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the value of 'x' in the equation 3x - 7 = 14?",
+      "options": ["5", "7", "9", "21"],
+      "correct": "B",
+      "explanation": "Adding 7 to both sides gives 3x = 21, then dividing by 3 gives x = 7.",
+      "funFact": "The equals sign '=' was invented in 1557 by Welsh mathematician Robert Recorde because he was tired of writing 'is equal to'!"
+    },
+    {
+      "id": 2,
+      "question": "What is the formula for the area of a circle?",
+      "options": ["\u03c0d", "2\u03c0r", "\u03c0r\u00b2", "1/2 bh"],
+      "correct": "C",
+      "explanation": "The area of a circle is calculated by multiplying pi (\u03c0) by the radius squared (r\u00b2).",
+      "funFact": "The symbol for Pi (\u03c0) has been in use for over 250 years, introduced by William Jones in 1706!"
+    },
+    {
+      "id": 3,
+      "question": "What is the value of 2\u00b3 (2 cubed)?",
+      "options": ["6", "8", "16", "32"],
+      "correct": "B",
+      "explanation": "2 cubed means 2 * 2 * 2, which equals 8.",
+      "funFact": "A standard Rubik's cube is a 3x3x3 puzzle, but the smallest one ever made is only 0.22 inches across!"
+    },
+    {
+      "id": 4,
+      "question": "What is the square root of 64?",
+      "options": ["6", "8", "12", "16"],
+      "correct": "B",
+      "explanation": "Since 8 * 8 = 64, the square root of 64 is 8.",
+      "funFact": "The square root symbol \u221a is called a 'radical' and comes from the Latin word 'radix', meaning root!"
+    },
+    {
+      "id": 5,
+      "question": "How do you express the fraction 3/4 as a percentage?",
+      "options": ["25%", "50%", "75%", "100%"],
+      "correct": "C",
+      "explanation": "3 divided by 4 is 0.75, which is 75%.",
+      "funFact": "The word 'percent' comes from the Latin 'per centum', which translates to 'by the hundred'!"
+    },
+    {
+      "id": 6,
+      "question": "What is the least common multiple (LCM) of 4 and 6?",
+      "options": ["10", "12", "24", "48"],
+      "correct": "B",
+      "explanation": "The multiples of 4 are 4, 8, 12... and multiples of 6 are 6, 12... The lowest they share is 12.",
+      "funFact": "Cicadas use prime number lifecycles (13 or 17 years) so they don't sync up with their predators' population booms!"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a prime number?",
+      "options": ["15", "21", "27", "29"],
+      "correct": "D",
+      "explanation": "29 can only be divided evenly by 1 and itself, making it a prime number.",
+      "funFact": "The largest known prime number has over 24 million digits. It would take you weeks just to read it out loud!"
+    },
+    {
+      "id": 8,
+      "question": "What is the formula for the area of a triangle?",
+      "options": ["bh", "1/2 bh", "\u03c0r\u00b2", "2(b+h)"],
+      "correct": "B",
+      "explanation": "The area of a triangle is half of the base times the height (1/2 bh).",
+      "funFact": "The Bermuda Triangle is roughly triangular, but there's no mathematical proof that more ships sink there than anywhere else!"
+    },
+    {
+      "id": 9,
+      "question": "What is the sum of supplementary angles?",
+      "options": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+      "correct": "B",
+      "explanation": "Supplementary angles are two angles that add up to exactly 180 degrees, forming a straight line.",
+      "funFact": "A skateboard trick where you turn completely around in a half-circle is called a '180'!"
+    },
+    {
+      "id": 10,
+      "question": "Solve for y: 2y + 5 = 15",
+      "options": ["3", "5", "7", "10"],
+      "correct": "B",
+      "explanation": "Subtract 5 from both sides (2y = 10), then divide by 2 (y = 5).",
+      "funFact": "The letter 'x' is most commonly used for an unknown, but Descartes used x, y, and z for unknowns simply because the printer had extra of those letters!"
+    },
+    {
+      "id": 11,
+      "question": "What does the Pythagorean theorem state for a right triangle with legs a and b, and hypotenuse c?",
+      "options": ["a + b = c", "a\u00b2 + b\u00b2 = c\u00b2", "a\u00b2 - b\u00b2 = c\u00b2", "ab = c"],
+      "correct": "B",
+      "explanation": "The square of the hypotenuse is equal to the sum of the squares of the other two sides.",
+      "funFact": "Pythagoras supposedly wouldn't let anyone into his math cult unless they completely swore off eating beans!"
+    },
+    {
+      "id": 12,
+      "question": "What is 15% of 200?",
+      "options": ["15", "20", "30", "45"],
+      "correct": "C",
+      "explanation": "10% of 200 is 20, and 5% is 10. Adding them together gives 30.",
+      "funFact": "Percentages are completely reversible! 15% of 200 is exactly the same as 200% of 15."
+    },
+    {
+      "id": 13,
+      "question": "What is the absolute value of -10? ( |-10| )",
+      "options": ["-10", "0", "10", "100"],
+      "correct": "C",
+      "explanation": "Absolute value is the distance from zero on a number line, which is always positive, so it is 10.",
+      "funFact": "Absolute zero is the lowest possible temperature in the universe, measuring at -273.15 degrees Celsius!"
+    },
+    {
+      "id": 14,
+      "question": "What is a polygon with 8 sides called?",
+      "options": ["Hexagon", "Heptagon", "Octagon", "Nonagon"],
+      "correct": "C",
+      "explanation": "The prefix 'octa-' means eight, so an eight-sided shape is an octagon.",
+      "funFact": "Stop signs in the United States are octagons, a shape chosen in 1922 so drivers could recognize it from the back!"
+    },
+    {
+      "id": 15,
+      "question": "What is the median of the following set of numbers: 2, 5, 8, 10, 15?",
+      "options": ["5", "8", "9", "10"],
+      "correct": "B",
+      "explanation": "The median is the middle number when they are ordered. 8 is exactly in the middle.",
+      "funFact": "The median in a highway serves the exact same purpose as the median in math: it divides things down the absolute middle!"
+    },
+    {
+      "id": 16,
+      "question": "What is the probability of rolling a 4 on a standard six-sided die?",
+      "options": ["1/2", "1/4", "1/6", "1/8"],
+      "correct": "C",
+      "explanation": "There is one '4' on a die and six possible outcomes, so the probability is 1 out of 6.",
+      "funFact": "The opposite sides of a standard die always add up to 7 (1+6, 2+5, 3+4)!"
+    },
+    {
+      "id": 17,
+      "question": "What is the slope of the line given by the equation y = 3x - 2?",
+      "options": ["-2", "0", "2", "3"],
+      "correct": "D",
+      "explanation": "In the y = mx + b form, 'm' is the slope. Here, m is 3.",
+      "funFact": "The letter 'm' is used for slope, possibly coming from the French word 'monter' which means 'to climb'!"
+    },
+    {
+      "id": 18,
+      "question": "Evaluate the expression: 5 + 3 * 2",
+      "options": ["10", "11", "16", "30"],
+      "correct": "B",
+      "explanation": "Following the order of operations (PEMDAS), multiply first (3 * 2 = 6), then add 5 to get 11.",
+      "funFact": "The acronym PEMDAS (Please Excuse My Dear Aunt Sally) has been helping kids remember order of operations for decades!"
+    },
+    {
+      "id": 19,
+      "question": "Factor the expression: 2x + 4",
+      "options": ["2(x + 2)", "x(2 + 4)", "2x(1 + 2)", "4(x + 1)"],
+      "correct": "A",
+      "explanation": "You can pull out a common factor of 2 from both terms, leaving 2(x + 2).",
+      "funFact": "The concept of factoring was essential in cracking the German Enigma code during World War II!"
+    },
+    {
+      "id": 20,
+      "question": "What is the sum of the interior angles of a triangle?",
+      "options": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+      "correct": "B",
+      "explanation": "No matter the shape or size of a triangle, its interior angles always add up to exactly 180 degrees.",
+      "funFact": "If you draw a triangle on the surface of a sphere, like the Earth, the angles actually add up to MORE than 180 degrees!"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "subject": "Science",
+  "grade": "Elementary",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which planet in our solar system is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correct": "B",
+      "explanation": "Mars is called the Red Planet because its surface is covered in iron oxide, which is basically rust!",
+      "funFact": "Mars has the largest volcano in the entire solar system, called Olympus Mons!"
+    },
+    {
+      "id": 2,
+      "question": "What is the scientific name for the process of a caterpillar turning into a butterfly?",
+      "options": ["Photosynthesis", "Evaporation", "Metamorphosis", "Hibernation"],
+      "correct": "C",
+      "explanation": "Metamorphosis means a major change in form, like how a caterpillar changes into a butterfly.",
+      "funFact": "Frogs also go through metamorphosis, changing from tadpoles into adult frogs!"
+    },
+    {
+      "id": 3,
+      "question": "What invisible force pulls objects toward the center of the Earth?",
+      "options": ["Magnetism", "Friction", "Gravity", "Electricity"],
+      "correct": "C",
+      "explanation": "Gravity is the pulling force that keeps our feet on the ground and the planets orbiting the sun.",
+      "funFact": "If you weigh 100 pounds on Earth, you would only weigh about 38 pounds on Mars due to lower gravity!"
+    },
+    {
+      "id": 4,
+      "question": "Which part of a plant is mainly responsible for making food using sunlight?",
+      "options": ["The Roots", "The Stem", "The Leaves", "The Flowers"],
+      "correct": "C",
+      "explanation": "Leaves catch sunlight and use it to turn water and air into food for the plant.",
+      "funFact": "Giant water lily leaves can grow over 10 feet across and hold the weight of a small child!"
+    },
+    {
+      "id": 5,
+      "question": "What state of matter is water when it takes the shape of its container but doesn't fill it completely?",
+      "options": ["Solid", "Liquid", "Gas", "Plasma"],
+      "correct": "B",
+      "explanation": "Liquids like water and juice flow and take the shape of the cup you pour them into.",
+      "funFact": "Water is the only natural substance found in all three states (solid, liquid, gas) at normal Earth temperatures!"
+    },
+    {
+      "id": 6,
+      "question": "What is the hardest natural substance found on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Quartz"],
+      "correct": "C",
+      "explanation": "Diamonds are formed deep underground under extreme heat and pressure, making them super hard.",
+      "funFact": "Diamonds are so hard that the only natural thing that can scratch a diamond is another diamond!"
+    },
+    {
+      "id": 7,
+      "question": "What kind of animal has fur or hair and feeds its babies milk?",
+      "options": ["Amphibian", "Reptile", "Bird", "Mammal"],
+      "correct": "D",
+      "explanation": "Mammals are warm-blooded animals with hair or fur, and they produce milk for their young.",
+      "funFact": "Even though they live in the ocean, whales and dolphins are mammals, not fish!"
+    },
+    {
+      "id": 8,
+      "question": "What is the very hot, liquid rock found deep inside the Earth or a volcano called?",
+      "options": ["Magma", "Granite", "Obsidian", "Coal"],
+      "correct": "A",
+      "explanation": "Melted rock underground is called magma. When it erupts above ground, it is called lava.",
+      "funFact": "Lava can reach temperatures over 2,000 degrees Fahrenheit (1,200 degrees Celsius)!"
+    },
+    {
+      "id": 9,
+      "question": "What covers about 70 percent of the Earth's surface?",
+      "options": ["Forests", "Deserts", "Water", "Mountains"],
+      "correct": "C",
+      "explanation": "The Earth is sometimes called the 'Blue Planet' because oceans of water cover most of it.",
+      "funFact": "More than 80% of the Earth's oceans have never been mapped or explored by humans!"
+    },
+    {
+      "id": 10,
+      "question": "Which important human organ pumps blood all throughout the body?",
+      "options": ["The Lungs", "The Heart", "The Brain", "The Liver"],
+      "correct": "B",
+      "explanation": "The heart acts like a pump, pushing oxygen-rich blood through your blood vessels.",
+      "funFact": "Your heart beats about 100,000 times in one single day!"
+    },
+    {
+      "id": 11,
+      "question": "What gas do we breathe out that plants need to survive?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"],
+      "correct": "C",
+      "explanation": "Animals breathe out carbon dioxide, and plants use it to make food, releasing oxygen back for us!",
+      "funFact": "Without plants taking in carbon dioxide, Earth would get way too hot for us to live on!"
+    },
+    {
+      "id": 12,
+      "question": "What type of simple machine is a playground seesaw?",
+      "options": ["Pulley", "Wedge", "Inclined Plane", "Lever"],
+      "correct": "D",
+      "explanation": "A lever is a stiff bar that rests on a support called a fulcrum, just like a seesaw.",
+      "funFact": "Ancient Egyptians used huge levers to help build the massive pyramids!"
+    },
+    {
+      "id": 13,
+      "question": "What is the closest star to Earth?",
+      "options": ["Sirius", "The Sun", "Polaris", "Alpha Centauri"],
+      "correct": "B",
+      "explanation": "The Sun is a star, and it is much closer to us than any other star in the universe.",
+      "funFact": "The Sun is so huge that you could fit over one million Earths inside it!"
+    },
+    {
+      "id": 14,
+      "question": "Animals that eat only plants are known as what?",
+      "options": ["Carnivores", "Herbivores", "Omnivores", "Insectivores"],
+      "correct": "B",
+      "explanation": "Herbivores, like deer, cows, and rabbits, get all their energy from eating plants.",
+      "funFact": "The largest animal to ever live on land, the Argentinosaurus, was a gentle herbivore!"
+    },
+    {
+      "id": 15,
+      "question": "What special chemical gives plants their green color?",
+      "options": ["Chlorophyll", "Carotene", "Melanin", "Calcium"],
+      "correct": "A",
+      "explanation": "Chlorophyll makes plants green and helps them trap sunlight for photosynthesis.",
+      "funFact": "Sea slugs can eat algae and use the algae's chlorophyll to make food from sunlight, just like a plant!"
+    },
+    {
+      "id": 16,
+      "question": "What are clouds mostly made of?",
+      "options": ["Smoke", "Cotton", "Tiny Water Drops", "Dust"],
+      "correct": "C",
+      "explanation": "When water vapor in the air cools down, it forms tiny liquid water drops or ice crystals, creating clouds.",
+      "funFact": "A single puffy cumulus cloud can weigh as much as 100 elephants!"
+    },
+    {
+      "id": 17,
+      "question": "How long does it take for the Earth to travel all the way around the Sun?",
+      "options": ["One Day", "One Month", "One Year", "Ten Years"],
+      "correct": "C",
+      "explanation": "It takes the Earth about 365 days, or one year, to complete one orbit around the Sun.",
+      "funFact": "Because it actually takes 365 and a quarter days, we add an extra day every four years, called Leap Year!"
+    },
+    {
+      "id": 18,
+      "question": "What do we call a scientist who studies stars, planets, and space?",
+      "options": ["Biologist", "Geologist", "Astronomer", "Chemist"],
+      "correct": "C",
+      "explanation": "Astronomers use telescopes and satellites to look at things far away in the universe.",
+      "funFact": "Galileo was an early astronomer who discovered that Jupiter has its own moons!"
+    },
+    {
+      "id": 19,
+      "question": "Which of these materials is pulled by a magnet?",
+      "options": ["Wood", "Plastic", "Iron", "Glass"],
+      "correct": "C",
+      "explanation": "Magnets attract certain metals, like iron, steel, and nickel.",
+      "funFact": "The Earth itself is actually a giant magnet with a North and South magnetic pole!"
+    },
+    {
+      "id": 20,
+      "question": "What do we call a heavy wind storm that is shaped like a spinning funnel?",
+      "options": ["Tornado", "Tsunami", "Blizzard", "Earthquake"],
+      "correct": "A",
+      "explanation": "Tornadoes are violent, rotating columns of air that touch the ground.",
+      "funFact": "Tornado winds can spin faster than 300 miles per hour!"
+    }
+  ]
+}
