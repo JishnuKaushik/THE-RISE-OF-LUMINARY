@@ -67,7 +67,6 @@ void MenuState::cleanup() {
 void MenuState::updateBoxColors() {
     for (size_t i = 0; i < menuButtons.size(); i++) {
         menuButtons[i]->setSelected(i == selectedIndex);
-        menuButtons[i]->update();
     }
 }
 
@@ -92,9 +91,8 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
 
         if (hovering) {
             selectedIndex = i;
+            updateBoxColors();
         }
-
-        menuButtons[i]->update();
     }
 }
      if (const auto* mousePressed = event.getIf<sf::Event::MouseButtonPressed>()) {
@@ -122,7 +120,7 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
                     game->switchToProfileSelection();
                 }
                 else if (selectedIndex == 2) {
-                    game->switchToTraining();
+                    game->switchToTrainingHub();
                 }
                 else if (selectedIndex == 3) {
                     std::cout << "Statistics - Coming Soon!" << std::endl;
@@ -135,7 +133,7 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
             }
         }
     }
-}    
+}
 
      if (const auto* keyPressed = event.getIf<sf::Event::KeyPressed>()) {
         switch (keyPressed->code) {
@@ -145,17 +143,17 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
                 updateTextColors();
                 std::cout << "Selected: " << options[selectedIndex] << std::endl;
                 break;
-                
+
             case sf::Keyboard::Key::Down:
                 selectedIndex = (selectedIndex + 1) % options.size();
                 updateBoxColors();
                 updateTextColors();
                 std::cout << "Selected: " << options[selectedIndex] << std::endl;
                 break;
-                
+
             case sf::Keyboard::Key::Enter:
                 std::cout << "Enter pressed on: " << options[selectedIndex] << std::endl;
-                
+
                 if (selectedIndex == 0) {  // NEW GAME
                     std::cout << "Starting New Game..." << std::endl;
                     game->hasLoadedProfile = false;
@@ -167,7 +165,7 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
                 }
                 else if (selectedIndex == 2) {  // TRAINING MODE
                     std::cout << "Starting Training Mode..." << std::endl;
-                    game->switchToTraining();
+                    game->switchToTrainingHub();
                 }
                 else if (selectedIndex == 3) {  // STATISTICS
                     std::cout << "Statistics - Coming Soon!" << std::endl;
@@ -184,7 +182,10 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
     }
 }
 
-void MenuState::update(float deltaTime) {}
+void MenuState::update(float deltaTime) {
+    for (auto* button : menuButtons)
+        button->update(deltaTime);
+}
 
 void MenuState::render(sf::RenderWindow& window) {
     if (backgroundSprite.has_value()) {
