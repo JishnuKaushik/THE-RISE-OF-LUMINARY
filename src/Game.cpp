@@ -5,6 +5,8 @@
 #include "ProfileSelectionState.hpp"
 #include "CharacterSelectionState.hpp"
 #include "SplashState.hpp"
+#include "TrainingHubState.hpp"
+#include "LessonViewerState.hpp"
 
 Game::Game() : isRunning(true), currentGameState(GameState::SPLASH), hasLoadedProfile(false), selectedCharacterId(1) {
     initWindow();
@@ -41,7 +43,9 @@ void Game::initStates() {
     trainingState = std::make_unique<TrainingState>(this);
     profileSelectionState = std::make_unique<ProfileSelectionState>(this);
     characterSelectionState = std::make_unique<CharacterSelectionState>(this);
-    
+    trainingHubState = std::make_unique<TrainingHubState>(this);
+    lessonViewerState = std::make_unique<LessonViewerState>(this);
+
     splashState->onEnter();
 }
 
@@ -54,17 +58,13 @@ void Game::switchToSplash() {
 }
 
 void Game::switchToMenu() {
-    if (currentGameState == GameState::SPLASH) {
-        splashState->onExit();
-    } else if (currentGameState == GameState::REGISTRATION) {
-        registrationState->onExit();
-    } else if (currentGameState == GameState::TRAINING) {
-        trainingState->onExit();
-    } else if (currentGameState == GameState::PROFILE_SELECTION) {
-        profileSelectionState->onExit();
-    } else if (currentGameState == GameState::CHARACTER_SELECTION) {
-        characterSelectionState->onExit();
-    }
+    if      (currentGameState == GameState::SPLASH)             splashState->onExit();
+    else if (currentGameState == GameState::REGISTRATION)       registrationState->onExit();
+    else if (currentGameState == GameState::TRAINING)           trainingState->onExit();
+    else if (currentGameState == GameState::PROFILE_SELECTION)  profileSelectionState->onExit();
+    else if (currentGameState == GameState::CHARACTER_SELECTION) characterSelectionState->onExit();
+    else if (currentGameState == GameState::TRAINING_HUB)       trainingHubState->onExit();
+    else if (currentGameState == GameState::LESSON_VIEWER)      lessonViewerState->onExit();
     currentGameState = GameState::MENU;
     menuState->onEnter();
     std::cout << "Switched to Menu" << std::endl;
@@ -79,15 +79,28 @@ void Game::switchToRegistration() {
 }
 
 void Game::switchToTraining() {
-    if (currentGameState == GameState::REGISTRATION) {
-        registrationState->onExit();
-    } else if (currentGameState == GameState::PROFILE_SELECTION) {
-        profileSelectionState->onExit();
-    } else if (currentGameState == GameState::CHARACTER_SELECTION) {
-        characterSelectionState->onExit();
-    }
+    if      (currentGameState == GameState::REGISTRATION)       registrationState->onExit();
+    else if (currentGameState == GameState::PROFILE_SELECTION)  profileSelectionState->onExit();
+    else if (currentGameState == GameState::CHARACTER_SELECTION) characterSelectionState->onExit();
+    else if (currentGameState == GameState::TRAINING_HUB)       trainingHubState->onExit();
+    else if (currentGameState == GameState::LESSON_VIEWER)      lessonViewerState->onExit();
     currentGameState = GameState::TRAINING;
     trainingState->onEnter();
+}
+
+void Game::switchToTrainingHub() {
+    if      (currentGameState == GameState::MENU)          menuState->onExit();
+    else if (currentGameState == GameState::TRAINING)      trainingState->onExit();
+    else if (currentGameState == GameState::LESSON_VIEWER) lessonViewerState->onExit();
+    currentGameState = GameState::TRAINING_HUB;
+    trainingHubState->onEnter();
+}
+
+void Game::switchToLessonViewer() {
+    if (currentGameState == GameState::TRAINING_HUB) trainingHubState->onExit();
+    lessonViewerState->loadPages(trainingChapterPath, trainingChapterTitle);
+    currentGameState = GameState::LESSON_VIEWER;
+    lessonViewerState->onEnter();
 }
 
 void Game::switchToProfileSelection() {
@@ -134,11 +147,17 @@ void Game::handleEvents() {
         
         if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>()) {
             if (keyPressed->code == sf::Keyboard::Key::Escape) {
-                if (currentGameState != GameState::MENU && currentGameState != GameState::SPLASH) {
-                    switchToMenu();
-                } else if (currentGameState == GameState::MENU) {
-                    window.close();
-                    isRunning = false;
+                // TRAINING_HUB and LESSON_VIEWER handle ESC internally
+                bool stateHandlesOwnEsc =
+                    currentGameState == GameState::TRAINING_HUB ||
+                    currentGameState == GameState::LESSON_VIEWER;
+                if (!stateHandlesOwnEsc) {
+                    if (currentGameState != GameState::MENU && currentGameState != GameState::SPLASH) {
+                        switchToMenu();
+                    } else if (currentGameState == GameState::MENU) {
+                        window.close();
+                        isRunning = false;
+                    }
                 }
             }
         }
@@ -161,6 +180,12 @@ void Game::handleEvents() {
                 break;
             case GameState::CHARACTER_SELECTION:
                 characterSelectionState->handleInput(*event);
+                break;
+            case GameState::TRAINING_HUB:
+                trainingHubState->handleInput(*event);
+                break;
+            case GameState::LESSON_VIEWER:
+                lessonViewerState->handleInput(*event);
                 break;
             default:
                 break;
@@ -187,6 +212,12 @@ void Game::update(float deltaTime) {
             break;
         case GameState::CHARACTER_SELECTION:
             characterSelectionState->update(deltaTime);
+            break;
+        case GameState::TRAINING_HUB:
+            trainingHubState->update(deltaTime);
+            break;
+        case GameState::LESSON_VIEWER:
+            lessonViewerState->update(deltaTime);
             break;
         default:
             break;
@@ -221,6 +252,16 @@ void Game::render() {
         case GameState::CHARACTER_SELECTION:
             window.clear(sf::Color(20, 15, 40));
             characterSelectionState->render(window);
+            window.display();
+            break;
+        case GameState::TRAINING_HUB:
+            window.clear(sf::Color(14, 10, 35));
+            trainingHubState->render(window);
+            window.display();
+            break;
+        case GameState::LESSON_VIEWER:
+            window.clear(sf::Color(8, 6, 20));
+            lessonViewerState->render(window);
             window.display();
             break;
         default:
