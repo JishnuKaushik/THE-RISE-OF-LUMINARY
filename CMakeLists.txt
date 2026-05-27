@@ -25,7 +25,14 @@ add_executable(LuminaryGame
     src/Enemy.cpp
     src/ElementSystem.cpp
     src/SplashState.cpp
+    src/TrainingHubState.cpp
+    src/LessonViewerState.cpp
 )
+
+# Link stdc++fs explicitly for older MinGW toolchains (no-op on MSVC/GCC 9+)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS "9.0")
+    target_link_libraries(LuminaryGame stdc++fs)
+endif()
 
 target_link_libraries(LuminaryGame SFML::Graphics SFML::Window SFML::System SFML::Audio)
 
