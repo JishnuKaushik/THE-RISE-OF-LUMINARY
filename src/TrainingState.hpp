@@ -80,6 +80,8 @@ private:
     sf::RectangleShape* masteryBarFill;
     sf::RectangleShape* playerHUDPanel;
     sf::RectangleShape* enemyHUDPanel;
+    sf::RectangleShape* battleLogBg;
+    sf::RectangleShape* bottomDivider;
 
     // ── Colors ────────────────────────────────────────────────────────────────
     sf::Color correctColor;
