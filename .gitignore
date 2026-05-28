@@ -43,9 +43,9 @@ src_BACKUP/
 data_BACKUP/
 CMakeLists.txt_BACKUP
 CMakeLists.txt.save
-TrainingState_backup_filter.cpp
-TrainingState_filtered.cpp
-TrainingState_new_load.cpp
+src/TrainingState_backup_filter.cpp
+src/TrainingState_filtered.cpp
+src/TrainingState_new_load.cpp
 src/*.backup
 src/*.before_*
 src/*.broken
@@ -53,3 +53,6 @@ src/*.txt
 
 # Archives
 sfeMovie.zip
+
+# Test / sample data files
+data/questions/sample_questions.json
