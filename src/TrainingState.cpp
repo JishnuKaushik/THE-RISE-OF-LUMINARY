@@ -223,47 +223,46 @@ static void drawVignette(sf::RenderTarget& target) {
 }
 
 // ─── Layout constants (1280 × 720) ───────────────────────────────────────────
+// All positions tuned to sit inside the decorative frame artwork.
 namespace Layout {
     constexpr float SW = 1280.f, SH = 720.f;
 
-    // HUD strip
-    constexpr float HUD_Y  = 5.f,  HUD_H  = 110.f;
-    constexpr float PHUD_X = 8.f,  PHUD_W = 320.f;
-    constexpr float EHUD_X = 820.f;
-    constexpr float SCORE_W = 300.f;
-    constexpr float SCORE_X = 490.f;
+    // HUD strip — three panels separated by gem/star decorations
+    constexpr float HUD_Y   = 5.f,   HUD_H   = 150.f;
+    constexpr float PHUD_X  = 8.f,   PHUD_W  = 388.f;   // player (left)
+    constexpr float SCORE_X = 484.f, SCORE_W = 314.f;   // score  (centre)
+    constexpr float EHUD_X  = 878.f, EHUD_W  = 394.f;   // enemy  (right)
 
-    // Battle log background at (10,230) size(600,35) — text sits 5px inside
-    constexpr float BLOG_Y = 235.f;
+    // Battle log — floats just above the question box
+    constexpr float BLOG_Y = 242.f;
 
-    // Question panel — bottom edge = 270+150 = 420
-    constexpr float QBOX_X = 80.f,  QBOX_W = 1120.f;
-    constexpr float QBOX_Y = 270.f, QBOX_H = 150.f;
+    // Question panel — large centre decorative box
+    constexpr float QBOX_X = 78.f,  QBOX_W = 1124.f;
+    constexpr float QBOX_Y = 263.f, QBOX_H  = 178.f;
 
-    // Answer grid (2×2) — starts 10px below question box (430)
-    // right edge 660+530=1190, bottom 530+90=620
+    // Answer grid (2×2)
     constexpr float BTN_H   = 90.f;
     constexpr float BTN_GAP = 10.f;
     constexpr float BTN_W   = 530.f;
     constexpr float COL0_X  = 90.f;
     constexpr float COL1_X  = 660.f;
-    constexpr float GRID_Y  = 430.f;
-    constexpr float ROW2_Y  = 530.f;   // GRID_Y + BTN_H + BTN_GAP
+    constexpr float GRID_Y  = 447.f;   // 6px gap below question box bottom (441)
+    constexpr float ROW2_Y  = 547.f;   // GRID_Y + BTN_H + BTN_GAP
 
-    // Feedback strip (below answers)
-    constexpr float FB_Y = ROW2_Y + BTN_H + 5.f;   // 625
-    constexpr float FB_H = 68.f;
+    // Feedback strip (visible only when answered / hinted)
+    constexpr float FB_Y = ROW2_Y + BTN_H + 4.f;   // 641
+    constexpr float FB_H = 62.f;
 
-    // Mastery bar (bottom-left) — label above at y=668, bar at y=688
-    constexpr float MBAR_X = 30.f;
-    constexpr float MBAR_Y = 688.f;
-    constexpr float MBAR_W = 500.f;
-    constexpr float MBAR_H = 16.f;
+    // Mastery bar (lives inside the bottom strip panel)
+    constexpr float MBAR_X = 28.f;
+    constexpr float MBAR_Y = 690.f;
+    constexpr float MBAR_W = 360.f;
+    constexpr float MBAR_H = 14.f;
 
-    // Bottom control strip
+    // Bottom control strip (original position preserved)
     constexpr float BOT_STRIP_Y = 668.f;
     constexpr float BOT_STRIP_H = 52.f;
-    constexpr float BOT_Y = 680.f;
+    constexpr float BOT_Y       = 680.f;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -296,66 +295,67 @@ TrainingState::TrainingState(Game* gameInstance)
     const sf::Color bgDark(10, 8, 28, 215);
 
     // ── Player HUD panel (top-left) ───────────────────────────────────────────
-    playerHUDPanel = new sf::RectangleShape(sf::Vector2f(330.f, 100.f));
-    playerHUDPanel->setPosition(sf::Vector2f(8.f, 5.f));
+    playerHUDPanel = new sf::RectangleShape(sf::Vector2f(PHUD_W, HUD_H));
+    playerHUDPanel->setPosition(sf::Vector2f(PHUD_X, HUD_Y));
     playerHUDPanel->setOutlineColor(sf::Color(0, 200, 200, 180));
     playerHUDPanel->setOutlineThickness(2.f);
 
     playerHealthText = new sf::Text(font, "LUMINARY: 100/100", 22);
-    playerHealthText->setPosition(sf::Vector2f(20.f, 15.f));
+    playerHealthText->setPosition(sf::Vector2f(PHUD_X + 14.f, HUD_Y + 14.f));
     playerHealthText->setFillColor(sf::Color(0, 255, 200));
 
-    playerHealthBarBg = new sf::RectangleShape(sf::Vector2f(300.f, 18.f));
-    playerHealthBarBg->setPosition(sf::Vector2f(20.f, 45.f));
+    playerHealthBarBg = new sf::RectangleShape(sf::Vector2f(PHUD_W - 24.f, 16.f));
+    playerHealthBarBg->setPosition(sf::Vector2f(PHUD_X + 12.f, HUD_Y + 52.f));
     playerHealthBarBg->setFillColor(sf::Color(20, 14, 38, 200));
 
-    playerHealthBar = new sf::RectangleShape(sf::Vector2f(300.f, 18.f));
-    playerHealthBar->setPosition(sf::Vector2f(20.f, 45.f));
+    playerHealthBar = new sf::RectangleShape(sf::Vector2f(PHUD_W - 24.f, 16.f));
+    playerHealthBar->setPosition(sf::Vector2f(PHUD_X + 12.f, HUD_Y + 52.f));
     playerHealthBar->setFillColor(sf::Color(40, 210, 180));
 
     playerStatText = new sf::Text(font, "ATK: 20  DEF: 10", 17);
-    playerStatText->setPosition(sf::Vector2f(20.f, 68.f));
+    playerStatText->setPosition(sf::Vector2f(PHUD_X + 14.f, HUD_Y + 82.f));
     playerStatText->setFillColor(sf::Color(180, 180, 180));
 
     // ── Enemy HUD panel (top-right) ───────────────────────────────────────────
-    enemyHUDPanel = new sf::RectangleShape(sf::Vector2f(450.f, 112.f));
-    enemyHUDPanel->setPosition(sf::Vector2f(820.f, 5.f));
+    enemyHUDPanel = new sf::RectangleShape(sf::Vector2f(EHUD_W, HUD_H));
+    enemyHUDPanel->setPosition(sf::Vector2f(EHUD_X, HUD_Y));
     enemyHUDPanel->setOutlineColor(sf::Color(220, 60, 60, 180));
     enemyHUDPanel->setOutlineThickness(2.f);
 
     enemyNameText = new sf::Text(font, "FIRE DRAGON", 24);
-    enemyNameText->setPosition(sf::Vector2f(830.f, 12.f));
+    enemyNameText->setPosition(sf::Vector2f(EHUD_X + 12.f, HUD_Y + 12.f));
     enemyNameText->setFillColor(sf::Color(255, 80, 60));
 
     enemyHealthText = new sf::Text(font, "150 / 150", 20);
-    enemyHealthText->setPosition(sf::Vector2f(830.f, 45.f));
+    enemyHealthText->setPosition(sf::Vector2f(EHUD_X + 12.f, HUD_Y + 46.f));
     enemyHealthText->setFillColor(sf::Color::White);
 
     enemyElementText = new sf::Text(font, "FIRE TYPE", 18);
-    enemyElementText->setPosition(sf::Vector2f(830.f, 70.f));
+    enemyElementText->setPosition(sf::Vector2f(EHUD_X + 12.f, HUD_Y + 74.f));
     enemyElementText->setFillColor(sf::Color(255, 140, 0));
 
-    enemyHealthBarBg = new sf::RectangleShape(sf::Vector2f(430.f, 18.f));
-    enemyHealthBarBg->setPosition(sf::Vector2f(830.f, 92.f));
+    enemyHealthBarBg = new sf::RectangleShape(sf::Vector2f(EHUD_W - 24.f, 16.f));
+    enemyHealthBarBg->setPosition(sf::Vector2f(EHUD_X + 12.f, HUD_Y + 106.f));
     enemyHealthBarBg->setFillColor(sf::Color(20, 14, 38, 200));
 
-    enemyHealthBar = new sf::RectangleShape(sf::Vector2f(430.f, 18.f));
-    enemyHealthBar->setPosition(sf::Vector2f(830.f, 92.f));
+    enemyHealthBar = new sf::RectangleShape(sf::Vector2f(EHUD_W - 24.f, 16.f));
+    enemyHealthBar->setPosition(sf::Vector2f(EHUD_X + 12.f, HUD_Y + 106.f));
     enemyHealthBar->setFillColor(sf::Color(220, 60, 60));
 
     // ── Centre score / streak panel ───────────────────────────────────────────
-    scorePanel = new sf::RectangleShape(sf::Vector2f(300.f, 95.f));
-    scorePanel->setPosition(sf::Vector2f(490.f, 5.f));
+    scorePanel = new sf::RectangleShape(sf::Vector2f(SCORE_W, HUD_H));
+    scorePanel->setPosition(sf::Vector2f(SCORE_X, HUD_Y));
     scorePanel->setFillColor(sf::Color(20, 20, 40, 200));
     scorePanel->setOutlineColor(sf::Color(255, 215, 0, 180));
     scorePanel->setOutlineThickness(2.f);
 
+    // Three lines evenly distributed across HUD_H with equal top/bottom margins
     scoreText = new sf::Text(font, "SCORE: 0", 21);
-    scoreText->setPosition(sf::Vector2f(505.f, 12.f));
+    scoreText->setPosition(sf::Vector2f(SCORE_X + 16.f, HUD_Y + 18.f));
     scoreText->setFillColor(sf::Color(255, 220, 80));
 
     streakText = new sf::Text(font, "STREAK: 0", 21);
-    streakText->setPosition(sf::Vector2f(505.f, 38.f));
+    streakText->setPosition(sf::Vector2f(SCORE_X + 16.f, HUD_Y + 58.f));
     streakText->setFillColor(sf::Color(255, 220, 80));
 
     // streakPanel: kept only for cleanup compatibility, never rendered
@@ -363,7 +363,7 @@ TrainingState::TrainingState(Game* gameInstance)
     streakPanel->setPosition(sf::Vector2f(-9999, -9999));
 
     progressText = new sf::Text(font, "Q 1/20", 21);
-    progressText->setPosition(sf::Vector2f(505.f, 64.f));
+    progressText->setPosition(sf::Vector2f(SCORE_X + 16.f, HUD_Y + 98.f));
     progressText->setFillColor(sf::Color(255, 220, 80));
 
     // ── Battle log background + text ─────────────────────────────────────────
@@ -383,7 +383,7 @@ TrainingState::TrainingState(Game* gameInstance)
     questionBox->setOutlineThickness(2.f);
 
     questionText = new sf::Text(font, "", 23);
-    questionText->setPosition(sf::Vector2f(100.f, 285.f));
+    questionText->setPosition(sf::Vector2f(QBOX_X + 20.f, QBOX_Y + 16.f));
     questionText->setFillColor(sf::Color::White);
 
     // ── Answer buttons (2×2 grid) — right edge 1190, bottom 590, all on-screen
@@ -406,7 +406,7 @@ TrainingState::TrainingState(Game* gameInstance)
         optionBoxes.push_back(box);
 
         auto* text = new sf::Text(font, "", 18);
-        text->setPosition(sf::Vector2f(btnXY[i][0] + 15.f, btnXY[i][1] + 28.f));
+        text->setPosition(sf::Vector2f(btnXY[i][0] + 16.f, btnXY[i][1] + 33.f));
         text->setFillColor(normalColor);
         optionTexts.push_back(text);
     }
@@ -432,25 +432,25 @@ TrainingState::TrainingState(Game* gameInstance)
     masteryBarFill->setFillColor(sf::Color(140, 90, 220));
 
     masteryText = new sf::Text(font, "Mastery: 0%", 17);
-    masteryText->setPosition(sf::Vector2f(MBAR_X, 668.f));
+    masteryText->setPosition(sf::Vector2f(MBAR_X, MBAR_Y - 18.f));
     masteryText->setFillColor(sf::Color(180, 180, 255));
 
     // ── Bottom nav ────────────────────────────────────────────────────────────
     backButtonText = new sf::Text(font, "MENU (ESC)", 18);
-    backButtonText->setPosition(sf::Vector2f(20.f, BOT_Y));
+    backButtonText->setPosition(sf::Vector2f(22.f, BOT_Y));
     backButtonText->setFillColor(sf::Color(255, 215, 100));
 
     hintButtonText = new sf::Text(font, "HINT (-2) - H", 18);
-    hintButtonText->setPosition(sf::Vector2f(580.f, BOT_Y));
+    hintButtonText->setPosition(sf::Vector2f(SW / 2.f - 70.f, BOT_Y));
     hintButtonText->setFillColor(sf::Color(255, 215, 100));
 
     nextButtonText = new sf::Text(font, "NEXT (ENTER)", 18);
-    nextButtonText->setPosition(sf::Vector2f(1100.f, BOT_Y));
+    nextButtonText->setPosition(sf::Vector2f(SW - 170.f, BOT_Y));
     nextButtonText->setFillColor(sf::Color(255, 215, 100));
 
     // ── Bottom divider line ───────────────────────────────────────────────────
-    bottomDivider = new sf::RectangleShape(sf::Vector2f(1280.f, 2.f));
-    bottomDivider->setPosition(sf::Vector2f(0.f, 716.f));
+    bottomDivider = new sf::RectangleShape(sf::Vector2f(SW, 2.f));
+    bottomDivider->setPosition(sf::Vector2f(0.f, BOT_STRIP_Y));
     bottomDivider->setFillColor(sf::Color(80, 60, 120, 200));
 
     // Questions loaded in onEnter() after grade/subject are set
