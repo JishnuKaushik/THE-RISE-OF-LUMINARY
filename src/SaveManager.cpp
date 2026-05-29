@@ -37,7 +37,21 @@ bool SaveManager::savePlayer(const PlayerData& data) {
     file << "  \"lastPlayedDate\": \"" << data.lastPlayedDate << "\",\n";
     file << "  \"currentStreak\": " << data.currentStreak << ",\n";
     file << "  \"dailyMinutes\": " << data.dailyMinutes << ",\n";
-    file << "  \"selectedCharacter\": " << data.selectedCharacter << "\n";
+    file << "  \"selectedCharacter\": " << data.selectedCharacter << ",\n";
+    file << "  \"dailyQuestionsAnswered\": " << data.dailyQuestionsAnswered << ",\n";
+    file << "  \"dailyChaptersCompleted\": " << data.dailyChaptersCompleted << ",\n";
+    file << "  \"dailyQuestStreakDone\": " << (data.dailyQuestStreakDone ? "true" : "false") << ",\n";
+    // Per-subject stats — fixed set of 5 subjects
+    static const char* SUBJS[] = {"Mathematics","Science","History","Literature","Arts"};
+    for (const char* s : SUBJS) {
+        int v = data.topicAttempts.count(s) ? data.topicAttempts.at(s) : 0;
+        file << "  \"topicAttempts_" << s << "\": " << v << ",\n";
+    }
+    for (int i = 0; i < 5; i++) {
+        int v = data.topicCorrect.count(SUBJS[i]) ? data.topicCorrect.at(SUBJS[i]) : 0;
+        file << "  \"topicCorrect_" << SUBJS[i] << "\": " << v;
+        file << (i < 4 ? ",\n" : "\n");
+    }
     file << "}\n";
     
     file.close();
@@ -101,6 +115,31 @@ bool SaveManager::loadPlayer(const std::string& username, PlayerData& data) {
         else if (line.find("\"selectedCharacter\"") != std::string::npos) {
             size_t colon = line.find(':');
             data.selectedCharacter = std::stoi(line.substr(colon + 1));
+        }
+        else if (line.find("\"dailyQuestionsAnswered\"") != std::string::npos) {
+            size_t colon = line.find(':');
+            data.dailyQuestionsAnswered = std::stoi(line.substr(colon + 1));
+        }
+        else if (line.find("\"dailyChaptersCompleted\"") != std::string::npos) {
+            size_t colon = line.find(':');
+            data.dailyChaptersCompleted = std::stoi(line.substr(colon + 1));
+        }
+        else if (line.find("\"dailyQuestStreakDone\"") != std::string::npos) {
+            data.dailyQuestStreakDone = (line.find("true") != std::string::npos);
+        }
+        else if (line.find("\"topicAttempts_") != std::string::npos) {
+            size_t s = line.find("topicAttempts_") + 14;
+            size_t e = line.find('"', s);
+            std::string subj = line.substr(s, e - s);
+            size_t colon = line.find(':', e);
+            data.topicAttempts[subj] = std::stoi(line.substr(colon + 1));
+        }
+        else if (line.find("\"topicCorrect_") != std::string::npos) {
+            size_t s = line.find("topicCorrect_") + 13;
+            size_t e = line.find('"', s);
+            std::string subj = line.substr(s, e - s);
+            size_t colon = line.find(':', e);
+            data.topicCorrect[subj] = std::stoi(line.substr(colon + 1));
         }
     }
     
