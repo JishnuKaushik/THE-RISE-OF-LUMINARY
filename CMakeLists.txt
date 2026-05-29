@@ -27,6 +27,10 @@ add_executable(LuminaryGame
     src/SplashState.cpp
     src/TrainingHubState.cpp
     src/LessonViewerState.cpp
+    src/StoryManager.cpp
+    src/StatisticsState.cpp
+    src/AchievementManager.cpp
+    src/SettingsState.cpp
 )
 
 # Link stdc++fs explicitly for older MinGW toolchains (no-op on MSVC/GCC 9+)
