@@ -199,6 +199,55 @@ Inspirations: *Persona*, *Slay the Spire*, *Honkai: Star Rail*, RPG Maker combat
 
 ---
 
+## Credits
+
+### Original Team
+
+| Name | Role |
+|---|---|
+| **Ishan** | Team Lead — project architecture, initial codebase, game systems design |
+| **Yuvraj Chillar** | Team Member |
+| **Aditya Sain** | Team Member |
+| **Jatin Bhadwaj** | Team Member |
+
+---
+
+### Improvements & Additions — Jishnu Kaushik
+
+All of the following changes were researched, implemented, and committed by **Jishnu Kaushik**, built on top of the original team's foundation:
+
+**Training State Overhaul**
+- Complete rewrite and expansion of `TrainingState.cpp` (550+ insertions) — restructured the core battle loop, question flow, and UI rendering pipeline
+- Reorganised `TrainingState.hpp` — member variables cleaned up, new UI elements added for improved clarity and scalability
+
+**Battle HUD Layout System**
+- Replaced all hardcoded pixel positions with a centralised `Layout` namespace of named constants
+- Covers every HUD panel — player, enemy, score, question box, answer grid, feedback strip, mastery bar, and bottom nav
+- Makes layout tuning a single-location change instead of hunting through 110 lines of raw numbers
+
+**Button Class Upgrade**
+- Added full state machine to `Button` — pressed, disabled, hover, and idle states with proper transitions
+- Implemented smooth **color interpolation** between states for animated feel
+- Enhanced callback system and overall input handling reliability
+
+**Character Selection UI Revamp**
+- Replaced static background with a scaled dynamic background (`characterselect.png`)
+- Rebuilt character card rendering — textures, sprites, and outline boxes built dynamically in `updateDisplay()`
+- Improved memory safety: vectors cleared, textures/sprites/boxes owned and deleted correctly
+- Fixed input handling (nav keys update colors correctly), removed broken numeric shortcuts, cleaned up emojis from UI text
+
+**Training Hub & Lesson Viewer States**
+- Built `TrainingHubState` from scratch — new chapter/lesson selection screen between the menu and combat
+- Built `LessonViewerState` from scratch (260 lines) — full lesson-viewing UI with its own rendering and input pipeline
+- Wired both new states into `Game.cpp` and `Game.hpp` — state transitions, CMakeLists.txt build integration
+
+**Codebase Cleanup & Documentation**
+- Removed stale test data (`sample_questions.json`) superseded by the 25 real question files
+- Tightened `.gitignore` — backup file patterns scoped to `src/`, sample file explicitly excluded
+- Wrote the initial enhanced `README.md` and clarified `CLAUDE.md` (removed outdated blocker note on question filtering)
+
+---
+
 ## License
 
-Personal educational game project by Ishan. All rights reserved.
+Personal educational game project. All rights reserved.
