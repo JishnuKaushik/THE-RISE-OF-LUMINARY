@@ -380,30 +380,28 @@ Story loading is functional. Story-battle integration is partially complete.
 
 > Update this section as bugs are fixed. Mark fixed bugs with **[FIXED]** and note the date + commit.
 
-### BUG-001 [CRITICAL] — Subject + Grade Filtering Not Working
+### BUG-001 [FIXED] — Subject + Grade Filtering Not Working
 - **File:** `TrainingState.cpp` → `loadQuestions()`
-- **Root cause:** Function iterates ALL `Class_*` folders and loads ALL JSON files, ignoring `game->selectedSubject` and `game->playerData.gradeLevel`
-- **Fix:** Load only the single file matching grade + subject instead of full directory scan
-- **Required data:** `game->selectedSubject` + `game->playerData.gradeLevel` → map to path
-- **Status:** Open
+- **Root cause:** Was iterating ALL `Class_*` folders; now loads single targeted file.
+- **Status:** Fixed (already resolved in codebase before Phase 0 work)
 
-### BUG-002 [CRITICAL] — Story Mode Not Accessible
-- **Files:** `Game.hpp` (missing STORY_MODE enum value), `MenuState.cpp` (no menu option), `TrainingStoryState.cpp` (placeholder only — no chapter display)
-- **Root cause:** `STORY_MODE` never added to `GameState` enum; no `switchToStoryMode()` method exists; `TrainingStoryState` has stub implementations
-- **Fix order:** `Game.hpp` enum → `Game.cpp` switch blocks → `Game::switchToStoryMode()` → `MenuState` option → `TrainingStoryState` implementation using `StoryManager`
-- **Status:** Open
+### BUG-002 [FIXED] — Story Mode Not Accessible
+- **Files:** `Game.hpp`, `Game.cpp`, `MenuState.cpp`, `TrainingStoryState.cpp/hpp`, `StoryManager.cpp` (new)
+- **Root cause:** `STORY_MODE` never in `GameState` enum; `TrainingStoryState` was a stub.
+- **Fix applied:** Added `STORY_MODE` enum + `switchToStoryMode()` + all 3 switch blocks in `Game.cpp`; full 7-screen `TrainingStoryState` using `StoryManager`; "STORY MODE" added to menu at index 3.
+- **Status:** Fixed
 
-### BUG-003 [MEDIUM] — XP Awarded But Not Persisted
-- **File:** `TrainingState.cpp` → `checkAnswer()`
-- **Root cause:** `Character::addXP()` exists and `CharacterManager::saveProgress()` exists, but neither is called after a correct answer in battle
-- **Fix:** Call `charManager.addXP(xpAmount)` on correct answer, then `charManager.saveProgress()`
-- **Status:** Open
+### BUG-003 [FIXED] — XP Awarded But Not Persisted
+- **File:** `TrainingState.cpp` → `checkAnswer()`, `nextQuestion()`
+- **Root cause:** `Character::addXP()` and `CharacterManager::saveProgress()` existed but were never called in battle
+- **Fix:** Added `CharacterManager charManager` to `TrainingState`; `charManager.loadProgress()` on `onEnter()`; `ch->addXP(points)` + `charManager.saveProgress()` on correct answer; level-up detection updates `battleLogText`; +50 XP victory bonus on chapter complete
+- **Status:** Fixed
 
-### BUG-004 [MEDIUM] — CardManager Initialized But Never Used in Battle
-- **File:** `TrainingState.cpp`
-- **Root cause:** `CardManager` class is complete with `playCard()`, `drawInitialHand()` etc. but no instance exists in `TrainingState`; cards are never drawn or awarded
-- **Fix:** Add `CardManager cardManager` to `TrainingState`, call `drawInitialHand()` on battle start, award cards on correct streaks
-- **Status:** Open
+### BUG-004 [FIXED] — CardManager Initialized But Never Used in Battle
+- **File:** `TrainingState.cpp`, `TrainingState.hpp`
+- **Root cause:** `CardManager` class was complete but no instance existed in `TrainingState`
+- **Fix:** Added `CardManager cardManager` to `TrainingState`; `CardManager::initialize()` is called in constructor (draws initial hand of 3); streak milestones 3/5/7 award cards 4/5/6 via `addCardToDeck()` and display gold "CARD EARNED" message in battle log
+- **Status:** Fixed
 
 ---
 
@@ -441,116 +439,98 @@ Implement `TrainingStoryState` using existing `StoryManager`:
 
 ---
 
-### PHASE 1 — Wire Existing Systems Into Battle
+### PHASE 1 — Wire Existing Systems Into Battle [COMPLETE]
 
-**1.1 XP + Character Progression (BUG-003)**
-- `CharacterManager` already has `addXP()`, `levelUp()`, `saveProgress()`
-- Wire into `TrainingState::checkAnswer()` for correct answers
-- Wire into battle victory for enemy defeat bonus using `Enemy::xpReward`
-- Display level-up notification in battle log
+**1.1 XP + Character Progression (BUG-003) [FIXED]**
+- `CharacterManager charManager` added to `TrainingState`; `loadProgress()` on `onEnter()`
+- `ch->addXP(points)` + `saveProgress()` on correct answer; level-up detected and shown in battle log
+- +50 XP victory bonus on chapter complete in `nextQuestion()`
 
-**1.2 Lite Card Integration (BUG-004)**
-- `CardManager` is already built. Wire it in.
-- `TrainingState` gets a `CardManager cardManager` member
-- On battle start: `cardManager.drawInitialHand()`
-- On correct answer streak (3, 5, 7): `cardManager.addCardToDeck(randomCardId)` and show "Card Earned!" feedback
-- Pre-battle screen (new state or overlay): pick 3 cards from owned deck that apply passive bonuses
+**1.2 Lite Card Integration (BUG-004) [FIXED]**
+- `CardManager cardManager` added to `TrainingState`
+- Streak milestones 3/5/7 award cards 4/5/6 via `addCardToDeck()` + gold "CARD EARNED" message
 
-**1.3 Mouse Support (UI-wide)**
-- Every state with buttons/options needs mouse hover + click support
-- `sf::Mouse::getPosition(window)` → `window.mapPixelToCoords()` → `bounds.contains()`
-- Hover: highlight the option box; Click: same action as keyboard selection
-- Keyboard and mouse must coexist — do not remove keyboard input
+**1.3 Mouse Support [DONE]**
+- `TrainingState`: answer boxes highlight on hover, click to answer, click when answered to advance
+- `TrainingStoryState`: click subject boxes, chapter rows, answer boxes, reading screens to advance
+- Keyboard coexists with all mouse input
 
 ---
 
-### PHASE 2 — Educational Features
+### PHASE 2 — Educational Features [PARTIALLY COMPLETE]
 
-**2.1 Weak Topic Tracking**
-Add to `PlayerData`:
-```cpp
-std::map<std::string, int> topicAttempts;   // topic → total attempts
-std::map<std::string, int> topicCorrect;    // topic → correct answers
-```
-On wrong answer: `topicAttempts[question.subject]++`
-On correct answer: both maps increment. Save in `SaveManager`.
+**2.1 Weak Topic Tracking [DONE]**
+- `std::map<std::string, int> topicAttempts` and `topicCorrect` added to `PlayerData`
+- Incremented in `TrainingState::checkAnswer()` on every attempt and correct answer
+- Serialized/deserialized in `SaveManager` using flat keys `topicAttempts_{Subject}` / `topicCorrect_{Subject}`
 
-**2.2 Adaptive Difficulty**
-After loading questions, calculate player accuracy per subject from `PlayerData` maps.
-- If accuracy < 50%: weight question pool toward easier questions
-- If accuracy > 80%: prefer questions from the next grade folder
-JSON-driven — no hardcoded difficulty values.
+**2.2 Adaptive Difficulty [DONE]**
+- After `gradeToFolderPrefix()`, calculates subject accuracy from `topicAttempts`/`topicCorrect` (requires ≥10 attempts)
+- accuracy < 50%: tries the grade folder one step down; accuracy > 80%: tries one step up
+- Falls back to original grade if the adjacent file doesn't exist
 
-**2.3 Statistics Screen**
-New state: `StatisticsState`. Display using existing `PlayerData` fields:
-- Overall accuracy: `correctAnswers / totalQuestionsAnswered * 100`
-- Best streak, current streak, daily minutes played
-- Per-subject accuracy from `topicCorrect`/`topicAttempts` maps
-- Strongest/weakest subject, completed chapters list
+**2.3 Statistics Screen [DONE]**
+- New `StatisticsState` wired into all 3 switch blocks + `switchToStatistics()`
+- Shows: player name, grade, subject, questions, accuracy, streaks, daily minutes, chapters done
+- Per-subject accuracy with strongest/weakest subject detection
+- Click or ESC/ENTER to return to menu
+- Menu index 4 (STATISTICS) now routes to this state
 
 ---
 
-### PHASE 3 — Progression + Retention
+### PHASE 3 — Progression + Retention [COMPLETE]
 
-**3.1 Achievements**
-JSON-tracked milestones. New file: `saves/{username}_achievements.json`
-```json
-[
-  { "id": "first_win",     "name": "First Victory",   "unlocked": false },
-  { "id": "streak_10",     "name": "On Fire",         "unlocked": false },
-  { "id": "questions_100", "name": "Century Scholar", "unlocked": false },
-  { "id": "all_chapters",  "name": "Story Complete",  "unlocked": false }
-]
-```
-Check and unlock in `TrainingState` and `TrainingStoryState`. Show unlock popup via `ParticleSystem` + text overlay.
+**3.1 Achievements [DONE]**
+- `AchievementManager` loads 10 achievements from `data/achievements.json` (fallback hardcoded)
+- Saves per-user to `saves/{username}_achievements.json`
+- `game->achievements` is a public member of `Game`; `setUsername()` called on entering Training/Story
+- Checks wired in `TrainingState::checkAnswer()` (first correct, streak 5/10, questions 50/100, level 5/10, all subjects) and `nextQuestion()` (first win)
+- `TrainingStoryState::saveChapterCompletion()` calls `checkStoryChapter()`
+- Unlock popup via `spawnFloatingText("ACHIEVEMENT: ...")` using the callback
 
-**3.2 Daily Quests**
-Use `dailyMinutes` and `currentStreak` in `PlayerData`. Three daily targets (reset on date change using `lastPlayedDate`):
-- Answer N questions today
-- Maintain N-day login streak
-- Complete one story chapter
+**3.2 Daily Quests [DONE]**
+- `dailyQuestionsAnswered`, `dailyChaptersCompleted`, `dailyQuestStreakDone` added to `PlayerData`
+- Saved/loaded in `SaveManager`; reset on new calendar day in `switchToTraining()` and `switchToStoryMode()`
+- Three targets: 10 questions today, 1 story chapter today, 2-day login streak
+- Displayed in `StatisticsState` with `[X]` / `[ ]` progress indicators
 
-**3.3 Character Milestone Upgrades**
-Three milestone levels per character: 5 / 10 / 15. JSON-driven passive bonus per milestone.
-Extend `characters.json` format:
-```json
-{
-  "id": 1,
-  "milestones": [
-    { "level": 5,  "stat": "attack",    "bonus": 5  },
-    { "level": 10, "stat": "defense",   "bonus": 3  },
-    { "level": 15, "stat": "maxHealth", "bonus": 20 }
-  ]
-}
-```
-Apply in `Character::levelUp()`.
+**3.3 Character Milestone Upgrades [DONE]**
+- Milestone bonuses in `Character::levelUp()`: Lv.5 +5 attack, Lv.10 +3 defense, Lv.15 +20 maxHealth
+- Logged to stdout with milestone message
 
 ---
 
-### PHASE 4 — Polish
+### PHASE 4 — Polish [COMPLETE]
 
-**4.1 Screen Fade Transitions**
-Add to `Game` class:
-```cpp
-sf::RectangleShape fadeOverlay;   // full-screen black rect
-float fadeAlpha;
-bool fadingOut, fadingIn;
-```
-On state switch: fade to black → switch state → fade from black. ~0.3s per direction. No new state needed — runs in `Game::update()`.
+**4.1 Screen Fade Transitions [DONE]**
+- `fadeOverlay`, `fadeAlpha`, `fadingOut/In`, `fadeTimer`, `pendingStateSwitch` added to `Game`
+- `startFade(lambda)` called from `MenuState` keyboard/mouse handlers; all 5 menu options fade
+- `Game::update()` drives fade timer; `Game::render()` draws overlay after state render, before `display()`
+- `render()` refactored: single `window.display()` after all states, splash handled separately
 
-**4.2 Floating Combat Text**
-Extend `ParticleSystem` (already exists) with:
-`spawnFloatingText(sf::Vector2f pos, std::string text, sf::Color color)`
-Spawn on: correct answer (green "+10"), wrong answer (red "WRONG"), level up (gold "LEVEL UP!").
+**4.2 Floating Combat Text [DONE]**
+- `ParticleSystem` extended with `FloatingText` struct (stores raw data, renders `sf::Text` each frame to avoid SFML 3 default constructor issue)
+- `spawnFloatingText(pos, str, color)` requires `setFont()` to be called first (done in `TrainingState::onEnter()`)
+- Spawns: green "+N" on correct, red "WRONG!" on wrong, gold "LEVEL UP!" on level up
+- Fades out alpha in last 40% of lifetime (1.2s total)
 
-**4.3 Survival Mode**
-Same as TRAINING but with `lives = 3`. Toggle via `bool survivalMode` flag in `TrainingState` — no new state needed. Wrong answer: `lives--`; show life indicator in UI. `lives == 0`: game over screen.
+**4.3 Survival Mode [DONE]**
+- `bool survivalMode` + `int survivalLives` added to `TrainingState`
+- Default: off. Wrong answer decrements lives; at 0 shows GAME OVER and sends to menu
+- Lives displayed as hearts in the streak/lives panel when active
+- Toggle: set `trainingState->survivalMode = true` before `switchToTraining()`
 
-**4.4 Endless Mode**
-Remove the `questions.resize(50)` cap in `loadQuestions()`. When `currentQuestionIndex >= questions.size()`: reshuffle and loop. Track total answered across loops in stats.
+**4.4 Endless Mode [DONE]**
+- `bool endlessMode` + `int endlessLoopCount` added to `TrainingState`
+- When all questions exhausted with `endlessMode = true`: reshuffles + loops instead of ending
+- Toggle: set `trainingState->endlessMode = true` before `switchToTraining()`
 
-**4.5 Settings Menu**
-New state: `SettingsState`. Controls: music volume (slider 0–100), SFX volume (slider 0–100), fullscreen toggle. Save to `saves/settings.json`. Load on game start in `Game::initWindow()`.
+**4.5 Settings Menu [DONE]**
+- `SettingsState` with 3 panel options: Music Volume (LEFT/RIGHT ±5), SFX Volume (LEFT/RIGHT ±5), Fullscreen toggle
+- Saves to `saves/settings.json` on exit; loads on enter
+- Menu now has 7 options: NEW GAME / LOAD PROFILE / TRAINING / STORY / STATISTICS / SETTINGS / EXIT
+- Selected option highlighted with gold border; visual bar `[===   ] 60` for volumes
+- Mouse click on panels toggles/selects; all navigation via keyboard also works
 
 ---
 
@@ -604,6 +584,15 @@ if (event.type == sf::Event::KeyPressed) { ... }
 getLocalBounds().size.x
 // WRONG (SFML 2)
 getLocalBounds().width
+
+// COLOR ALPHA TYPE — CORRECT (SFML 3 / C++17)
+static_cast<uint8_t>(alpha)
+// WRONG (SFML 2) — sf::Uint8 does not exist in SFML 3
+static_cast<sf::Uint8>(alpha)
+
+// sf::Text DEFAULT CONSTRUCTOR — does not exist in SFML 3
+// Struct members of type sf::Text cannot be default-initialized.
+// Use raw data (string, color, position) and construct sf::Text at render time.
 
 // MOUSE POSITION
 sf::Vector2i rawPos = sf::Mouse::getPosition(window);
