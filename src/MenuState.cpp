@@ -22,7 +22,9 @@ MenuState::MenuState(Game* gameInstance) : game(gameInstance), selectedIndex(0) 
         "NEW GAME",
         "LOAD PROFILE",
         "TRAINING MODE",
+        "STORY MODE",
         "STATISTICS",
+        "SETTINGS",
         "EXIT"
     };
     
@@ -114,18 +116,24 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
 
                 if (selectedIndex == 0) {
                     game->hasLoadedProfile = false;
-                    game->switchToRegistration();
+                    game->startFade([this]{ game->switchToRegistration(); });
                 }
                 else if (selectedIndex == 1) {
-                    game->switchToProfileSelection();
+                    game->startFade([this]{ game->switchToProfileSelection(); });
                 }
                 else if (selectedIndex == 2) {
-                    game->switchToTrainingHub();
+                    game->startFade([this]{ game->switchToTrainingHub(); });
                 }
                 else if (selectedIndex == 3) {
-                    std::cout << "Statistics - Coming Soon!" << std::endl;
+                    game->startFade([this]{ game->switchToStoryMode(); });
                 }
                 else if (selectedIndex == 4) {
+                    game->startFade([this]{ game->switchToStatistics(); });
+                }
+                else if (selectedIndex == 5) {
+                    game->startFade([this]{ game->switchToSettings(); });
+                }
+                else if (selectedIndex == 6) {
                     game->getWindow().close();
                 }
 
@@ -154,28 +162,30 @@ if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
             case sf::Keyboard::Key::Enter:
                 std::cout << "Enter pressed on: " << options[selectedIndex] << std::endl;
 
-                if (selectedIndex == 0) {  // NEW GAME
-                    std::cout << "Starting New Game..." << std::endl;
+                if (selectedIndex == 0) {
                     game->hasLoadedProfile = false;
-                    game->switchToRegistration();
+                    game->startFade([this]{ game->switchToRegistration(); });
                 }
-                else if (selectedIndex == 1) {  // LOAD PROFILE
-                    std::cout << "Loading Profile..." << std::endl;
-                    game->switchToProfileSelection();
+                else if (selectedIndex == 1) {
+                    game->startFade([this]{ game->switchToProfileSelection(); });
                 }
-                else if (selectedIndex == 2) {  // TRAINING MODE
-                    std::cout << "Starting Training Mode..." << std::endl;
-                    game->switchToTrainingHub();
+                else if (selectedIndex == 2) {
+                    game->startFade([this]{ game->switchToTrainingHub(); });
                 }
-                else if (selectedIndex == 3) {  // STATISTICS
-                    std::cout << "Statistics - Coming Soon!" << std::endl;
+                else if (selectedIndex == 3) {
+                    game->startFade([this]{ game->switchToStoryMode(); });
                 }
-                else if (selectedIndex == 4) {  // EXIT
-                    std::cout << "Exiting game..." << std::endl;
+                else if (selectedIndex == 4) {
+                    game->startFade([this]{ game->switchToStatistics(); });
+                }
+                else if (selectedIndex == 5) {
+                    game->startFade([this]{ game->switchToSettings(); });
+                }
+                else if (selectedIndex == 6) {
                     game->getWindow().close();
                 }
                 break;
-                
+
             default:
                 break;
         }

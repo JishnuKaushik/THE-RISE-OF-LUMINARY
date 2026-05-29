@@ -7,8 +7,16 @@
 #include "SplashState.hpp"
 #include "TrainingHubState.hpp"
 #include "LessonViewerState.hpp"
+#include "TrainingStoryState.hpp"
+#include "StatisticsState.hpp"
+#include "SettingsState.hpp"
+#include <chrono>
+#include <ctime>
+#include <sstream>
+#include <iomanip>
 
-Game::Game() : isRunning(true), currentGameState(GameState::SPLASH), hasLoadedProfile(false), selectedCharacterId(1) {
+Game::Game() : isRunning(true), currentGameState(GameState::SPLASH), hasLoadedProfile(false), selectedCharacterId(1),
+               fadeAlpha(0.f), fadingOut(false), fadingIn(false), fadeTimer(0.f) {
     initWindow();
     initFont();
     initStates();
@@ -19,7 +27,18 @@ Game::~Game() = default;
 void Game::initWindow() {
     window.create(sf::VideoMode({1280, 720}), "The Rising of the Luminary");
     window.setFramerateLimit(60);
+    fadeOverlay.setSize(sf::Vector2f(1280.f, 720.f));
+    fadeOverlay.setPosition(sf::Vector2f(0.f, 0.f));
+    fadeOverlay.setFillColor(sf::Color(0, 0, 0, 0));
     std::cout << "Window created: 1280x720" << std::endl;
+}
+
+void Game::startFade(std::function<void()> onComplete) {
+    pendingStateSwitch = onComplete;
+    fadingOut  = true;
+    fadingIn   = false;
+    fadeTimer  = 0.f;
+    fadeAlpha  = 0.f;
 }
 
 void Game::initFont() {
@@ -45,6 +64,9 @@ void Game::initStates() {
     characterSelectionState = std::make_unique<CharacterSelectionState>(this);
     trainingHubState = std::make_unique<TrainingHubState>(this);
     lessonViewerState = std::make_unique<LessonViewerState>(this);
+    trainingStoryState = std::make_unique<TrainingStoryState>(this);
+    statisticsState = std::make_unique<StatisticsState>(this);
+    settingsState   = std::make_unique<SettingsState>(this);
 
     splashState->onEnter();
 }
@@ -65,6 +87,9 @@ void Game::switchToMenu() {
     else if (currentGameState == GameState::CHARACTER_SELECTION) characterSelectionState->onExit();
     else if (currentGameState == GameState::TRAINING_HUB)       trainingHubState->onExit();
     else if (currentGameState == GameState::LESSON_VIEWER)      lessonViewerState->onExit();
+    else if (currentGameState == GameState::STORY_MODE)         trainingStoryState->onExit();
+    else if (currentGameState == GameState::STATISTICS)         statisticsState->onExit();
+    else if (currentGameState == GameState::SETTINGS)           settingsState->onExit();
     currentGameState = GameState::MENU;
     menuState->onEnter();
     std::cout << "Switched to Menu" << std::endl;
@@ -78,12 +103,31 @@ void Game::switchToRegistration() {
     registrationState->onEnter();
 }
 
+static std::string getTodayString() {
+    auto now = std::chrono::system_clock::now();
+    std::time_t t = std::chrono::system_clock::to_time_t(now);
+    std::tm* tm_ptr = std::localtime(&t);
+    std::ostringstream oss;
+    oss << std::put_time(tm_ptr, "%Y-%m-%d");
+    return oss.str();
+}
+
 void Game::switchToTraining() {
     if      (currentGameState == GameState::REGISTRATION)       registrationState->onExit();
     else if (currentGameState == GameState::PROFILE_SELECTION)  profileSelectionState->onExit();
     else if (currentGameState == GameState::CHARACTER_SELECTION) characterSelectionState->onExit();
     else if (currentGameState == GameState::TRAINING_HUB)       trainingHubState->onExit();
     else if (currentGameState == GameState::LESSON_VIEWER)      lessonViewerState->onExit();
+    achievements.setUsername(playerData.username);
+    // Daily reset check
+    std::string today = getTodayString();
+    if (playerData.lastPlayedDate != today) {
+        playerData.currentStreak = (playerData.dailyQuestStreakDone) ? playerData.currentStreak + 1 : 0;
+        playerData.dailyQuestionsAnswered = 0;
+        playerData.dailyChaptersCompleted = 0;
+        playerData.dailyQuestStreakDone   = false;
+        playerData.lastPlayedDate = today;
+    }
     currentGameState = GameState::TRAINING;
     trainingState->onEnter();
 }
@@ -123,6 +167,34 @@ void Game::switchToGameplay() {
     currentGameState = GameState::GAMEPLAY;
 }
 
+void Game::switchToStoryMode() {
+    if (currentGameState == GameState::MENU) menuState->onExit();
+    achievements.setUsername(playerData.username);
+    // Daily reset check
+    std::string today = getTodayString();
+    if (playerData.lastPlayedDate != today) {
+        playerData.currentStreak = (playerData.dailyQuestStreakDone) ? playerData.currentStreak + 1 : 0;
+        playerData.dailyQuestionsAnswered = 0;
+        playerData.dailyChaptersCompleted = 0;
+        playerData.dailyQuestStreakDone   = false;
+        playerData.lastPlayedDate = today;
+    }
+    currentGameState = GameState::STORY_MODE;
+    trainingStoryState->onEnter();
+}
+
+void Game::switchToStatistics() {
+    if (currentGameState == GameState::MENU) menuState->onExit();
+    currentGameState = GameState::STATISTICS;
+    statisticsState->onEnter();
+}
+
+void Game::switchToSettings() {
+    if (currentGameState == GameState::MENU) menuState->onExit();
+    currentGameState = GameState::SETTINGS;
+    settingsState->onEnter();
+}
+
 void Game::run() {
     std::cout << "Game is running!" << std::endl;
     sf::Clock clock;
@@ -150,7 +222,10 @@ void Game::handleEvents() {
                 // TRAINING_HUB and LESSON_VIEWER handle ESC internally
                 bool stateHandlesOwnEsc =
                     currentGameState == GameState::TRAINING_HUB ||
-                    currentGameState == GameState::LESSON_VIEWER;
+                    currentGameState == GameState::LESSON_VIEWER ||
+                    currentGameState == GameState::STORY_MODE    ||
+                    currentGameState == GameState::STATISTICS     ||
+                    currentGameState == GameState::SETTINGS;
                 if (!stateHandlesOwnEsc) {
                     if (currentGameState != GameState::MENU && currentGameState != GameState::SPLASH) {
                         switchToMenu();
@@ -187,6 +262,15 @@ void Game::handleEvents() {
             case GameState::LESSON_VIEWER:
                 lessonViewerState->handleInput(*event);
                 break;
+            case GameState::STORY_MODE:
+                trainingStoryState->handleInput(*event);
+                break;
+            case GameState::STATISTICS:
+                statisticsState->handleInput(*event);
+                break;
+            case GameState::SETTINGS:
+                settingsState->handleInput(*event);
+                break;
             default:
                 break;
         }
@@ -194,6 +278,24 @@ void Game::handleEvents() {
 }
 
 void Game::update(float deltaTime) {
+    // Screen fade update
+    if (fadingOut) {
+        fadeTimer += deltaTime;
+        fadeAlpha = std::min(255.f, (fadeTimer / FADE_DURATION) * 255.f);
+        fadeOverlay.setFillColor(sf::Color(0, 0, 0, static_cast<uint8_t>(fadeAlpha)));
+        if (fadeTimer >= FADE_DURATION) {
+            if (pendingStateSwitch) { pendingStateSwitch(); pendingStateSwitch = nullptr; }
+            fadingOut = false;
+            fadingIn  = true;
+            fadeTimer = 0.f;
+        }
+    } else if (fadingIn) {
+        fadeTimer += deltaTime;
+        fadeAlpha = std::max(0.f, 255.f - (fadeTimer / FADE_DURATION) * 255.f);
+        fadeOverlay.setFillColor(sf::Color(0, 0, 0, static_cast<uint8_t>(fadeAlpha)));
+        if (fadeTimer >= FADE_DURATION) { fadingIn = false; fadeAlpha = 0.f; }
+    }
+
     switch (currentGameState) {
         case GameState::SPLASH:
             splashState->update(deltaTime);
@@ -219,54 +321,56 @@ void Game::update(float deltaTime) {
         case GameState::LESSON_VIEWER:
             lessonViewerState->update(deltaTime);
             break;
+        case GameState::STORY_MODE:
+            trainingStoryState->update(deltaTime);
+            break;
+        case GameState::STATISTICS:
+            statisticsState->update(deltaTime);
+            break;
+        case GameState::SETTINGS:
+            settingsState->update(deltaTime);
+            break;
         default:
             break;
     }
 }
 
 void Game::render() {
-    switch (currentGameState) {
-        case GameState::SPLASH:
-            splashState->render(window);
-            break;
-        case GameState::MENU:
-            window.clear(sf::Color(20, 15, 40));
-            menuState->render(window);
-            window.display();
-            break;
-        case GameState::REGISTRATION:
-            window.clear(sf::Color(20, 15, 40));
-            registrationState->render(window);
-            window.display();
-            break;
-        case GameState::TRAINING:
-            window.clear(sf::Color(20, 15, 40));
-            trainingState->render(window);
-            window.display();
-            break;
-        case GameState::PROFILE_SELECTION:
-            window.clear(sf::Color(20, 15, 40));
-            profileSelectionState->render(window);
-            window.display();
-            break;
-        case GameState::CHARACTER_SELECTION:
-            window.clear(sf::Color(20, 15, 40));
-            characterSelectionState->render(window);
-            window.display();
-            break;
-        case GameState::TRAINING_HUB:
-            window.clear(sf::Color(14, 10, 35));
-            trainingHubState->render(window);
-            window.display();
-            break;
-        case GameState::LESSON_VIEWER:
-            window.clear(sf::Color(8, 6, 20));
-            lessonViewerState->render(window);
-            window.display();
-            break;
-        default:
-            window.clear(sf::Color::Black);
-            window.display();
-            break;
+    // Splash manages its own clear/display cycle
+    if (currentGameState == GameState::SPLASH) {
+        splashState->render(window);
+        return;
     }
+
+    // All other states: clear → render state → fade overlay → display
+    sf::Color bg = sf::Color(20, 15, 40);
+    switch (currentGameState) {
+        case GameState::TRAINING_HUB:   bg = sf::Color(14, 10, 35);  break;
+        case GameState::LESSON_VIEWER:  bg = sf::Color(8,  6,  20);  break;
+        case GameState::STORY_MODE:
+        case GameState::STATISTICS:
+        case GameState::SETTINGS:       bg = sf::Color(8,  6,  24);  break;
+        default: break;
+    }
+    window.clear(bg);
+
+    switch (currentGameState) {
+        case GameState::MENU:               menuState->render(window);               break;
+        case GameState::REGISTRATION:       registrationState->render(window);       break;
+        case GameState::TRAINING:           trainingState->render(window);           break;
+        case GameState::PROFILE_SELECTION:  profileSelectionState->render(window);   break;
+        case GameState::CHARACTER_SELECTION:characterSelectionState->render(window); break;
+        case GameState::TRAINING_HUB:       trainingHubState->render(window);        break;
+        case GameState::LESSON_VIEWER:      lessonViewerState->render(window);       break;
+        case GameState::STORY_MODE:         trainingStoryState->render(window);      break;
+        case GameState::STATISTICS:         statisticsState->render(window);         break;
+        case GameState::SETTINGS:           settingsState->render(window);           break;
+        default: break;
+    }
+
+    // Fade overlay drawn on top of everything
+    if (fadingOut || fadingIn)
+        window.draw(fadeOverlay);
+
+    window.display();
 }
