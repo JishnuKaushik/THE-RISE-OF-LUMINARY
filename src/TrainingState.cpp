@@ -479,6 +479,46 @@ void TrainingState::loadQuestions() {
         return;
     }
 
+    // ── Adaptive difficulty ───────────────────────────────────────────────────
+    // Grade order for step-up / step-down
+    static const std::vector<std::string> GRADE_ORDER = {
+        "Preschool", "Elementary", "Middle School", "High School", "College Prep"
+    };
+    auto gradeIt = std::find(GRADE_ORDER.begin(), GRADE_ORDER.end(), grade);
+    int gradeIdx = (gradeIt != GRADE_ORDER.end())
+                   ? static_cast<int>(gradeIt - GRADE_ORDER.begin()) : 2;
+
+    int att = game->playerData.topicAttempts.count(subject)
+              ? game->playerData.topicAttempts.at(subject) : 0;
+    int cor = game->playerData.topicCorrect.count(subject)
+              ? game->playerData.topicCorrect.at(subject) : 0;
+
+    if (att >= 10) {   // only adapt after enough data
+        float acc = static_cast<float>(cor) / att;
+        if (acc < 0.5f && gradeIdx > 0) {
+            std::string easierGrade = GRADE_ORDER[gradeIdx - 1];
+            std::string easierPrefix = gradeToFolderPrefix(easierGrade);
+            std::string easierPath = "data/questions/" + easierPrefix
+                                     + subjectToFilename(subject) + ".json";
+            if (std::ifstream(easierPath).good()) {
+                folderPrefix = easierPrefix;
+                std::cout << "[TrainingState] Adaptive: accuracy " << (int)(acc*100)
+                          << "% < 50% — stepping down to " << easierGrade << "\n";
+            }
+        } else if (acc > 0.8f && gradeIdx < (int)GRADE_ORDER.size() - 1) {
+            std::string harderGrade = GRADE_ORDER[gradeIdx + 1];
+            std::string harderPrefix = gradeToFolderPrefix(harderGrade);
+            std::string harderPath = "data/questions/" + harderPrefix
+                                     + subjectToFilename(subject) + ".json";
+            if (std::ifstream(harderPath).good()) {
+                folderPrefix = harderPrefix;
+                std::cout << "[TrainingState] Adaptive: accuracy " << (int)(acc*100)
+                          << "% > 80% — stepping up to " << harderGrade << "\n";
+            }
+        }
+    }
+    // ─────────────────────────────────────────────────────────────────────────
+
     std::string path = "data/questions/" + folderPrefix + subjectToFilename(subject) + ".json";
     std::cout << "[TrainingState] Loading: " << path << "\n";
 
@@ -587,15 +627,21 @@ void TrainingState::checkAnswer(int optionIndex) {
     Question& q    = questions[currentQuestionIndex];
 
     game->playerData.totalQuestionsAnswered++;
+    game->playerData.dailyQuestionsAnswered++;
+    game->playerData.topicAttempts[q.subject]++;
 
     if (optionIndex == q.correctIndex) {
         game->playerData.correctAnswers++;
+        game->playerData.topicCorrect[q.subject]++;
         int points = 10 + (streak * 2);
         score  += points;
         streak++;
 
         screenShake.start(0.2f, 6.0f);
         particles.spawnSparkles(optionBoxes[optionIndex]->getPosition());
+        particles.spawnFloatingText(
+            optionBoxes[optionIndex]->getPosition() + sf::Vector2f(220.f, 0.f),
+            "+" + std::to_string(points), sf::Color(100, 255, 140));
 
         // Correct button — green
         optionBoxes[optionIndex]->setFillColor(sf::Color(10, 55, 22, 220));
@@ -603,12 +649,53 @@ void TrainingState::checkAnswer(int optionIndex) {
         optionBoxes[optionIndex]->setOutlineThickness(3);
         optionTexts[optionIndex]->setFillColor(sf::Color(100, 255, 140));
 
-        battleLogText->setString("CORRECT! +" + std::to_string(points) + " points!");
-        battleLogText->setFillColor(sf::Color(100, 255, 160));
+        // Award XP to the player's selected character
+        std::string xpMsg = "CORRECT! +" + std::to_string(points) + " points!";
+        bool leveledUp = false;
+        Character* ch = charManager.getCharacterById(game->playerData.selectedCharacter);
+        if (ch) {
+            int oldLevel = ch->level;
+            ch->addXP(points);
+            charManager.saveProgress();
+            if (ch->level > oldLevel) {
+                leveledUp = true;
+                xpMsg = "LEVEL UP! " + ch->name + " is now Lv." + std::to_string(ch->level) + "!";
+                particles.spawnSparkles(sf::Vector2f(640, 200));
+                particles.spawnFloatingText(sf::Vector2f(640, 180), "LEVEL UP!", sf::Color(255, 220, 80));
+            }
+        }
+        battleLogText->setString(xpMsg);
+        battleLogText->setFillColor(leveledUp ? sf::Color(255, 220, 80) : sf::Color(100, 255, 160));
+
+        // Award a card at streak milestones 3, 5, 7
+        if (streak == 3 || streak == 5 || streak == 7) {
+            static const int streakCardIds[] = {4, 5, 6, 7};
+            int idx = (streak == 3) ? 0 : (streak == 5) ? 1 : 2;
+            Card* earnedCard = cardManager.getCardById(streakCardIds[idx]);
+            if (earnedCard) {
+                cardManager.addCardToDeck(streakCardIds[idx]);
+                xpMsg = "CARD EARNED: " + earnedCard->name + "! (Streak " + std::to_string(streak) + ")";
+                leveledUp = true; // reuse gold color for card reward
+            }
+        }
+        battleLogText->setString(xpMsg);
+        battleLogText->setFillColor(leveledUp ? sf::Color(255, 220, 80) : sf::Color(100, 255, 160));
 
         std::string fbStr = "CORRECT!  +" + std::to_string(points) + " pts     " + q.explanation;
         feedbackText->setString(wrapText(fbStr, game->getMainFont(), 16, Layout::QBOX_W - 28.f));
         feedbackBox->setFillColor(sf::Color(6, 38, 16, 155));
+
+        // Achievement checks
+        game->achievements.checkFirstCorrect();
+        game->achievements.checkStreak(streak);
+        game->achievements.checkQuestionsAnswered(game->playerData.totalQuestionsAnswered);
+        if (ch) game->achievements.checkCharacterLevel(ch->level);
+        {
+            std::vector<std::string> subjectsAnswered;
+            for (const auto& kv : game->playerData.topicCorrect)
+                if (kv.second > 0) subjectsAnswered.push_back(kv.first);
+            game->achievements.checkAllSubjects(subjectsAnswered);
+        }
 
         std::cout << "Correct! Streak: " << streak << " Score: " << score << "\n";
     } else {
@@ -616,6 +703,9 @@ void TrainingState::checkAnswer(int optionIndex) {
 
         screenShake.start(0.2f, 4.0f);
         particles.spawnSmoke(optionBoxes[optionIndex]->getPosition());
+        particles.spawnFloatingText(
+            optionBoxes[optionIndex]->getPosition() + sf::Vector2f(220.f, 0.f),
+            "WRONG!", sf::Color(255, 80, 80));
 
         // Wrong button — crimson
         optionBoxes[optionIndex]->setFillColor(sf::Color(55, 8, 8, 220));
@@ -627,6 +717,27 @@ void TrainingState::checkAnswer(int optionIndex) {
         optionBoxes[q.correctIndex]->setOutlineColor(sf::Color(60, 220, 100));
         optionBoxes[q.correctIndex]->setOutlineThickness(3);
         optionTexts[q.correctIndex]->setFillColor(sf::Color(100, 255, 140));
+
+        if (survivalMode) {
+            survivalLives--;
+            if (survivalLives <= 0) {
+                particles.spawnSmoke(sf::Vector2f(640, 360));
+                battleLogText->setString("GAME OVER! No lives remaining. Press ENTER.");
+                battleLogText->setFillColor(sf::Color(255, 60, 60));
+                particles.spawnFloatingText(sf::Vector2f(640, 280), "GAME OVER", sf::Color(255, 60, 60));
+                feedbackText->setString("SURVIVAL MODE OVER — Final Score: " + std::to_string(score));
+                feedbackBox->setFillColor(sf::Color(42, 6, 6, 155));
+                nextButtonText->setString("PRESS ENTER FOR MENU");
+                // Force end of questions so Enter goes to menu
+                currentQuestionIndex = static_cast<int>(questions.size());
+                updateUI();
+                saveProgress();
+                return;
+            }
+            particles.spawnFloatingText(
+                optionBoxes[optionIndex]->getPosition() + sf::Vector2f(220.f, 0.f),
+                "LIFE LOST! " + std::to_string(survivalLives) + " left", sf::Color(255, 80, 80));
+        }
 
         battleLogText->setString("WRONG! Enemy attacks!");
         battleLogText->setFillColor(sf::Color(255, 100, 100));
@@ -649,12 +760,41 @@ void TrainingState::nextQuestion() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= (int)questions.size()) {
+        // Endless mode — reshuffle and loop instead of ending
+        if (endlessMode && !questions.empty()) {
+            endlessLoopCount++;
+            std::mt19937 rng(std::random_device{}());
+            std::shuffle(questions.begin(), questions.end(), rng);
+            currentQuestionIndex = 0;
+            particles.spawnSparkles(sf::Vector2f(640, 360));
+            battleLogText->setString("LOOP " + std::to_string(endlessLoopCount + 1) + "! Shuffled — keep going!");
+            battleLogText->setFillColor(sf::Color(140, 220, 255));
+            displayQuestion();
+            return;
+        }
+
         feedbackText->setString(wrapText(
             "CHAPTER COMPLETE!    Final Score: " + std::to_string(score),
             game->getMainFont(), 16, Layout::QBOX_W - 28.f));
         nextButtonText->setString("PRESS ENTER FOR MENU");
         particles.spawnSparkles(sf::Vector2f(640, 360));
-        battleLogText->setString("VICTORY!");
+
+        // Achievement checks on victory
+        game->achievements.checkFirstWin();
+        game->achievements.checkQuestionsAnswered(game->playerData.totalQuestionsAnswered);
+
+        // Victory XP bonus
+        const int VICTORY_XP = 50;
+        std::string victoryMsg = "VICTORY! +" + std::to_string(VICTORY_XP) + " XP bonus!";
+        Character* ch = charManager.getCharacterById(game->playerData.selectedCharacter);
+        if (ch) {
+            int oldLevel = ch->level;
+            ch->addXP(VICTORY_XP);
+            charManager.saveProgress();
+            if (ch->level > oldLevel)
+                victoryMsg += "  LEVEL UP! Now Lv." + std::to_string(ch->level) + "!";
+        }
+        battleLogText->setString(victoryMsg);
         battleLogText->setFillColor(sf::Color(255, 220, 80));
     } else {
         displayQuestion();
@@ -690,11 +830,18 @@ void TrainingState::startBattle() {
 void TrainingState::updateUI() {
     scoreText->setString("SCORE: " + std::to_string(score));
 
-    streakText->setString("STREAK: " + std::to_string(streak));
-    if      (streak >= 8) streakText->setFillColor(sf::Color(255, 80,  80));
-    else if (streak >= 5) streakText->setFillColor(sf::Color(255, 160, 40));
-    else if (streak >= 3) streakText->setFillColor(sf::Color(255, 220, 80));
-    else                  streakText->setFillColor(sf::Color(180, 220, 255));
+    if (survivalMode) {
+        std::string hearts;
+        for (int i = 0; i < survivalLives; i++) hearts += "♥ ";
+        streakText->setString("LIVES: " + hearts);
+        streakText->setFillColor(sf::Color(255, 80, 120));
+    } else {
+        streakText->setString("STREAK: " + std::to_string(streak));
+        if      (streak >= 8) streakText->setFillColor(sf::Color(255, 80,  80));
+        else if (streak >= 5) streakText->setFillColor(sf::Color(255, 160, 40));
+        else if (streak >= 3) streakText->setFillColor(sf::Color(255, 220, 80));
+        else                  streakText->setFillColor(sf::Color(180, 220, 255));
+    }
 }
 
 void TrainingState::updateBattleUI() {}
@@ -709,6 +856,39 @@ void TrainingState::saveProgress() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 void TrainingState::handleInput(const sf::Event& event) {
+    // Mouse hover — brighten option box border
+    if (const auto* mm = event.getIf<sf::Event::MouseMoved>()) {
+        sf::Vector2f mp(static_cast<float>(mm->position.x), static_cast<float>(mm->position.y));
+        if (!answered && !questions.empty()) {
+            for (int i = 0; i < 4 && i < (int)optionBoxes.size(); i++) {
+                bool hov = optionBoxes[i]->getGlobalBounds().contains(mp);
+                optionBoxes[i]->setOutlineColor(hov ? sf::Color(220, 200, 80)
+                                                     : sf::Color(160, 120, 35, 160));
+                optionBoxes[i]->setOutlineThickness(hov ? 3.f : 2.f);
+            }
+        }
+    }
+
+    // Mouse click — select answer or advance
+    if (const auto* mb = event.getIf<sf::Event::MouseButtonPressed>()) {
+        if (mb->button == sf::Mouse::Button::Left) {
+            sf::Vector2f mp(static_cast<float>(mb->position.x), static_cast<float>(mb->position.y));
+            if (!answered && !questions.empty()) {
+                for (int i = 0; i < 4 && i < (int)optionBoxes.size(); i++) {
+                    if (optionBoxes[i]->getGlobalBounds().contains(mp)) {
+                        checkAnswer(i);
+                        break;
+                    }
+                }
+            } else if (answered) {
+                if (currentQuestionIndex >= (int)questions.size())
+                    game->switchToMenu();
+                else
+                    nextQuestion();
+            }
+        }
+    }
+
     if (const auto* keyPressed = event.getIf<sf::Event::KeyPressed>()) {
         if (!answered && !questions.empty()) {
             switch (keyPressed->code) {
@@ -958,6 +1138,18 @@ void TrainingState::onEnter() {
     playerHealthBar->setSize({playerHealthBarBg->getSize().x, playerHealthBar->getSize().y});
     enemyHealthBar ->setSize({enemyHealthBarBg->getSize().x,  enemyHealthBar->getSize().y});
 
+    particles.setFont(game->getMainFont());
+    survivalMode   = false;
+    survivalLives  = 3;
+    endlessMode    = false;
+    endlessLoopCount = 0;
+
+    // Achievement unlock popup via floating text
+    game->achievements.setUnlockCallback([this](const Achievement& a) {
+        particles.spawnFloatingText(sf::Vector2f(640.f, 240.f),
+            "ACHIEVEMENT: " + a.name + "!", sf::Color(255, 215, 80));
+    });
+    charManager.loadProgress();
     loadQuestions();
     startBattle();
     displayQuestion();
@@ -965,5 +1157,6 @@ void TrainingState::onEnter() {
 
 void TrainingState::onExit() {
     std::cout << "Exited Training State\n";
+    game->achievements.setUnlockCallback(nullptr);
     saveProgress();
 }

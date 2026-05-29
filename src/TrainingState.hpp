@@ -6,6 +6,8 @@
 #include "BattleSystem.hpp"
 #include "ScreenShake.hpp"
 #include "ParticleSystem.hpp"
+#include "Character.hpp"
+#include "Card.hpp"
 
 struct Question {
     int id;
@@ -26,6 +28,8 @@ private:
     BattleSystem battleSystem;
     ScreenShake screenShake;
     ParticleSystem particles;
+    CharacterManager charManager;
+    CardManager cardManager;
     sf::Texture backgroundTexture;
     std::optional<sf::Sprite> backgroundSprite;
 
@@ -38,6 +42,14 @@ private:
     int  selectedOption;
     bool hintUsed;
     bool inBattle;
+
+    // Survival Mode
+    bool survivalMode;
+    int  survivalLives;
+
+    // Endless Mode
+    bool endlessMode;
+    int  endlessLoopCount;
 
     // HP lerp animation
     float displayPlayerHP, targetPlayerHP, maxPlayerHP;
