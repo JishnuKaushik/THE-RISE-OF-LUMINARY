@@ -44,6 +44,19 @@ void Character::levelUp() {
     attack += 5;
     defense += 3;
     std::cout << name << " reached level " << level << "!" << std::endl;
+
+    // Milestone bonuses at levels 5, 10, 15
+    if (level == 5) {
+        attack += 5;
+        std::cout << name << " MILESTONE Lv.5: +5 Attack! (now " << attack << ")\n";
+    } else if (level == 10) {
+        defense += 3;
+        std::cout << name << " MILESTONE Lv.10: +3 Defense! (now " << defense << ")\n";
+    } else if (level == 15) {
+        maxHealth += 20;
+        health = maxHealth;
+        std::cout << name << " MILESTONE Lv.15: +20 Max HP! (now " << maxHealth << ")\n";
+    }
 }
 
 void Character::heal(int amount) {
