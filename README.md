@@ -158,7 +158,10 @@ THE-RISE-OF-LUMINARY-main/
 │   ├── ParallaxBackground.cpp / .hpp      Scrolling layered combat backgrounds
 │   ├── Card.cpp / .hpp                    Card mechanics
 │   ├── Button.cpp / .hpp                  Animated UI button system
-│   ├── StoryManager.hpp                   Story JSON loading
+│   ├── StoryManager.hpp / .cpp            Story JSON loading (30 chapters × 5 subjects)
+│   ├── AchievementManager.cpp / .hpp      10-achievement system, per-user save files
+│   ├── StatisticsState.cpp / .hpp         Performance tracking and daily quest display
+│   ├── SettingsState.cpp / .hpp           Volume and fullscreen settings
 │   ├── TrainingHubState.cpp / .hpp        Chapter / lesson selection hub
 │   ├── LessonViewerState.cpp / .hpp       In-game lesson viewer UI
 │   └── ...                                Menu, registration, character select states
@@ -201,6 +204,9 @@ THE-RISE-OF-LUMINARY-main/
 | `Button.cpp / hpp` | Animated UI buttons with full state machine |
 | `TrainingHubState.cpp / hpp` | Chapter / lesson selection hub |
 | `LessonViewerState.cpp / hpp` | In-game educational content viewer |
+| `AchievementManager.cpp / hpp` | 10-achievement system with per-user persistence |
+| `StatisticsState.cpp / hpp` | Performance tracking and daily quest display |
+| `SettingsState.cpp / hpp` | Music/SFX volume and fullscreen settings |
 | `SaveManager.cpp / hpp` | JSON save / load for player profiles |
 | `ParallaxBackground.cpp / hpp` | Scrolling layered combat backgrounds |
 
@@ -220,12 +226,20 @@ Player profiles live in `saves/` as human-readable JSON files. Each profile trac
 
 ## 🗺️ Roadmap
 
-- [ ] Full story mode — dialogue cutscenes and chapter-by-chapter boss progression
-- [ ] Skill trees and card unlock reward system
-- [ ] Statistics screen — performance tracking per subject and grade
-- [ ] XP curve balancing across all 5 grade levels
+- [x] Full story mode — 7-screen flow: intro → concept → quick-check → battle → results
+- [x] Card unlock reward system — streak milestones 3/5/7 award cards in battle
+- [x] Statistics screen — per-subject accuracy, daily quest progress, strongest/weakest subject
+- [x] Achievement system — 10 achievements loaded from JSON, per-user save files
+- [x] Settings menu — music/SFX volume, fullscreen toggle, persisted to JSON
+- [x] Survival mode — lives system; wrong answers cost a life, 0 = game over
+- [x] Endless mode — question pool reshuffles and loops instead of ending
+- [x] Adaptive difficulty — adjusts grade level up/down based on subject accuracy
+- [x] Daily quests — 3 daily targets tracked and displayed on statistics screen
+- [x] Floating combat text — XP gain, wrong answer, level-up popups in battle
+- [x] Screen fade transitions — cinematic fades between all menu options
 - [ ] Per-element and per-action sound effects
 - [ ] Boss battle visual sequences and special animations
+- [ ] XP curve balancing across all 5 grade levels
 
 ---
 
@@ -274,6 +288,34 @@ Player profiles live in `saves/` as human-readable JSON files. Each profile trac
 - Built `TrainingHubState` from scratch — the chapter/lesson selection screen between the menu and combat
 - Built `LessonViewerState` from scratch (260 lines) — full in-game lesson viewer with its own rendering pipeline and input handling
 - Wired both into `Game.cpp` / `Game.hpp` — state transitions, lifecycle methods, and CMakeLists.txt build integration
+
+**🏆 Achievement System**
+- Built `AchievementManager` — loads 10 achievements from `data/achievements.json` with hardcoded fallback
+- Per-user save files at `saves/{username}_achievements.json`; checks wired in battle and story states
+
+**📊 Statistics Screen**
+- Built `StatisticsState` — per-subject accuracy, strongest/weakest subject detection, daily quest progress display
+- Wired into state machine as menu option 5 (STATISTICS)
+
+**⚙️ Settings Menu**
+- Built `SettingsState` — music volume, SFX volume (±5 per key, visual bar), fullscreen toggle
+- Persists to `saves/settings.json`; wired as menu option 6 (SETTINGS)
+
+**🎖️ Survival & Endless Modes**
+- Survival mode: wrong answers cost a life; 0 lives triggers GAME OVER and returns to menu
+- Endless mode: question pool reshuffles and loops instead of ending on completion
+
+**🎯 Adaptive Difficulty**
+- After grade selection, calculates subject accuracy from `topicAttempts`/`topicCorrect` (requires ≥10 attempts)
+- accuracy < 50%: tries one grade below; accuracy > 80%: tries one grade above; falls back if file missing
+
+**📅 Daily Quests & Topic Tracking**
+- Three daily targets (10 questions, 1 story chapter, 2-day streak) tracked and reset on new calendar day
+- Per-subject `topicAttempts`/`topicCorrect` maps serialized in SaveManager for adaptive difficulty and statistics
+
+**✨ Polish — Fade Transitions & Floating Text**
+- Screen fade transitions added for all 5 menu options via `startFade()` lambda in Game
+- `FloatingText` added to `ParticleSystem` — green XP gain, red WRONG!, gold LEVEL UP! and achievement popups
 
 **🧹 Codebase Cleanup & Documentation**
 - Removed stale test data (`sample_questions.json`) superseded by the 24 real question files
