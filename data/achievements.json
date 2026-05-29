@@ -1,0 +1,12 @@
+[
+  { "id": "first_correct",  "name": "First Blood",       "desc": "Answer your first question correctly." },
+  { "id": "first_win",      "name": "First Victory",     "desc": "Complete a chapter for the first time." },
+  { "id": "streak_5",       "name": "On a Roll",         "desc": "Reach a streak of 5 correct answers." },
+  { "id": "streak_10",      "name": "On Fire!",          "desc": "Reach a streak of 10 correct answers." },
+  { "id": "questions_50",   "name": "Half Century",      "desc": "Answer 50 questions total." },
+  { "id": "questions_100",  "name": "Century Scholar",   "desc": "Answer 100 questions total." },
+  { "id": "level_5",        "name": "Rising Star",       "desc": "Reach character level 5." },
+  { "id": "level_10",       "name": "Champion",          "desc": "Reach character level 10." },
+  { "id": "story_chapter",  "name": "Story Begins",      "desc": "Complete your first story chapter." },
+  { "id": "all_subjects",   "name": "Renaissance Mind",  "desc": "Answer questions in all 5 subjects." }
+]
