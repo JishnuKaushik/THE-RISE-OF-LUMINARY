@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <cmath>
 
-ParticleSystem::ParticleSystem() {
+ParticleSystem::ParticleSystem() : font(nullptr) {
 }
 
 ParticleSystem::~ParticleSystem() {
@@ -65,21 +65,52 @@ void ParticleSystem::update(float deltaTime) {
     for (auto it = particles.begin(); it != particles.end();) {
         it->shape.move(it->velocity * deltaTime);
         it->life -= deltaTime;
-        
+        if (it->life <= 0) it = particles.erase(it);
+        else ++it;
+    }
+
+    for (auto it = floatingTexts.begin(); it != floatingTexts.end();) {
+        it->position += it->velocity * deltaTime;
+        it->life -= deltaTime;
         if (it->life <= 0) {
-            it = particles.erase(it);
+            it = floatingTexts.erase(it);
         } else {
+            // Fade alpha in last 40% of life
+            float ratio = it->life / it->totalLife;
+            float alpha = (ratio < 0.4f) ? (ratio / 0.4f) * 255.f : 255.f;
+            it->color.a = static_cast<uint8_t>(alpha);
             ++it;
         }
     }
 }
 
 void ParticleSystem::render(sf::RenderWindow& window) {
-    for (auto& p : particles) {
-        window.draw(p.shape);
+    for (auto& p : particles) window.draw(p.shape);
+    if (font) {
+        for (auto& ft : floatingTexts) {
+            sf::Text t(*font, ft.str, 26);
+            t.setFillColor(ft.color);
+            t.setOutlineColor(sf::Color(0, 0, 0, 140));
+            t.setOutlineThickness(2.f);
+            t.setPosition(ft.position);
+            window.draw(t);
+        }
     }
+}
+
+void ParticleSystem::spawnFloatingText(sf::Vector2f pos, const std::string& str, sf::Color color) {
+    if (!font) return;
+    FloatingText ft;
+    ft.str      = str;
+    ft.color    = color;
+    ft.position = pos;
+    ft.velocity = sf::Vector2f(0.f, -90.f);
+    ft.life     = 1.2f;
+    ft.totalLife= 1.2f;
+    floatingTexts.push_back(ft);
 }
 
 void ParticleSystem::clear() {
     particles.clear();
+    floatingTexts.clear();
 }
